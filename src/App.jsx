@@ -1,10 +1,13 @@
 import './App.css';
-import AboutContent from './pages/Apropos/Apropos';
+import {Outlet} from "react-router-dom";
+import Apropos from './pages/Apropos/Apropos';
+
 
 function App() {
   return (
     <div className="App">
-      <AboutContent />
+      {/* <Outlet /> */}
+      <Apropos />
     </div>
   );
 }
