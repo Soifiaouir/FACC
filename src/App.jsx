@@ -1,7 +1,6 @@
 import './App.css';
 import {Outlet} from "react-router-dom";
-import Apropos from './pages/apropos/Apropos';
-import CarrousselP from './components/caroussels/carousselP/CarrousselP';
+import CarrousselImg from './components/caroussels/carrousselimg/Carrousselimg';
 
 
 
@@ -9,8 +8,7 @@ function App() {
   return (
     <div className="App">
       {/* <Outlet /> */}
-      {/* <Apropos /> */}
-      < CarrousselP visibleImages={3}/>
+      <CarrousselImg />
     </div>
   );
 }
