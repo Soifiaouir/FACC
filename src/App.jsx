@@ -1,14 +1,14 @@
 import './App.css';
 import {Outlet} from "react-router-dom";
-import CarrousselImg from './components/caroussels/carrousselimg/Carrousselimg';
+import Countdown from './components/compteurs/Compteur';
 
-
+const eventDate = "2025-10-10T15:15:00";
 
 function App() {
   return (
     <div className="App">
       {/* <Outlet /> */}
-      <CarrousselImg />
+      <Countdown eventDate={eventDate}/>
     </div>
   );
 }
