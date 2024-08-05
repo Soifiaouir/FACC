@@ -1,0 +1,80 @@
+.logo{
+    background-color: #C4CEDE;
+    width: 100%;
+}
+.carroussel {
+    padding: 0%;
+    position: relative;
+    width: 80%;
+    height: 300px;
+    margin: 0 auto;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+  }
+  
+  .carroussel_images {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    flex-grow: 1;
+    padding: 0%;
+    height: 250px;
+  }
+  
+  .carroussel_img {
+    width: calc(100% / 3 - 20px); /* Ajustez en fonction du nombre d'images visibles */
+    height: 150px;
+    object-fit: contain;
+    margin: 0 10px;
+    transition: transform 0.3s ease;
+  }
+  
+  .carroussel_img:hover {
+    transform: scale(1.05);
+  }
+  
+  .fleche {
+    width: 150px;
+    height: 150px;
+    cursor: pointer;
+    object-fit: cover; 
+    transition: opacity 0.3s ease;
+  }
+  
+  .fleche:hover {
+    opacity: 0.7;
+  }
+  
+  /* Styles pour les images de lune (flèches) */
+  .fleche[src*="luneg"] {
+    transform: rotate(180deg); /* Rotation pour la flèche gauche si nécessaire */
+  }
+  
+  /* Responsive design */
+  @media (max-width: 768px) {
+    .carroussel {
+      width: 95%;
+    }
+  
+    .carroussel_img {
+      width: calc(100% / 2 - 20px); /* Affiche 2 images sur les écrans plus petits */
+    }
+  }
+  
+  @media (max-width: 390px) {
+    .carroussel{
+        padding: 10px;
+    }
+    
+    .fleche{
+        height: 75px;
+    }
+    .carroussel_img{
+        height: 250px;
+        width: 250px;
+    }
+  }

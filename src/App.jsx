@@ -1,13 +1,16 @@
 import './App.css';
 import {Outlet} from "react-router-dom";
-import Apropos from './pages/Apropos/Apropos';
+import Apropos from './pages/apropos/Apropos';
+import CarrousselP from './components/caroussels/carousselP/CarrousselP';
+
 
 
 function App() {
   return (
     <div className="App">
       {/* <Outlet /> */}
-      <Apropos />
+      {/* <Apropos /> */}
+      < CarrousselP visibleImages={3}/>
     </div>
   );
 }
