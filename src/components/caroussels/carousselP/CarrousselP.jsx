@@ -14,7 +14,7 @@ const CarrousselP = () => {
 
     useEffect(() => {
         const handleResize = () => {
-            if (window.innerWidth <= 400) {
+            if (window.innerWidth <= 768) {
                 setVisibleImages(1);
             } else {
                 setVisibleImages(3);
@@ -51,18 +51,18 @@ const CarrousselP = () => {
 
         return (
             <div className="logo">
-                <div className='carroussel'>
-                    <img src={luneg} alt = 'precedent' className="fleche"
+                <div className='caroussel'>
+                    <img src={luneg} alt = 'precedent' className="fleches"
                         onClick={prevSlide} />
                     <div className="carroussel_images">
                         {getVisibleImages().map((image, index) => (
                         <img key={index}
                             src={image}
                             alt={`Logo ${currentIndex+index + 1}`}
-                            className="." />
+                            className="carroussel_img" />
                         ))}
                     </div>
-                    <img src={luned} alt='suivant' className="fleche"
+                    <img src={luned} alt='suivant' className="fleches"
                         onClick={nextSlide} /> 
                 </div>
             </div>

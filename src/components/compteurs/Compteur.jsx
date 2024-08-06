@@ -1,19 +1,22 @@
 import React, { useState, useEffect } from 'react';
 import './Compteur.css';
 
-const Countdown = ({ eventDate }) => {
+const Compteur = ({ eventDate }) => {
   // Fonction pour calculer le temps restant jusqu'à la date de l'événement
   const calculateTimeLeft = () => {
     const difference = +new Date(eventDate) - +new Date();
     let timeLeft = {};
 
     if (difference > 0) {
-      // Calcul des jours, heures, minutes et secondes restants
+      const millisecondsInHour = 1000 * 60 * 60;
+      const hoursInDay = 24;
+      const daysInMonth = 30.44; // Moyenne approximative de jours par mois
+
+      // Calcul des mois, jours et heures restants
       timeLeft = {
-        J: Math.floor(difference / (1000 * 60 * 60 * 24)),
-        H: Math.floor((difference / (1000 * 60 * 60)) % 24),
-        M: Math.floor((difference / 1000 / 60) % 60),
-        S: Math.floor((difference / 1000) % 60),
+        Mois: Math.floor(difference / (millisecondsInHour * hoursInDay * daysInMonth)),
+        Jours: Math.floor((difference / (millisecondsInHour * hoursInDay)) % daysInMonth),
+        Heures: Math.floor((difference / millisecondsInHour) % hoursInDay)
       };
     }
 
@@ -25,11 +28,11 @@ const Countdown = ({ eventDate }) => {
   // État pour stocker le temps restant
   const [timeLeft, setTimeLeft] = useState(calculateTimeLeft());
 
-  // Effet pour mettre à jour le temps restant chaque seconde
+  // Effet pour mettre à jour le temps restant chaque heure
   useEffect(() => {
     const timer = setTimeout(() => {
       setTimeLeft(calculateTimeLeft());
-    }, 1000);
+    }, 3600000); // Mise à jour toutes les heures (3600000 ms = 1 heure)
 
     // Nettoyage du timer lors du démontage du composant
     return () => clearTimeout(timer);
@@ -54,9 +57,9 @@ const Countdown = ({ eventDate }) => {
   // Rendu du composant
   return (
     <div className='compteur'>
-      {timerComponents.length ? timerComponents : <span>Un nouvel evenement est en préparation</span>}
+      {timerComponents.length ? timerComponents : <span>Un nouvel événement est en préparation</span>}
     </div>
   );
 };
 
-export default Countdown;
+export default Compteur;

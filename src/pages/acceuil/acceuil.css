@@ -1,0 +1,151 @@
+.acceuil {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 0px;
+}
+
+.video {
+    width: 90%;
+}
+
+.hero {
+    padding: 50px 0px;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+}
+
+.herogauche, .herodroite {
+    width: 45%;
+}
+
+.herodroite {
+    text-align: center;
+    padding: 0%;
+}
+
+.bandeau {
+    background-color: #7C3302;
+    color: #C4CEDE;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 7%;
+}
+
+.futur {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+    width: 90%;
+    padding-bottom: 10px;
+}
+
+.sectionG {
+    width: 40%;
+    text-align: start;
+}
+
+.invitation {
+    width: 40%;
+    height: auto;
+}
+
+.compt {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+    background-color: #7C3302;
+    width: 100%;
+    color: #E0DA4F;    
+}
+
+.mobil{
+    background-color: #7C3302;
+    width: 100%;
+    color:#C4CEDE;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+    .acceuil{  
+        gap:10px;
+    }
+
+    .hero {
+        flex-direction: column;
+    }
+
+    .herogauche, .herodroite {
+        width: 100%;
+        margin-bottom: 20px;
+        padding: 10px 0px 10px 0px;
+    }
+
+    .bandeau {
+        flex-direction: column;
+        gap: 20px;
+        height: 100px;
+        width: 100%;
+    }
+
+    .futur {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .sectionG, .invitation {
+        width: 100%;
+    }
+
+    .compt {
+        flex-direction: column;
+        gap: 30px;
+        padding: 20px 0;
+    }
+    .E{
+        display: none;
+    }
+    
+}
+
+
+@media screen and (min-width: 769px) {
+
+    .mobil{
+        display: none;
+        }
+
+}
+
+
+
+@media screen and (max-width: 400px) {
+    .video {
+        width: 100%;
+    }
+
+    .hero {
+        padding: 30px 0px;
+    }
+
+    .futur {
+        width: 100%;
+    }
+
+    .sectionG, .invitation {
+        width: 95%;
+    }
+   
+}
