@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import { BrowserRouter as Router, Routes, Route} from 'react-router-dom';
-import Apropos from './pages/Apropos/Apropos';
+import Apropos from './pages/apropos/Apropos';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 

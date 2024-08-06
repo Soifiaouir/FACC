@@ -19,11 +19,11 @@
 
 .App{
   margin: 0%;
-  padding: 50px;
   background-color: white;
   color: #1F1E13;
   font-family:  'InriaSerif';
   align-items: center;
+  width: 100%;
  }
 
  h1{
@@ -53,4 +53,3 @@ h4{
   justify-content: center;
   align-items: center;
 }
-

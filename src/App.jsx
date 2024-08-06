@@ -1,13 +1,15 @@
 import './App.css';
 import {Outlet} from "react-router-dom";
-import Apropos from './pages/Apropos/Apropos';
+import Acceuil from './pages/acceuil/acceuil';
 
 
 function App() {
   return (
     <div className="App">
       {/* <Outlet /> */}
-      <Apropos />
+      < Acceuil />    
+     
+      
     </div>
   );
 }

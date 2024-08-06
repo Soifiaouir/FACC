@@ -1,5 +1,6 @@
 import React from 'react';
 import Video from '../../components/video/video';
+import './Apropos.css';
 
 function Apropos() {
   return (

@@ -1,7 +1,7 @@
 import React from "react";
 import Logo from '../../assets/logo-vecto.png';
 import { Link } from 'react-router-dom';
-import './nav.css';
+import 'style.module.css';
 
 const Navbar = () => {
     return (

@@ -1,0 +1,55 @@
+.carroussel {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    height: 100%;
+    gap: 10px;
+
+  }
+  
+  .img_container {
+   /* Ajustez selon vos besoins */
+    overflow: hidden;
+  }
+  
+  .caroussel_img {
+    width: auto;
+    height: auto;
+
+  }
+  
+  .control {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+  }
+  
+  img.fleche {
+    height: 25px;
+    width: 25px;
+  }
+  
+  .indicateur {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 0 20px;
+  }
+  
+  .indicator {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: #E0DA4F; /* Jaune */
+    margin: 0 5px;
+    cursor: pointer;
+  }
+  
+  .indicator.active {
+    background-color: #7C3302; /* Rouge */
+  }
