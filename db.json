@@ -1,28 +1,31 @@
 {
-    "artistes": [
-      {
-        "id": 1,
-        "nom": "Dupont",
-        "prenom": "Marie",
-        "photo": "marie-dupont.jpg",
-        "description": "Artiste plasticienne spécialisée dans les installations immersives",
-        "oeuvre": {
-          "type": "photo",
-          "url": "oeuvre-marie-dupont.jpg"
-        },
-        "reseauSocial": "https://instagram.com/mariedupont"
-      },
-      {
-        "id": 2,
-        "nom": "Martin",
-        "prenom": "Pierre",
-        "photo": "pierre-martin.jpg",
-        "description": "Sculpteur contemporain travaillant principalement le métal",
-        "oeuvre": {
-          "type": "video",
-          "url": "oeuvre-pierre-martin.mp4"
-        },
-        "reseauSocial": "https://twitter.com/pierremartin"
-      }
-    ]
-  }
+  "artistes": [
+    {
+      "id": 1,
+      "nom": "Martin",
+      "prenom": "Pierre",
+      "photo": "id2.jpg",
+      "description": "Sculpteur contemporain travaillant principalement le métal",
+      "url": "MOSAIC.jpg",
+      "reseauSocial": "https://instagram.com/mariedupont"
+    },
+    {
+      "id": 2,
+      "nom": "Martin",
+      "prenom": "Pierre",
+      "photo": "id1.jpg",
+      "description": "Sculpteur contemporain travaillant principalement le métal",
+      "url": "MOSAIC.jpg",
+      "reseauSocial": "https://twitter.com/pierremartin"
+    },
+    {
+      "id": 3,
+      "nom": "BALTHAZAR",
+      "prenom": "Denis",
+      "photo": "Denis.jpg",
+      "description": "Sculpteur contemporain travaillant principalement le métal",
+      "url": "MOSAIC.jpg",
+      "reseauSocial": "https://www.facebook.com/Facdescomores"
+    }
+  ]
+}
