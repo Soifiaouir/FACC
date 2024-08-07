@@ -1,10 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import { BrowserRouter as Router, Routes, Route} from 'react-router-dom';
-import Apropos from './pages/apropos/Apropos';
+import { BrowserRouter as Router, Routes, Route, Navigate} from 'react-router-dom';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import Acceuil from './pages/acceuil/acceuil';
+import Edition2024 from './pages/edition2024/Edition2024';
+import Artistes from './pages/artistes/Artistes'
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -12,7 +14,11 @@ root.render(
     <Router>
       <Routes>
         <Route path= "/" element={<App />}>
-        <Route path="/Apropos" element={<Apropos/>}/>
+          <Route index element={<Acceuil />} />
+          <Route path="accueil" element={<Navigate replace to="/" />} />
+          <Route path="Edition2024" element={<Edition2024 />} />
+          <Route path="Artistes" element={<Artistes />} />
+
         </Route>
       </Routes>
     </Router>
