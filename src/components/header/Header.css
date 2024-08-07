@@ -1,0 +1,19 @@
+.menu{
+    padding: 0% 5%;
+    margin: 0%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    height: 150px;
+    color:#7C3302;
+}
+
+.Facclogo{
+    height: 150px;
+}
+
+Link{
+    text-decoration: none;
+
+}
