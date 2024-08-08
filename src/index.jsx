@@ -8,6 +8,7 @@ import Acceuil from './pages/acceuil/acceuil';
 import Edition2024 from './pages/edition2024/Edition2024';
 import Artistes from './pages/artistes/Artistes'
 import Edition2012 from './pages/2012/Edition2012';
+import Apropos from './pages/apropos/Apropos';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -20,6 +21,7 @@ root.render(
           <Route path="Edition2024" element={<Edition2024 />} />
           <Route path="Artistes" element={<Artistes />} />
           <Route path="Edition2012" element={<Edition2012 />} />
+          <Route path="Apropos" element={<Apropos />} />
 
         </Route>
       </Routes>

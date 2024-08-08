@@ -3,9 +3,18 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap:30px;
     padding: 0px;
-   
+}
+
+h2{
+    padding: 0%;
+    margin-bottom: 0%;
+    
+}
+
+h3{
+    padding: 0%;
+    margin: 0%;
 }
 
 .video {
@@ -13,7 +22,7 @@
 }
 
 .hero {
-    padding: 50px 0px;
+    padding: 25px 0px;
     height: auto;
     display: flex;
     flex-direction: row;
@@ -21,11 +30,16 @@
 
 .herogauche, .herodroite {
     width: 45%;
+    height: auto;
 }
 
 .herodroite {
     text-align: center;
     padding: 0%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
 }
 
 .bandeau {
@@ -67,7 +81,8 @@
     gap: 60px;
     background-color: #7C3302;
     width: 100%;
-    color: #E0DA4F;    
+    color: #E0DA4F;   
+    margin-bottom: 10px; 
 }
 
 .mobil{

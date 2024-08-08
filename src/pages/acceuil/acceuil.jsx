@@ -5,13 +5,13 @@ import Invitation from "../../assets/Invitation.jpg";
 import Compteur from "../../components/compteurs/Compteur";
 import CarrousselP from "../../components/caroussels/carousselP/CarrousselP";
 
-const eventDate = "2025-10-10T15:15:00";
+const eventDate = "2024-11-21T10:15:00";
 
 function Acceuil() {
 
     return (
         <div className="acceuil">
-            <h1>Festival d'Art Contemporain des Comores (FACC)</h1>
+            <h1>Festival d'Arts Contemporains des Comores (FACC)</h1>
             <iframe width="695" height="391" src="https://www.youtube.com/embed/enT-JJIIo48" title="Bande annonce  Documentaire FACC - MP 13" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen className="video"></iframe>
             <h3 className="mobil">5ème Edition</h3>
             <h2>Présentation du FACC</h2>

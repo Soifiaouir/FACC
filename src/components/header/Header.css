@@ -5,15 +5,45 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    height: 150px;
     color:#7C3302;
+    font-family: 'Adamina';
+    font-weight: bold;
+    font-size: 25px;
 }
 
 .Facclogo{
-    height: 150px;
+    height: 300px;
 }
 
-Link{
+.menu a {
     text-decoration: none;
-
+    color: inherit;
+    
 }
+
+.menu a:hover {
+    color: #283527;
+}
+
+.menu p {
+    margin: 0;
+    cursor: pointer;
+    
+}
+
+.dropdown {
+    display: none;
+    position: absolute;
+    background-color: #7C3302; /* Couleur de fond du dropdown */
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    z-index: 1;
+    min-width: 150px;
+    border-radius: 5px;
+    color: #E0DA4F;
+}
+
+.nav-dropdown:hover .dropdown {
+    display: block;
+}
+

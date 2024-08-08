@@ -14,13 +14,13 @@ const Navbar = () => {
                 <img src={Logofacc} alt='logofacc' className="Facclogo"/>
             </Link>
             <Link to="/Edition2024">
-                <p><span>Edition 2024</span></p>
+                <p>Edition 2024</p>
             </Link>
             <Link to="/Artistes">
-                <p><span>Artistes</span></p>
+                <p>Artistes</p>
             </Link>
             <div className="nav-dropdown" onMouseEnter={() => setShowPastEvents(true)}  onMouseLeave={() => setShowPastEvents(false)}>
-                <span>Evenement Passé</span>
+                <span>Evenements Passés</span>
                 {showPastEvents && (
                     <div className="dropdown">
                         <p>2022</p>
@@ -36,7 +36,7 @@ const Navbar = () => {
                 {showPracticalInfo && (
                     <div className="dropdown">
                         <p>contact</p>
-                        <p>A propos</p>
+                        <Link to="/Apropos"><p>A propos</p></Link>
                     </div>
                 )}
             </div>
