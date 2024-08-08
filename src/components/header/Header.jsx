@@ -35,7 +35,7 @@ const Navbar = () => {
                 <span>Infos Pratiques</span>
                 {showPracticalInfo && (
                     <div className="dropdown">
-                        <p>contact</p>
+                        <Link to="/Contact"><p>Contact</p></Link>
                         <Link to="/Apropos"><p>A propos</p></Link>
                     </div>
                 )}

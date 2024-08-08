@@ -2,7 +2,7 @@ import './App.css';
 import {Outlet} from "react-router-dom";
 import Header from "./components/header/Header";
 import Footer from './components/footer/Footer';
-import ContactForm from './pages/contact/Contact';
+
 
 
 function App() {
@@ -10,8 +10,8 @@ function App() {
     <div className="App">
       
       <Header />
-      {/* <Outlet /> */}
-      <ContactForm />
+       <Outlet /> 
+      
       <Footer />
         
     </div>
