@@ -1,4 +1,4 @@
-const API_URL = 'http://localhost:5891';
+const API_URL = 'http://localhost:5080';
 // configuration de l'url de l'api
 
 //fonction asynchrone pour récuperer les donéées des artistes depuis l'api
