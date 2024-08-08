@@ -27,7 +27,7 @@ const Navbar = () => {
                         <p>2020</p>
                         <p>2018</p>
                         <p>2016</p>
-                        <p>2013</p>
+                        <Link to="/Edition2012"><p>Edition2012</p></Link>
                     </div>
                 )}
             </div>
