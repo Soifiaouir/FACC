@@ -7,7 +7,11 @@
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
+    "classnames": "^2.5.1",
+    "cross": "^1.0.0",
+    "cross-env": "^7.0.3",
     "emailjs-com": "^3.2.0",
+    "env": "^0.0.2",
     "express": "^4.19.2",
     "path": "^0.12.7",
     "react": "^18.3.1",
@@ -23,6 +27,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
+    "server": "node server.js",
     "json-server": "json-server --watch db.json --port 5891"
   },
   "eslintConfig": {

@@ -1,11 +1,11 @@
-const API_URL = 'http://localhost:5891';
+import { BASE_URL } from "../config";
 // configuration de l'url de l'api
 
 //fonction asynchrone pour récuperer les donéées des artistes depuis l'api
 export const getArtistes = async () => {
 
   try {
-    const response = await fetch (`${API_URL}/artistes`);
+    const response = await fetch (`${BASE_URL}/artistes`);
     if(!response.ok) {
       throw new Error('Erreur de récupération des donnée de l api');
     }
