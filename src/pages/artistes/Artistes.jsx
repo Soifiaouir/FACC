@@ -17,7 +17,7 @@ const Artistes = () => {
         setLoading(false);
       } catch (err) {
         console.error("Erreur détaillée:", err);
-        setError(`Erreur lors du chargement des artistes: ${err.message}`);
+        setError(`Erreur lors du chargement des artistes pistache:  ${err.message}`);
         setLoading(false);
       }
     };
