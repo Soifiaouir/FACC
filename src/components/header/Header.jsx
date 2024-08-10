@@ -10,15 +10,11 @@ const Navbar = () => {
 
     return (
         <nav className="menu">
-            <Link to="/" className="logo-link">
-                <img src={Logofacc} alt='logofacc' className="Facclogo"/>
-            </Link>
-            <Link to="/Edition2024">
-                <p>Edition 2024</p>
-            </Link>
-            <Link to="/Artistes">
-                <p>Artistes</p>
-            </Link>
+            
+            <Link to="/" className="logo-link"><img src={Logofacc} alt='logofacc' className="Facclogo"/></Link>
+            <Link to="/Edition2024"><p>Edition 2024</p></Link>
+            <Link to="/Artistes"><p>Artistes</p></Link>
+
             <div className="nav-dropdown" onMouseEnter={() => setShowPastEvents(true)}  onMouseLeave={() => setShowPastEvents(false)}>
                 <span>Evenements Passés</span>
                 {showPastEvents && (
