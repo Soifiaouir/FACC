@@ -17,4 +17,3 @@ export const getArtistes = async () => {
       throw error; // Relance l'erreur pour la gestion dans le composant
     }
   };
-
