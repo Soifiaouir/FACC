@@ -1,6 +1,6 @@
 import React from "react";
 import './Edition2024.css';
-import HeroB from '../../assets/Oeuvres/art 2016.jpg';
+import Hero from '../../assets/Oeuvres/art 2016.jpg';
 import Compteur from "../../components/compteurs/Compteur";
 import BoutonTelecharger from "../../components/boutons/boutonT/BoutonT";
 import Program from "../../assets/Oeuvres/art.jpg";
@@ -16,7 +16,7 @@ const Edition2024 = () => {
         <div className="Edition2024">
             <h2>Edition 2024</h2>
             <div className="hero2024">
-            <img src={HeroB} alt='art de rue' className="HeroB" />
+            <img src={Hero} alt='art de rue' className="HeroB" />
             <p>Chers visiteurs et artistes,<br/>
             Nous avons le plaisir de vous inviter à la prochaine édition du Festival d'Arts Contemporains des Comores, qui se tiendra le 21 novembre 2024 à Moroni. Organisé par l'Association du Festival d'Art Contemporain des Comores, cet événement biennal, connu sous le nom de "Hudjijuwa", célèbre la richesse et la diversité de l'art comorien et international.
             </p>
