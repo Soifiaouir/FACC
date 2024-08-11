@@ -1,0 +1,41 @@
+.Edition2024{
+    max-width: 100%;
+}
+
+
+.hero2024{
+    text-align: center;
+}
+
+.HeroB{
+    
+    height: 35%;
+  }
+
+.section{
+    padding: 30px;
+    display: flex;
+    flex-direction: row;
+    gap : 10px;
+    width: 95%;
+}
+
+.lieux, .program {
+    width: 50%;
+}
+
+.droite {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+.Salouva {
+   width: 100%;
+   height: 50px;
+ 
+
+}
