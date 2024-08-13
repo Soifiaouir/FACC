@@ -2,10 +2,10 @@ import React from "react";
 import './Edition2024.css';
 import Hero from '../../assets/Oeuvres/art 2016.jpg';
 import Compteur from "../../components/compteurs/Compteur";
-import BoutonTelecharger from "../../components/boutons/boutonT/BoutonT";
+import BoutonTelecharger from "../../components/boutons/boutonT/boutonT";
 import Program from "../../assets/Oeuvres/art.jpg";
 import Lieux from "../../assets/Oeuvres/Lieux.jpg";
-import BoutonP from "../../components/boutons/boutonP/BoutonP";
+import BoutonP from "../../components/boutons/boutonP/boutonP";
 import shiromani from "../../assets/shiromani.jpg";
 
 const Edition2024 = () => {
