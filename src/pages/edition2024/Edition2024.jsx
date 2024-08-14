@@ -29,7 +29,7 @@ const Edition2024 = () => {
                     <p>Nous vous attendons nombreux pour partager ensemble cette expérience artistique inoubliable qui contribue à la valorisation de l'art et de la culture comorienne. Ne manquez pas cette opportunité de vous immerger dans un monde de créativité et d'inspiration</p>
                     <BoutonTelecharger 
                         fileName="cvsoif"
-                        fileURL="../../assets/CV_soif_2024.pdf"/>
+                        fileUrl="https://www.canva.com/design/DAGIrgD6F04/zQBf-ddSxcxnXaEH2-CkkQ/view?utm_content=DAGIrgD6F04&utm_campaign=designshare&utm_medium=link&utm_source=editor"/>
                     </div>
             </div>
             <img src={shiromani} alt='tissus des comores' className="Salouva" />
