@@ -55,3 +55,11 @@ h4{
   justify-content: center;
   align-items: center;
 }
+ul{
+  list-style-type: none;
+}
+
+li{
+  color: #1F1E13;
+  font-family:  'InriaSerif'
+}
