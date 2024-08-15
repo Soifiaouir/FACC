@@ -4,7 +4,7 @@ import CarousselU from '../../CarousselU';
 const importAll = (r) => {
     return r.keys().map(key => ({
         path: r(key),
-        name: key.replace(/^.*[\\\/]/, '').split('.')[0]
+        name: key.replace(/^.*[\\/]/, '').split('.')[0]
     }));
 };
 
