@@ -13,9 +13,8 @@ function App() {
     <div className="App">
       
       <Header />
-       {/* <Outlet />   */}
-       < Edition2012 />
-         <Footer />
+       <Outlet /> 
+      <Footer />
     </div>
   );
 }
