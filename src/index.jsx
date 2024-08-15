@@ -12,27 +12,33 @@ import Apropos from './pages/apropos/Apropos';
 import ContactForm from './pages/contact/Contact';
 import Localisation from './pages/lieu/Lieux';
 import ArtisteDetail from './pages/artistes/artdet/ArtistesDetails';
+import { CookiesProvider } from 'react-cookie';
+import MentionLegal from './pages/ml/MentionLegal';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <Router>
-      <Routes>
-        <Route path= "/" element={<App />}>
-          <Route index element={<Acceuil />} />
-          <Route path="accueil" element={<Navigate replace to="/" />} />
-          <Route path="Edition2024" element={<Edition2024 />} />
-          <Route path="Artistes" element={<Artistes />} />
-          <Route path="Edition2012" element={<Edition2012 />} />
-          <Route path="Contact" element={<ContactForm />} />
-          <Route path="Apropos" element={<Apropos />} />
-          <Route path="Localisation" element={<Localisation />} />
-          <Route path="ArtisteDetails" element={<ArtisteDetail />} />
+      <CookiesProvider>
+        <Router>
+          <Routes>
+            <Route path= "/" element={<App />}>
+          
+              <Route index element={<Acceuil />} />
+              <Route path="accueil" element={<Navigate replace to="/" />} />
+              <Route path="Edition2024" element={<Edition2024 />} />
+              <Route path="Artistes" element={<Artistes />} />
+              <Route path="Edition2012" element={<Edition2012 />} />
+              <Route path="Contact" element={<ContactForm />} />
+              <Route path="Apropos" element={<Apropos />} />
+              <Route path="MentionLegal" element={<MentionLegal />} />
+              <Route path="Localisation" element={<Localisation />} />
+              <Route path="ArtisteDetails" element={<ArtisteDetail />} />
 
-        </Route>
-      </Routes>
-    </Router>
-    
+            </Route>
+          </Routes>
+        </Router>
+      
+     </CookiesProvider>
   </React.StrictMode>
 );
 

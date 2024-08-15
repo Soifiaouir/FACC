@@ -27,7 +27,7 @@ import './CarousselU.css';
                 clearInterval(interval);
                 window.removeEventListener('resize', handleResize);
             };
-        }, []);
+        }, [imageArray.length]);
     
         const prevSlide = () => {
             setCurrentIndex((prevIndex) => (prevIndex - 1 + imageArray.length) % imageArray.length);
