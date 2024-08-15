@@ -1,0 +1,75 @@
+.edit2012{
+    padding: 0 2% 0 2%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.hero {
+    display: flex;
+    gap: 30px;
+    margin-bottom: 40px;
+  }
+  
+  .hGauche {
+    flex: 1;
+  }
+  
+  .hDroite {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  
+  iframe {
+    max-width: 100%;
+    border: none;
+  }
+  
+  p {
+    text-align: center;
+    line-height: 1.6;
+  }
+  
+  ul {
+    list-style-type: none;
+   
+  }
+
+  .top{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+  .middle{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+  .bottom{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+  
+  /* Responsive design */
+  @media (max-width: 768px) {
+    .hero {
+      flex-direction: column;
+    }
+  
+    .hDroite {
+      margin-top: 20px;
+    }
+  
+    iframe {
+      width: 100%;
+      height: 300px;
+    }
+  }
+  
+  /* Styles pour les carrousels */
+  .CarousselPF, .CarouselA {
+    margin-top: 20px;
+  }

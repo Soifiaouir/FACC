@@ -11,6 +11,7 @@ import Edition2012 from './pages/2012/Edition2012';
 import Apropos from './pages/apropos/Apropos';
 import ContactForm from './pages/contact/Contact';
 import Localisation from './pages/lieu/Lieux';
+import ArtisteDetail from './pages/artistes/artdet/ArtistesDetails';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -26,6 +27,7 @@ root.render(
           <Route path="Contact" element={<ContactForm />} />
           <Route path="Apropos" element={<Apropos />} />
           <Route path="Localisation" element={<Localisation />} />
+          <Route path="ArtisteDetails" element={<ArtisteDetail />} />
 
         </Route>
       </Routes>
