@@ -1,32 +1,37 @@
-.CarousselU{
-    height: 45%;
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
+.CarousselU {
+  height: 300px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative; /* Ajoutez cette ligne */
 }
 
-.arrow{
-  
-    height: 75px;
-    width: auto;
-    position: relative;
-    overflow: hidden;
-    transform: translateY(-50%);
+.arrow {
+  height: 75px;
+  width: auto;
+  position: absolute; /* Changez 'relative' en 'absolute' */
+  top: 50%; /* Ajoutez cette ligne */
+  transform: translateY(-50%);
+  z-index: 1; /* Ajoutez cette ligne pour que les flèches soient au-dessus des images */
 }
 
-.images{
-    display: flex;
-    flex-direction: row;
-    gap: 30px;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
-    width: 80%;
+.arrow:first-child {
+  left: 10px; /* Ajoutez cette ligne pour positionner la flèche gauche */
 }
 
+.arrow:last-child {
+  right: 10px; /* Ajoutez cette ligne pour positionner la flèche droite */
+}
+
+.images {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+}
 .pic{
     display: flex;
     flex-direction: column;

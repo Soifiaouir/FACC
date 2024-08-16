@@ -29,7 +29,6 @@
   background-color:beige;
   color: #1F1E13;
   font-family:  'Corbel';
-  align-items: center;
   width: 100%;
  
  }
@@ -39,6 +38,7 @@
   font-size: 58px;
   text-align: center;
  }
+
  h2{
   font-family: 'ApexBrush';
   font-size: 48px;
@@ -67,9 +67,10 @@ ul{
 
 li{
   color: #1F1E13;
-  font-family:  'InriaSerif'
+  font-family:  'Corbel'
 }
 
 p{
-  text-align: justify;
+  text-align: left;
+  padding-left: 15px;
 }
