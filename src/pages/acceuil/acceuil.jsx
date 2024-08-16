@@ -1,7 +1,7 @@
 import React from "react";
 import './acceuil.css';
 import CarrousselImg from "../../components/caroussels/carrousselimg/Carrousselimg";
-import Invitation from "../../assets/Invitation.jpg";
+import Invitation from "../../assets/Invitation/6eme.png";
 import Compteur from "../../components/compteurs/Compteur";
 import CarrousselP from "../../components/caroussels/carousselP/CarrousselP";
 
@@ -13,7 +13,7 @@ function Acceuil() {
         <div className="acceuil">
             <h1>Festival d'Arts Contemporains des Comores (FACC)</h1>
             <iframe width="695" height="391" src="https://www.youtube.com/embed/enT-JJIIo48" title="Bande annonce  Documentaire FACC - MP 13" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen className="video"></iframe>
-            <h3 className="mobil">5ème Edition</h3>
+            <h3 className="mobil">5 Editions</h3>
             <h2>Présentation du FACC</h2>
             <div className="hero">
                 <div className="herogauche">
@@ -27,23 +27,26 @@ function Acceuil() {
                 </div>
             </div>
                 <div className="bandeau">
-                    <h3 className="E">5ème Edition</h3>
+                    <h3 className="E">5 Editions</h3>
                     <h3>+ de  100 Artistes</h3>
-                    <h3 className="E">12ans d'art</h3>
+                    <h3 className="E">12 ans d'art</h3>
                 </div>
                     <h2>Evenement à venir</h2>  
                 <div className="futur">
                     <div className="sectionG">
-                        <h3>6eme Edition du Facc</h3>
-                        <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-The standard Lorem Ipsum passage, used since the 1500s
-"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pari</p>
-                        <h3 className="mobil">12ans d'art</h3>
+                       <p className="event">Le Festival d’Arts Contemporains desComores : FACC, se tiendra du 21 au 28 novembre 2024 à Moroni. <br/>
+                        Cette sixième édition aura pour thème général <b>RESISTER</b> c’est-à-dire l’engagement à être, faire et avoir pour la réalisation de nos rêves. Résister c’est nourrir, conserver notre vitalité, notre émerveillement. Résister invite à s’affirmer, s’inventer, rechercher le désir, l’exprimer en rapport avec un présent qui est appelé à progresser, évoluer. <br/>
+                        Résister c’est aussi sublimer son monde en le présentant tel qu’il est souhaité.<br/>
+                        Cette dimension introspective permet à l’artiste de creuser en lui pour s’offrir au monde, son monde. C’est un acte de générosité, de partage, création du vivre et construire ensemble.<br/>
+                        L’art par ce qu’il donne à voir, montrer, entendre, ressentir, invite dans son essence la plus profonde à résister. Le choix du vecteur, de l’esthétique concourt également à cet objectif puissant qui questionne de tous temps.<br/>
+                        Le concept « Résister », se propose de développer une stratégie de monstrations pour consolider la Rencontre avec la population et la ville de Moroni, investie en plateforme rayonnante pour l’art contemporain...
+                       </p>
+                        <h3 className="mobil">12 ans d'art</h3>
                     </div>
                     <img src={Invitation} alt='Invitaion' class='invitation' />           
                 </div>
                 <div className="compt">
-                    <h3 className="E">6eme Edition</h3>
+                    <h3 className="E">6ème Edition:</h3>
                     <Compteur eventDate={eventDate}/>
                 </div>
                 < CarrousselP visibleImages={3}/>

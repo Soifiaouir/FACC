@@ -31,9 +31,9 @@ const Navbar = () => {
                 <span>Infos Pratiques</span>
                 {showPracticalInfo && (
                     <div className="dropdown">
-                        <Link to="/Contact"><p>Contact</p></Link>
+                        <Link to="/Contacts"><p>Contact</p></Link>
                         <Link to="/Apropos"><p>A propos</p></Link>
-                        <Link to="/MentionLegal"><p>MentionLegal</p></Link>
+                        <Link to="/MentionLegal"><p>Mentions Légales</p></Link>
                     </div>
                 )}
             </div>

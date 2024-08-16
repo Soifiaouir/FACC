@@ -16,7 +16,7 @@ const Footer = () => {
               <div className="footer-column">
                 <h3>FACC</h3>
                 <Link to="/Apropos"><p>A propos</p></Link>
-                <Link to="/Contact"><p>Contact</p></Link>
+                <Link to="/Contact"><p>Contacts</p></Link>
                 < SocialIcons 
                     facebookUrl="https://www.facebook.com/Facdescomores" 
                     instagramUrl="https://www.instagram.com/facc269/" />
@@ -27,7 +27,7 @@ const Footer = () => {
                 <h3>Communauté</h3>
                   <Link to="/Artistes"><p>Artistes</p></Link>
                   <p><a href="https://www.unesco.org/creativity/en/policy-monitoring-platform/festival-dart-contemporain-des-comores#:~:text=il%20se%20veut%20d'une,des%20concerts%20et%20du%20theatre." target="_blank" rel="noopener noreferrer">UNESCO</a></p>
-                  <p><a href="https://biennaledakar.org/" target="_blank" rel="noopener noreferrer">Biennal de Dakar</a></p>
+                  <p><a href="https://biennaledakar.org/" target="_blank" rel="noopener noreferrer">Biennale de Dakar</a></p>
                   </div>
               </div>
             

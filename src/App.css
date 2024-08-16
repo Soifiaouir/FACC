@@ -16,13 +16,19 @@
   font-weight: normal;
   font-style: normal;
 }
+@font-face {
+  font-family: 'Corbel';
+  src: url('../public/font/Adamina-Regular.ttf') format('truetype'); /* Chemin relatif vers le fichier de police */
+  font-weight: normal;
+  font-style: normal;
+}
 
 .App{
   margin: 0%;
   padding: 0%;
-  background-color: white;
+  background-color:beige;
   color: #1F1E13;
-  font-family:  'InriaSerif';
+  font-family:  'Corbel';
   align-items: center;
   width: 100%;
  
@@ -62,4 +68,8 @@ ul{
 li{
   color: #1F1E13;
   font-family:  'InriaSerif'
+}
+
+p{
+  text-align: justify;
 }

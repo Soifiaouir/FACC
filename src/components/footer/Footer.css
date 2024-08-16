@@ -1,5 +1,5 @@
 .footer {
-    background-color: #f8f8f8;
+    background-color: beige;
     display: flex;
     flex-direction: row;
     align-items: stretch; /* Assure que tous les enfants occupent la même hauteur */
