@@ -7,25 +7,19 @@
 
 .hero {
     display: flex;
+    flex-direction: row;
     gap: 30px;
     margin-bottom: 40px;
+    width: 95%;
+    padding-left: 2%;
+    align-items: center;
   }
-  
-  .hGauche {
-    flex: 1;
+    
+  .Vid2012{
+    width: 500px;
+    padding-right: 2%;
   }
-  
-  .hDroite {
-    flex: 1;
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-  }
-  
-  iframe {
-    max-width: 100%;
-    border: none;
-  }
+
   
   .Salouva{
     max-width:100% ;
@@ -45,14 +39,39 @@
     background-color: #BF8B63;
   }
 
+    .PF{
+      padding-left: 2%;
+      width: 95%;
+    }
+  
+  .parain2012{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap:30px;
+    height: 500px;
+    width: 95%;
+  }
+
+  .Ouss{
+    height:300px;
+  }
+
   .middle{
     display: flex;
     flex-direction: column; 
     gap: 30px;
+    background-color: #BF8B63;
+  }
+
+  .art2012{
+    padding-left: 2%;
+    width: 95%;
   }
 
   .scolarité2012{
-    width: 80%;
+    width: 95%;
+    padding-left: 2%;
   }
 
   .bottom{
@@ -60,17 +79,13 @@
     flex-direction: column;
     gap: 30px;
     background-color: #BF8B63;
-    height: 300px;
+    height: 350px;
     width: 100%;
   }
 
   .science2012{
-    width: 70%;
-    display: flex;
-    flex-direction: column;
-    align-items: start;
-    justify-content: start; /* Centre le contenu verticalement */
-    text-align: justify;
+    width: 95%;
+    padding-left: 2%;    
   }
   
   /* Responsive design */

@@ -4,16 +4,17 @@ import './Edition2012.css';
 import Caroussel2012 from "../../components/caroussels/carousselU/caroussels/carousels2012/caroussel2012E";
 import shiromani from "../../assets/shiromani.jpg";
 import Caroussel2012top from "../../components/caroussels/carousselU/caroussels/carousels2012/Caroussel2012top";
+import Oussman from "../../assets/2012/Ousmane_Sow.jpg"
 
     const Edition2012 = () =>{
 
     return (
         <div className="edit2012">
             <h2>Edition 2012</h2>
-            <div className="hero">
-                <div className="hGauche">
-                    <h3>1ere Edition</h3>
-                        <p className="E2012top">
+                <h3>1ere Edition</h3>
+                    <div className="hero">
+                        <div>
+                        <p>
                             La première édition du Festival d'arts contemporains des Comores (FACC) s'est déroulée du 13 au 18 juin 2012 à Moroni, la capitale des Comores.<br />
                             Cet événement historique a marqué la première fois que l'archipel des Comores organisait un festival d'art contemporain.<br />
                             Le thème central du festival était "la connaissance de soi".<br />
@@ -29,28 +30,48 @@ import Caroussel2012top from "../../components/caroussels/carousselU/caroussels/
                             L'événement était parrainé par le célèbre sculpteur sénégalais Ousmane Sow.<br />
                             Ce premier festival d'art contemporain aux Comores visait non seulement à promouvoir la création artistique contemporaine, mais aussi à raconter l'histoire des Comores à travers une approche pluridisciplinaire, mêlant art, science et pédagogie.
                         </p>
-                </div>
-                <div class="hDroite">
-                    <iframe width="521" height="391" src="https://www.youtube.com/embed/1iCwH7b2Gng" title="Comores, Festival 2012.avi" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                </div>
-            </div>
+                        </div>
+                        <div className="Vid2012">
+                            <iframe width="521" height="391" src="https://www.youtube.com/embed/1iCwH7b2Gng" title="Comores, Festival 2012.avi" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen ></iframe>
+                        </div>
+                    </div>
+                
+            
+
             <img src={shiromani} alt='tissus des comores' className="Salouva" />
+            
             <div className="top">
                 <h3>Les points forts</h3>
+                <div className='PF'>
                 <p>Le but de cette édition était de faire le point sur la création artistique des Comores, en mettant en valeur son originalité et sa modernité.<br/>
                     Il voulait aussi démontrer que tout en maintenant ses traditions et en ayant consciencede son histoire, les jeunes générations font et feront encore mieux face aux inévitables évolutions sociales, économiques et politiques.<br/>
                     La rencontre et le partage entre les peuples sont ainsi favorisés, le Festival promeut la diversité et le dynamisme culturel.<br/>
                     Cet évènement aborde ainsi trois aspects : artistique, scientifique et pédagogique.</p>
+                </div>
                 < Caroussel2012top />
             </div>
+
+                <h3>Le Parain</h3>
+            <div className="parain2012">
+                <p>Ousmane Sow, sculpteur sénégalais de renommée internationale, a joué un rôle déterminant dans le lancement du premier festival d'art contemporain des Comores en juin 2012. En tant que parrain de l'événement, il a apporté une dimension prestigieuse et une crédibilité artistique considérable à cette initiative culturelle pionnière.<br/>
+                    Son implication a été multifacette. Tout d'abord, sa notoriété a permis d'attirer l'attention des médias et du public sur ce festival, lui conférant une visibilité accrue à l'échelle nationale et internationale. Sa présence a également encouragé la participation d'autres artistes, dont certains venus de France et de Belgique, enrichissant ainsi la diversité des œuvres présentées.
+                    Lors de l'inauguration, Ousmane Sow a exprimé son enthousiasme face à la qualité des œuvres exposées. Il a déclaré être "ravi" de sa découverte, soulignant que c'était "une gageure pour les organisateurs" et qu'ils avaient "réussi à relever le défi". Ces commentaires positifs d'un artiste de son calibre ont non seulement validé la qualité artistique de l'événement, mais ont aussi boosté la confiance des artistes locaux et des organisateurs.<br/>
+                    Sow a particulièrement mis en avant le potentiel artistique de l'archipel, affirmant que "la qualité des œuvres est prometteuse" et qu'il y avait "une homogénéité" rassurante, garantissant que "la relève est assurée". Ces remarques ont contribué à légitimer la scène artistique contemporaine comorienne et à encourager son développement futur.
+                </p>
+                <img src={Oussman} alt="Oussmane SOW au festival" className="Ouss" />
+            </div>
+
             <img src={shiromani} alt='tissus des comores' className="Salouva" />
+           
             <div className="middle">
                 <h3>Les artistes</h3>
-                <p>Plus de 40 artistes originaires de divers horizons à travers le monde ont pris part à cet événement exceptionnel aux Comores. Cette rencontre unique a permis de célébrer la diversité culturelle et artistique, tout en favorisant les échanges entre les participants. Les artistes ont partagé leurs talents et leurs créations, contribuant ainsi à enrichir le paysage artistique local et à promouvoir la culture comorienne sur la scène internationale.</p>
+                    <div className='art2012'>
+                    <p>
+                        Plus de 40 artistes originaires de divers horizons à travers le monde ont pris part à cet événement exceptionnel aux Comores. Cette rencontre unique a permis de célébrer la diversité culturelle et artistique, tout en favorisant les échanges entre les participants. Les artistes ont partagé leurs talents et leurs créations, contribuant ainsi à enrichir le paysage artistique local et à promouvoir la culture comorienne sur la scène internationale.
+                    </p>
+                </div>
                 < CarouselA />
             </div>
-            <img src={shiromani} alt='tissus des comores' className="Salouva" />
-            
                 <h3>Implication Scolaire</h3>
                  <div className="scolarité2012">
                 <p> Le Festival d'Art Contemporain des Comores (F.A.C.C.) avait visé à attirer un large public, tant international que national, en mettant l'accent sur la jeunesse comorienne. Le Ministère de l'Education Nationale avait intégré cet événement dans le programme scolaire pour sensibiliser les jeunes aux arts visuels.<br/>
@@ -69,6 +90,8 @@ import Caroussel2012top from "../../components/caroussels/carousselU/caroussels/
                 </p>
                  </div>
 
+            <img src={shiromani} alt='tissus des comores' className="Salouva" />
+            
             <div className="bottom">
                 <h3>Galerie du Festival</h3>
                 <Caroussel2012 />
