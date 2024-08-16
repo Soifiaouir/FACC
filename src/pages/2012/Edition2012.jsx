@@ -13,7 +13,7 @@ import Caroussel2012top from "../../components/caroussels/carousselU/caroussels/
             <div className="hero">
                 <div className="hGauche">
                     <h3>1ere Edition</h3>
-                        <p>
+                        <p className="E2012top">
                             La première édition du Festival d'arts contemporains des Comores (FACC) s'est déroulée du 13 au 18 juin 2012 à Moroni, la capitale des Comores.<br />
                             Cet événement historique a marqué la première fois que l'archipel des Comores organisait un festival d'art contemporain.<br />
                             Le thème central du festival était "la connaissance de soi".<br />
@@ -50,10 +50,52 @@ import Caroussel2012top from "../../components/caroussels/carousselU/caroussels/
                 < CarouselA />
             </div>
             <img src={shiromani} alt='tissus des comores' className="Salouva" />
+            
+                <h3>Implication Scolaire</h3>
+                 <div className="scolarité2012">
+                <p> Le Festival d'Art Contemporain des Comores (F.A.C.C.) avait visé à attirer un large public, tant international que national, en mettant l'accent sur la jeunesse comorienne. Le Ministère de l'Education Nationale avait intégré cet événement dans le programme scolaire pour sensibiliser les jeunes aux arts visuels.<br/>
+                    Le festival avait impliqué activement les établissements scolaires :
+                    <ul>
+                    <li>Aux Comores, des classes avaient participé directement à l'événement.</li>
+                    <li> À Mayotte, 5 établissements avaient participé à un concours, avec le soutien des autorités locales.</li>
+                    </ul>
+                    Le F.A.C.C. avait cherché à créer des liens entre le monde scolaire et artistique à travers des actions pédagogiques spécifiques :
+                    <ul>
+                    <li> Un artiste réunionnais avait réalisé une performance avec une classe comorienne.</li>
+                    <li>À Mayotte, les enseignants avaient travaillé sur le concept du festival, avec un focus sur l'œuvre d'Ousmane SOW.</li>
+                    <li>Des artistes mahorais avaient présenté leur art aux élèves.</li>
+                    </ul>
+                    Ces initiatives avaient visé à permettre aux élèves de découvrir l'univers artistique, d'explorer leurs émotions et leur imagination, et de mieux comprendre leur histoire et la place des Comores dans la région.
+                </p>
+                 </div>
+
             <div className="bottom">
                 <h3>Galerie du Festival</h3>
                 <Caroussel2012 />
             </div>
+                <h3 >Aspect scientifique</h3>
+            <div className="science2012">     
+            
+                <p>La connaissance de soi s'était conjuguée avec la rencontre de l'être. Elle s'était destinée à la construction de la relation aux autres, en passant par l'Histoire qui cimentait les liens d'un peuple. Le Festival d'Art Contemporain des Comores avait voulu agir dans cette voie en présentant divers aspects du passé et du présent de l'Archipel.
+                Les scientifiques avaient exposé, dans une approche pluridisciplinaire sociologique, archéologique, anthropologique... des aspects de l'histoire de l'Archipel.
+                Mais aussi l'histoire abordée sous un angle plus global avait été examinée et présentée par des scientifiques venus d'ailleurs.<br/>
+                Différentes problématiques avaient été examinées lors du forum scientifique :
+                <ul>
+                    <li>Les sources de la littérature négro-africaine de langue française - <b>Makhily GASSAMA</b></li>
+                    <li>Les migrations déterminées - Présentation des grandes périodes d'arrivées des groupes qui avaient marqué l'histoire - <b>Damir BEN ALI</b></li>
+                    <li>Les sociétés coloniales 1841- 1975 - <b>Mouhoussine BARWANE</b></li>
+                    <li>L'Afrique à la recherche de son histoire à travers l'œuvre de Cheikh Anta Diop - <b>Cheikh M'backé DIOP</b></li>
+                    <li>La grotte de Hamampundru (Hamampoundrou) et le rituel associé. Usage et perception. Contribution à l'historiographie de l'île d'Anjouan - <b>Bourhane ABDEREHMANE</b></li>
+                    <li>Connaissance des religions du XIIIème au XIXème siècle -<b>Hamdani BAKAR</b> </li>
+                    <li>Le mouvement populaire mahorais. Le combat pour Mayotte française 1958-1976 - <b>Mamaye Idriss</b></li>
+                    <li>Les Comores au jour le jour – <b>Ahmed OULEDI</b></li>
+                    <li>Art contemporain et insularité - <b>Isabelle POUSSIER</b></li>
+                </ul>
+                    Deux expositions avaient été directement mises en parallèle :<br/>
+                    Cheikh M'backé DIOP « l'Afrique et les Sciences ».<br/>
+                    Ahmed OULEDI Photographies « Les Comores de 1900 à 2011 - Potentiels et Richesses »
+                </p>
+                </div>
 
         </div>
     );

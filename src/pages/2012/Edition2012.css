@@ -1,8 +1,8 @@
 .edit2012{
-    padding: 0 2% 0 2%;
+    padding: 0%;
     display: flex;
     flex-direction: column;
-    gap: 30px;
+    align-items: center;
 }
 
 .hero {
@@ -27,30 +27,50 @@
     border: none;
   }
   
-  p {
-    text-align: center;
-    line-height: 1.6;
+  .Salouva{
+    max-width:100% ;
   }
-  
+
   ul {
     list-style-type: none;
    
   }
 
   .top{
+    margin-top: 0%;
+    padding: 0%;
     display: flex;
     flex-direction: column;
     gap: 30px;
+    background-color: #BF8B63;
   }
+
   .middle{
     display: flex;
-    flex-direction: column;
+    flex-direction: column; 
     gap: 30px;
   }
+
+  .scolarité2012{
+    width: 80%;
+  }
+
   .bottom{
     display: flex;
     flex-direction: column;
     gap: 30px;
+    background-color: #BF8B63;
+    height: 300px;
+    width: 100%;
+  }
+
+  .science2012{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start; /* Centre le contenu verticalement */
+    text-align: justify;
   }
   
   /* Responsive design */
