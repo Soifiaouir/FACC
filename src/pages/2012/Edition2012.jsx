@@ -4,38 +4,37 @@ import './Edition2012.css';
 import Caroussel2012 from "../../components/caroussels/carousselU/caroussels/carousels2012/caroussel2012E";
 import shiromani from "../../assets/shiromani.jpg";
 import Caroussel2012top from "../../components/caroussels/carousselU/caroussels/carousels2012/Caroussel2012top";
-import Oussman from "../../assets/2012/Ousmane_Sow.jpg"
+import Oussman from "../../assets/2012/Ousmane_Sow.jpg";
 
     const Edition2012 = () =>{
 
     return (
         <div className="edit2012">
             <h2>Edition 2012</h2>
-                <h3>1ere Edition</h3>
-                    <div className="hero">
-                        <div>
-                        <p>
-                            La première édition du Festival d'arts contemporains des Comores (FACC) s'est déroulée du 13 au 18 juin 2012 à Moroni, la capitale des Comores.<br />
-                            Cet événement historique a marqué la première fois que l'archipel des Comores organisait un festival d'art contemporain.<br />
-                            Le thème central du festival était "la connaissance de soi".<br />
-                            Le festival a duré cinq jours et s'est tenu dans plusieurs sites de Moroni, notamment :
-                        </p>
-                        <ul>
-                            <li>Le Palais du Peuple</li>
-                            <li>La Médina de la capitale</li>
-                            <li>Le foyer des femmes</li>
-                            <li>Le Centre National de la Documentation et de recherches scientifiques.</li>
-                        </ul>
-                        <p>
-                            L'événement était parrainé par le célèbre sculpteur sénégalais Ousmane Sow.<br />
-                            Ce premier festival d'art contemporain aux Comores visait non seulement à promouvoir la création artistique contemporaine, mais aussi à raconter l'histoire des Comores à travers une approche pluridisciplinaire, mêlant art, science et pédagogie.
-                        </p>
+                <h3>Première Edition</h3>
+                        <div className="hero">
+                            <div>
+                            <p>
+                                La première édition du Festival d'arts contemporains des Comores (FACC) s'est déroulée du 13 au 18 juin 2012 à Moroni, la capitale des Comores.<br />
+                                Cet événement historique a marqué la première fois que l'archipel des Comores organisait un festival d'art contemporain.<br />
+                                Le thème central du festival était "la connaissance de soi".<br />
+                                Le festival a duré cinq jours et s'est tenu dans plusieurs sites de Moroni, notamment :
+                            </p>
+                            <ul>
+                                <li>Le Palais du Peuple</li>
+                                <li>La Médina de la capitale</li>
+                                <li>Le foyer des femmes</li>
+                                <li>Le Centre National de la Documentation et de recherches scientifiques.</li>
+                            </ul>
+                            <p>
+                                L'événement était parrainé par le célèbre sculpteur sénégalais Ousmane Sow.<br />
+                                Ce premier festival d'art contemporain aux Comores visait non seulement à promouvoir la création artistique contemporaine, mais aussi à raconter l'histoire des Comores à travers une approche pluridisciplinaire, mêlant art, science et pédagogie.
+                            </p>
+                            </div>
+                            <div className="Vid2012">
+                                <iframe width="521" height="391" src="https://www.youtube.com/embed/1iCwH7b2Gng" title="Comores, Festival 2012.avi" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen ></iframe>
+                            </div>
                         </div>
-                        <div className="Vid2012">
-                            <iframe width="521" height="391" src="https://www.youtube.com/embed/1iCwH7b2Gng" title="Comores, Festival 2012.avi" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen ></iframe>
-                        </div>
-                    </div>
-                
             
 
             <img src={shiromani} alt='tissus des comores' className="Salouva" />

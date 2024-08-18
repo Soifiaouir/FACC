@@ -14,6 +14,7 @@ import Localisation from './pages/lieu/Lieux';
 import ArtisteDetail from './pages/artistes/artdet/ArtistesDetails';
 import { CookiesProvider } from 'react-cookie';
 import MentionLegal from './pages/ml/MentionLegal';
+import Edition2014 from './pages/2014/Edition2014';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -28,6 +29,7 @@ root.render(
               <Route path="Edition2024" element={<Edition2024 />} />
               <Route path="Artistes" element={<Artistes />} />
               <Route path="Edition2012" element={<Edition2012 />} />
+              <Route path="Edition2014" element={<Edition2014 />} />
               <Route path="Contact" element={<ContactForm />} />
               <Route path="Apropos" element={<Apropos />} />
               <Route path="MentionLegal" element={<MentionLegal />} />

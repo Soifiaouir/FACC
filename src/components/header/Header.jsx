@@ -20,9 +20,9 @@ const Navbar = () => {
                 {showPastEvents && (
                     <div className="dropdown">
                         <p>2022</p>
-                        <p>2020</p>
                         <p>2018</p>
                         <p>2016</p>
+                        <Link to="/Edition2014"><p>Edition 2014</p></Link>
                         <Link to="/Edition2012"><p>Edition 2012</p></Link>
                     </div>
                 )}

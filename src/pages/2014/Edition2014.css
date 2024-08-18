@@ -1,0 +1,79 @@
+.Edition2014{
+    max-width: 100%;
+}
+
+.H{
+    width: 100%;
+    padding: 0%;
+    margin: 0%;
+}
+
+.hero2014{
+    height:400px;
+    width:95%;
+    padding-left: 2%;
+    padding-right: 2%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 30px;
+    }
+
+.Sec{
+    height:300px;
+}
+
+.M{
+    width: 100%;
+    background-color: #283527;
+}
+
+.Ma{
+    color: beige;
+}
+
+.maraine{
+   
+    color: beige;
+    width:95%;
+    padding-left: 2%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height:450px;
+}
+
+.A{
+    width: 100%;
+    padding: 0%;
+    margin: 0%;
+}
+
+.dimArt{
+    padding: 0 2% 0 2%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 1050px;
+}
+
+.S{
+    background-color: #283527;
+    width: 100%;
+}
+
+.scol2024{
+    padding: 0 2%;
+    width:95%;
+    color: beige;
+    
+}
+
+.sc{
+    color: beige;
+}
+
+.Parteniaria{
+    padding: 0 2%;
+    width:95%;
+}
