@@ -45,9 +45,10 @@
 }
 
 .artiste-image {
-  width: 100%;
-  height: 200px;
-  object-fit: cover;
+  height: 250px; /* Hauteur fixe pour toutes les images */
+  width: auto; /* La largeur s'adaptera automatiquement */
+  object-fit: contain; /* Assure que l'image entière est visible */
+  max-width: 100%;
 }
 
 .artiste-name {

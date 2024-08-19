@@ -1,6 +1,6 @@
 import React from "react";
 import './Edition2014.css';
-import seconde from '../../assets/Invitation/2eme.jpg'
+import seconde from '../../assets/Invitation/2eme.jpg';
 import Caroussel2014 from "../../components/caroussels/carousselU/caroussels/caroussel2014/Caroussel2014";
 
     const Edition2014 = () => {
@@ -70,7 +70,7 @@ import Caroussel2014 from "../../components/caroussels/carousselU/caroussels/car
                         <Caroussel2014 />
                     </div>
             </div>
-            
+
             <div className="Par">
                 <h3>Partenaria avec le CIFF</h3>
                 <div className="Parteniaria">

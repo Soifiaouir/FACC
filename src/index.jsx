@@ -5,7 +5,7 @@ import { BrowserRouter as Router, Routes, Route, Navigate} from 'react-router-do
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import Acceuil from './pages/acceuil/acceuil';
-import Edition2024 from './pages/edition2024/Edition2024';
+import Edition2024 from './pages/2024/Edition2024';
 import Artistes from './pages/artistes/Artistes'
 import Edition2012 from './pages/2012/Edition2012';
 import Apropos from './pages/apropos/Apropos';
@@ -15,6 +15,7 @@ import ArtisteDetail from './pages/artistes/artdet/ArtistesDetails';
 import { CookiesProvider } from 'react-cookie';
 import MentionLegal from './pages/ml/MentionLegal';
 import Edition2014 from './pages/2014/Edition2014';
+import Edition2016 from './pages/2016/Edition2016';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -30,6 +31,7 @@ root.render(
               <Route path="Artistes" element={<Artistes />} />
               <Route path="Edition2012" element={<Edition2012 />} />
               <Route path="Edition2014" element={<Edition2014 />} />
+              <Route path="Edition2016" element={<Edition2016 />} />
               <Route path="Contact" element={<ContactForm />} />
               <Route path="Apropos" element={<Apropos />} />
               <Route path="MentionLegal" element={<MentionLegal />} />

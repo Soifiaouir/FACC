@@ -1,10 +1,10 @@
 import React from "react";
 import './Edition2024.css';
-import Hero from '../../assets/Oeuvres/art 2016.jpg';
+import Hero from '../../assets/2016/oeuvre/13051593_472133249657699_3009297434381898285_n.jpg';
 import Compteur from "../../components/compteurs/Compteur";
 import BoutonTelecharger from "../../components/boutons/boutonT/boutonT";
-import Program from "../../assets/Oeuvres/art.jpg";
-import Lieux from "../../assets/Oeuvres/Lieux.jpg";
+import Program from "../../assets/Invitation/6eme.png";
+import Lieux from "../../assets/2016/13043386_472133079657716_5459179619092737188_n.jpg";
 import BoutonP from "../../components/boutons/boutonP/boutonP";
 import shiromani from "../../assets/shiromani.jpg";
 

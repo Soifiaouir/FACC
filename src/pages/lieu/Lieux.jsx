@@ -1,5 +1,5 @@
 import React from "react";
-import Lieux from "../../assets/Oeuvres/Lieux.jpg";
+import Lieux from "../../assets/2014/10275327_247982768739416_8036203434927876558_o.jpg";
 import './Lieux.css';
 
 const Localisation = () => {
