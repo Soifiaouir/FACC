@@ -2,10 +2,10 @@ import React, { useState, useEffect } from "react";
 import luneg from '../../../assets/luneg.png';
 import luned from '../../../assets/luned.png';
 import { getArtistes } from "../../../api/api";
-import ArtisteDetail from '../../../pages/artistes/artdet/ArtistesDetails'; // Assurez-vous que le chemin est correct
+import ArtisteDetail from '../../../pages/artistes/artdet/ArtistesDetails';
 import './CarouselA.css';
 
-const CarouselA = () => {
+const CarouselA = ({ artisteIds }) => {
     const [artistes, setArtistes] = useState([]);
     const [currentIndex, setCurrentIndex] = useState(0);
     const [visibleArtistes, setVisibleArtistes] = useState(3);
@@ -16,8 +16,11 @@ const CarouselA = () => {
     useEffect(() => {
         const fetchArtistes = async () => {
             try {
-                const data = await getArtistes();
-                setArtistes(data);
+                const allArtistes = await getArtistes();
+                const filteredArtistes = artisteIds 
+                    ? allArtistes.filter(artiste => artisteIds.includes(artiste.id))
+                    : allArtistes;
+                setArtistes(filteredArtistes);
                 setLoading(false);
             } catch (err) {
                 console.error("Erreur détaillée:", err);
@@ -29,20 +32,14 @@ const CarouselA = () => {
         fetchArtistes();
 
         const handleResize = () => {
-            if (window.innerWidth <= 768) {
-                setVisibleArtistes(1);
-            } else {
-                setVisibleArtistes(3);
-            }
+            setVisibleArtistes(window.innerWidth <= 768 ? 1 : 3);
         };
 
         handleResize();
         window.addEventListener('resize', handleResize);
 
-        return () => {
-            window.removeEventListener('resize', handleResize);
-        };
-    }, []);
+        return () => window.removeEventListener('resize', handleResize);
+    }, [artisteIds]);
 
     useEffect(() => {
         if (artistes.length > 0) {
@@ -63,11 +60,9 @@ const CarouselA = () => {
     };
 
     const getVisibleArtistes = () => {
-        let visible = [];
-        for (let i = 0; i < visibleArtistes; i++) {
-            visible.push(artistes[(currentIndex + i) % artistes.length]);
-        }
-        return visible;
+        return Array.from({ length: visibleArtistes }, (_, i) => 
+            artistes[(currentIndex + i) % artistes.length]
+        );
     };
 
     const handleArtisteClick = (artiste) => {

@@ -10,10 +10,8 @@ const MentionLegal = () => {
       <div className="section-content">
         <p>
           <strong>Éditeur du site :</strong> Festival d'Art Contemporain des Comores<br />
-          Adresse : 12 Rue de l'Art, 99999 Moroni, Comores<br />
-          Téléphone : +269 123 456 789<br />
-          Email : contact@festivalartcomores.com<br />
-          SIRET : 123 456 789 00000
+          Téléphone : +269639238465<br />
+          Email : f.acc@hotmail.fr<br />
         </p>
         <p>
           <strong>Hébergeur :</strong> OVHcloud<br />

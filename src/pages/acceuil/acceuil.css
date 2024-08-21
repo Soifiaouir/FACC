@@ -29,8 +29,12 @@ h3{
     flex-direction: row;
 }
 
-.herogauche, .herodroite {
-    width: 45%;
+.herogauche{
+    width: 35%;
+}
+
+.herodroite {
+    width: 55%;
     height: auto;
 }
 
@@ -111,7 +115,11 @@ h3{
         flex-direction: column;
     }
 
-    .herogauche, .herodroite {
+    .herogauche{
+        width: 500px;
+    }
+    
+    .herodroite {
         width: 100%;
         margin-bottom: 20px;
         padding: 10px 0px 10px 0px;

@@ -5,6 +5,12 @@
     align-items: center;
 }
 
+.preums{
+  height: auto;
+  width: 500px;
+  box-shadow: 5px 5px 10px 2px rgba(0, 0, 0, 0.5);
+}
+
 .hero {
     display: flex;
     flex-direction: row;
@@ -49,7 +55,7 @@
     flex-direction: row;
     align-items: center;
     gap:30px;
-    height: 500px;
+    height: auto;
     width: 95%;
   }
 
@@ -79,7 +85,7 @@
     flex-direction: column;
     gap: 30px;
     background-color: #BF8B63;
-    height: 350px;
+    height: auto;
     width: 100%;
   }
 
