@@ -1,12 +1,13 @@
 import React from "react";
 import './Edition2024.css';
-import Hero from '../../assets/2016/oeuvre/13051593_472133249657699_3009297434381898285_n.jpg';
 import Compteur from "../../components/compteurs/Compteur";
 import BoutonTelecharger from "../../components/boutons/boutonT/boutonT";
 import Program from "../../assets/Invitation/6eme.png";
-import Lieux from "../../assets/2016/13043386_472133079657716_5459179619092737188_n.jpg";
+import Lieux from "../../assets/Lieux/UNIV.jpg";
 import BoutonP from "../../components/boutons/boutonP/boutonP";
 import shiromani from "../../assets/shiromani.jpg";
+import Caroussel2024 from "../../components/caroussels/carousselU/caroussels/carousel2024/Caroussel2024";
+import Artistes from "../../assets/Artistes/Denis.jpg";
 
 const Edition2024 = () => {
 
@@ -16,7 +17,7 @@ const Edition2024 = () => {
         <div className="Edition2024">
             <h2>Edition 2024</h2>
             <div className="hero2024">
-            <img src={Hero} alt='art de rue' className="HeroB" />
+            <Caroussel2024 />
             <p>Chers visiteurs et artistes,<br/>
             Nous avons le plaisir de vous inviter à la prochaine édition du Festival d'Arts Contemporains des Comores, qui se tiendra le 21 novembre 2024 à Moroni. Organisé par l'Association du Festival d'Art Contemporain des Comores, cet événement biennal, connu sous le nom de "Hudjijuwa", célèbre la richesse et la diversité de l'art comorien et international.
             </p>
@@ -46,7 +47,7 @@ const Edition2024 = () => {
            
             <img src={shiromani} alt='tissus des comores' className="Salouva" />
             <div className="section">
-                <img src={Program} alt='prestation' className="program"/>    
+                <img src={Artistes} alt='prestation' className="program"/>    
                 <div className="droite">
                     <h3>Artistes</h3>
                     <p>Nous vous attendons nombreux pour partager ensemble cette expérience artistique inoubliable qui contribue à la valorisation de l'art et de la culture comorienne. Ne manquez pas cette opportunité de vous immerger dans un monde de créativité et d'inspiration</p>
