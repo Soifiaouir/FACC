@@ -1,9 +1,9 @@
 import React from "react";
 import './acceuil.css';
-import CarrousselImg from "../../components/caroussels/carrousselimg/Carrousselimg";
 import Invitation from "../../assets/Invitation/6eme.png";
 import Compteur from "../../components/compteurs/Compteur";
 import CarrousselP from "../../components/caroussels/carousselP/CarrousselP";
+import CarousselAcc from "../../components/caroussels/carousselU/caroussels/carouselAcc/CarousselAcc";
 
 const eventDate = "2024-11-21T10:15:00";
 
@@ -17,7 +17,7 @@ function Acceuil() {
             <h2>Présentation du FACC</h2>
             <div className="hero">
                 <div className="herogauche">
-                <CarrousselImg />
+                    <CarousselAcc />
                 </div>
                 <div className="herodroite">
                     <h3>Hudjijuwa</h3>
