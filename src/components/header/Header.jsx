@@ -19,8 +19,6 @@ const Navbar = () => {
                 <span>Evenements Passés</span>
                 {showPastEvents && (
                     <div className="dropdown">
-                        <p>2022</p>
-                        <Link to="/Edition2018"><p>Edition 2018</p></Link>
                         <Link to="/Edition2014"><p>Edition 2014</p></Link>
                         <Link to="/Edition2016"><p>Edition 2016</p></Link>
                         <Link to="/Edition2012"><p>Edition 2012</p></Link>
@@ -34,6 +32,7 @@ const Navbar = () => {
                         <Link to="/Contact"><p>Contacts</p></Link>
                         <Link to="/Apropos"><p>A propos</p></Link>
                         <Link to="/MentionLegal"><p>Mentions Légales</p></Link>
+                        <Link to="/AppelCandidature"><p>Appel à Candidature</p></Link>
                     </div>
                 )}
             </div>
