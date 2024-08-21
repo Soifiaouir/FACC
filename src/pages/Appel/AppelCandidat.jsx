@@ -2,6 +2,7 @@ import React from "react";
 import './AppelCandidat.css';
 import BoutonTelecharger from "../../components/boutons/boutonT/boutonT";
 
+
 const AppelCandidature = () => {
 
     return (
@@ -27,7 +28,7 @@ const AppelCandidature = () => {
             <div className="bt">
                 <BoutonTelecharger 
                 fileName="appel à candidature"
-                fileUrl="../../assets/APPEL-A-CANDIDATURE-FACC-2024.pdf"/>      
+                fileUrl="https://docs.google.com/document/d/1cqTh5EcKA5luP5W0UUSjGNAzSFhDDIrpAeGbZAoF0S8/edit?usp=sharing"/>      
             </div>
             </p>
 
