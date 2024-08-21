@@ -1,5 +1,5 @@
 .menu {
-    padding: 0% 5%;
+    padding: 0% 7%;
     margin: 0%;
     display: flex;
     flex-direction: row;
@@ -7,11 +7,12 @@
     justify-content: space-between;
     color: #7C3302;
     background-color: beige;
-    font-family: 'Adamina';
+    font-family: 'Corbel';
     font-weight: bold;
     font-size: 25px;
     position: relative; /* Nécessaire pour le positionnement absolu de l'image */
     z-index: 1; /* Assurez-vous que le texte est au-dessus de l'image */
+    max-width: 100%;
 }
 
 .menu::before {
@@ -59,10 +60,11 @@
     border-radius: 5px;
     color: #E0DA4F;
     line-height: 1.2em;
+    
 }
 .dropdown p {
     width: 100%; /* Assure que chaque élément prend toute la largeur */
-    text-align: left; /* Aligne le texte à gauche */
+    text-align: center; /* Aligne le texte à gauche */
     padding: 5px 0; /* Ajoute un peu d'espace vertical */
     white-space: nowrap; /* Empêche le texte de se wrapper */
 }

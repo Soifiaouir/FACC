@@ -16,7 +16,7 @@ const Artistes = () => {
         setArtistes(data);
         setLoading(false);
       } catch (err) {
-        console.error("Erreur détaillée:", err);
+        console.error("Erreur dégit taillée:", err);
         setError(`Erreur lors du chargement des artistes pistache:  ${err.message}`);
         setLoading(false);
       }

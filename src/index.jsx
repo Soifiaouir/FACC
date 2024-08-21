@@ -13,6 +13,7 @@ import Localisation from './pages/lieu/Lieux';
 import ArtisteDetail from './pages/artistes/artdet/ArtistesDetails';
 import Edition2024 from './pages/2024/Edition2024';
 import MentionLegal from './pages/ml/MentionLegal';
+import AppelCandidature from './pages/Appel/AppelCandidat';
 import Edition2012 from './pages/2012/Edition2012';
 import Edition2014 from './pages/2014/Edition2014';
 import Edition2016 from './pages/2016/Edition2016';
@@ -36,6 +37,7 @@ root.render(
               <Route path="Contact" element={<ContactForm />} />
               <Route path="Apropos" element={<Apropos />} />
               <Route path="MentionLegal" element={<MentionLegal />} />
+              <Route path="AppelCandidature" element={<AppelCandidature/>} />
               <Route path="Localisation" element={<Localisation />} />
               <Route path="ArtisteDetails" element={<ArtisteDetail />} />
             </Route>
