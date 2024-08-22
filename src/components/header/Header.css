@@ -1,0 +1,73 @@
+.menu {
+    padding: 0% 7%;
+    margin: 0%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    color: #7C3302;
+    background-color: beige;
+    font-family: 'Corbel';
+    font-weight: bold;
+    font-size: 25px;
+    position: relative; /* Nécessaire pour le positionnement absolu de l'image */
+    z-index: 1; /* Assurez-vous que le texte est au-dessus de l'image */
+    max-width: 100%;
+}
+
+.menu::before {
+    content: '';
+    position: absolute;
+    top: 25%; /* Positionnez l'image à 1/4 de la hauteur de la nav */
+    left: 0;
+    width: 100%;
+    height: 50px;
+    background-image: url('../../assets/shiromani.jpg');
+    background-size: cover; /* Couvre toute la largeur */
+    background-repeat: no-repeat;
+    z-index: 0; /* Assurez-vous que l'image est derrière le texte */
+}
+
+.Facclogo {
+    height: 300px; /* Conserve la taille du logo */
+    position: relative; /* Position relative pour gérer le z-index */
+    z-index: 2; /* Assurez-vous que le logo est au-dessus de l'image de fond */
+}
+
+.menu a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.menu a:hover {
+    color: #283527;
+}
+
+.menu p {
+    margin: 0;
+    cursor: pointer;
+    width: 150px;
+}
+
+.dropdown {
+    display: none;
+    position: absolute;
+    background-color: #7C3302; /* Couleur de fond du dropdown */
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    z-index: 1;
+    min-width: 150px;
+    border-radius: 5px;
+    color: #E0DA4F;
+    line-height: 1.2em;
+    
+}
+.dropdown p {
+    width: 100%; /* Assure que chaque élément prend toute la largeur */
+    text-align: center; /* Aligne le texte à gauche */
+    padding: 5px 0; /* Ajoute un peu d'espace vertical */
+    white-space: nowrap; /* Empêche le texte de se wrapper */
+}
+.nav-dropdown:hover .dropdown {
+    display: block;
+}

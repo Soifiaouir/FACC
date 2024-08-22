@@ -1,8 +1,21 @@
 .acceuil {
+    margin: 0%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 50px 0px;
+    gap:30px;
+    padding: 0px;
+}
+
+h2{
+    padding: 0%;
+    margin-bottom: 0%;
+    
+}
+
+h3{
+    padding: 0%;
+    margin: 0%;
 }
 
 .video {
@@ -10,24 +23,33 @@
 }
 
 .hero {
-    padding: 50px 0px;
+    padding: 25px 0px;
     height: auto;
     display: flex;
     flex-direction: row;
 }
 
-.herogauche, .herodroite {
-    width: 45%;
+.herogauche{
+    width: 35%;
+}
+
+.herodroite {
+    width: 55%;
+    height: auto;
 }
 
 .herodroite {
     text-align: center;
     padding: 0%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
 }
 
 .bandeau {
     background-color: #7C3302;
-    color: #C4CEDE;
+    color: #E0DA4F;
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -41,6 +63,7 @@
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    text-align: left;
     gap: 60px;
     width: 90%;
     padding-bottom: 10px;
@@ -48,8 +71,12 @@
 
 .sectionG {
     width: 40%;
-    text-align: start;
 }
+
+.event{
+    text-align: left;
+}
+
 
 .invitation {
     width: 40%;
@@ -64,7 +91,8 @@
     gap: 60px;
     background-color: #7C3302;
     width: 100%;
-    color: #E0DA4F;    
+    color: #E0DA4F;   
+    margin-bottom: 10px; 
 }
 
 .mobil{
@@ -87,7 +115,11 @@
         flex-direction: column;
     }
 
-    .herogauche, .herodroite {
+    .herogauche{
+        width: 500px;
+    }
+    
+    .herodroite {
         width: 100%;
         margin-bottom: 20px;
         padding: 10px 0px 10px 0px;

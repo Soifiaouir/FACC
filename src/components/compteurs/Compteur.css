@@ -1,7 +1,11 @@
 .compteur{
-    font-family: 'Adamina';
+    font-family: 'Corbel';
     font-size: 40px;
     font-weight: bold;
     color: #E0DA4F;
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #7C3302;
+    height: 45px;
 }

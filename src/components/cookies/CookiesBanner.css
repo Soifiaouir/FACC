@@ -1,0 +1,41 @@
+.cookie-banner{
+    background-color: #7C3302;
+    color: white;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    box-shadow: 0 px 15px rgba(0, 0, 0, 0.2);
+}
+
+.boutons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+}
+
+.boutona {
+    background-color: #BF8B63;
+    color: #283527;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 150px;
+    height: 50px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: 2s;
+    
+  }
+  
+  .boutona :hover {
+    background-color:  #283527;
+  }
+
+  .cook{
+    color: #E0DA4F;
+    text-decoration: none;
+  }

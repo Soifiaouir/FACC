@@ -1,0 +1,95 @@
+/* Styles de base */
+.Edition2016 {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.7em;
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+    overflow-x: hidden;
+    box-sizing: border-box;
+}
+
+.troistop, .troisiemetop, .Artistes2016, .School2016, .Science2016, .Aspect2016 {
+    width: 100%;
+    padding: 0 2%;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+}
+
+.troisiemetop {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5%;
+    flex-wrap: wrap;
+}
+
+.troisiemetop img {
+    height: auto;
+    max-height: 300px;
+    width: auto;
+    max-width: 45%;
+    object-fit: contain;
+}
+
+.A2016, .Science2016 {
+    background-color: #0c0c0c;
+    color: beige;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+h4 {
+    padding-left: 2%;
+    text-align: left;
+}
+
+ul, p {
+    padding: 0 2%;
+    box-sizing: border-box;
+}
+
+/* Responsive pour tablettes */
+@media screen and (max-width: 1024px) {
+    .troisiemetop img {
+        max-height: 250px;
+    }
+}
+
+/* Responsive pour mobiles */
+@media screen and (max-width: 768px) {
+    .troistop, .troisiemetop, .Artistes2016, .School2016, .Science2016, .Aspect2016 {
+        padding: 15px 3%;
+    }
+
+    .troisiemetop {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .troisiemetop img {
+        max-width: 100%;
+        max-height: 300px;
+    }
+
+    h4 {
+        padding-left: 0;
+    }
+
+    ul, p {
+        padding: 0 5px;
+        display: contents;
+    }
+}
+
+/* Responsive pour petits mobiles */
+@media screen and (max-width: 480px) {
+    .troistop, .troisiemetop, .Artistes2016, .School2016, .Science2016, .Aspect2016 {
+        padding: 10px 2%;
+    }
+
+    .troisiemetop img {
+        max-height: 200px;
+    }
+}

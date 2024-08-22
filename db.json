@@ -2,6 +2,7 @@
   "artistes": [
     {
       "id": 1,
+
       "nom": "PAROUMANOU",
       "prenom": "Migline",
       "photo": "Migline.jpg",
@@ -17,6 +18,7 @@
       "description": "L'illustrateur est un professionnel qui crée des images pour accompagner des textes. Son métier, qui remonte à l'époque de l'industrialisation du livre au XIXe siècle, allie créativité et technique. Les illustrateurs travaillent souvent en freelance dans divers domaines tels que l'édition, la presse, et la publicité, utilisant des outils traditionnels et numériques pour donner vie à des idées et des messages.",
       "url": "",
       "reseauSocial": "https://www.instagram.com/moniribae?igsh=MTVtZ2dzOGdnbnBrdw=="
+
     },
     {
       "id": 3,
@@ -107,6 +109,7 @@
       "description": "Denis Balthazar, originaire de Guyane française, a découvert l'art grâce à sa mère. Après des études aux Beaux-Arts et en droit, il s'est inspiré de l'art timbé des Saramacca. Enseignant à Mayotte depuis 2004, il a fondé UNE association 'En passant par l'art' pour promouvoir l'art comorien et cofondé le Festival des Arts Contemporains des Comores, où il encourage l'innovation artistique.",
       "url": "",
       "reseauSocial": " https://www.instagram.com/denis.balthazar?igsh=ZTcxMWF0MW4xNDFx "
+
     }
   ]
 }

@@ -7,7 +7,7 @@ function Apropos() {
 
     <div className="about-content">
       <h2>À propos du FACC</h2> 
-      <div class="vidéo"><iframe width="521" height="391" src="https://www.youtube.com/embed/1iCwH7b2Gng" title="Comores, Festival 2012.avi" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+      <div class="vidéo"><iframe width="695" height="391" src="https://www.youtube.com/embed/xd360nVmSwg" title="Teaser FACC   MP 13" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
         <p>Le <strong>Festival d'Art Contemporain des Comores (FACC)</strong> est un événement biennal fondé par Fatima Ousseni et son époux Denis Balthazar en 2012, destiné à promouvoir et valoriser l'art contemporain aux Comores. Créé pour répondre à plusieurs besoins spécifiques, le FACC vise à réunir les artistes comoriens et à les faire connaître tant au public local qu'international.</p>
       
       <h3>Origines du FACC</h3>
