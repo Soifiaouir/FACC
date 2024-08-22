@@ -1,7 +1,8 @@
 .artistes-page {
-  width: 100%;
-  padding: 20px;
+  max-width: 100%;
+  padding-left: 7%;
   transition: filter 0.3s ease;
+  padding-bottom: 15%;
 }
 
 .artistes-page.blur-background {
@@ -10,17 +11,20 @@
 
 .artistes-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-  gap: 20px;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 5%;
+  padding-top: 5%;
   justify-content: center;
+  padding-bottom: 5%;
 }
 
 .artiste-card {
   position: relative;
   cursor: pointer;
   width: 250px;
+  height: 325px;
   overflow: hidden;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.5);
   transition: transform 0.3s ease;
 }
 

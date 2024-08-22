@@ -44,7 +44,7 @@ const Artistes = () => {
         <div className="artistes-grid">
           {artistes.map((artiste) => {
             const imageUrl = require(`../../assets/Artistes/${artiste.photo}`);
-            const oeuvreUrl = require(`../../assets/Oeuvres/${artiste.url}`);
+            // const oeuvreUrl = require(`../../assets/Oeuvres/${artiste.url}`);
             
             return (
               <div 
@@ -54,11 +54,11 @@ const Artistes = () => {
               >
                 <img src={imageUrl} alt={`${artiste.prenom} ${artiste.nom}`} />
                 <h4>{artiste.prenom} {artiste.nom}</h4>
-                <img 
+                {/* <img 
                   src={oeuvreUrl} 
                   alt={`Œuvre de ${artiste.prenom} ${artiste.nom}`}  
                   className="oeuvre"
-                />
+                /> */}
               </div>
             );
           })}
