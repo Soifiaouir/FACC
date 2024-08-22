@@ -28,7 +28,7 @@ const AppelCandidature = () => {
             <div className="bt">
                 <BoutonTelecharger 
                 fileName="appel à candidature"
-                fileUrl="https://docs.google.com/document/d/1cqTh5EcKA5luP5W0UUSjGNAzSFhDDIrpAeGbZAoF0S8/edit?usp=sharing"/>      
+                fileUrl="https://drive.google.com/file/d/12A7vEkZugKALhX-lYbyBhY-syHB4FrFm/view?usp=sharing"/>      
             </div>
             </p>
 
