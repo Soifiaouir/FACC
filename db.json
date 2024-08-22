@@ -2,30 +2,111 @@
   "artistes": [
     {
       "id": 1,
-      "nom": "Martin",
-      "prenom": "Pierre",
-      "photo": "id2.jpg",
-      "description": "Sculpteur contemporain travaillant principalement le métal",
-      "url": "MOSAIC.jpg",
-      "reseauSocial": "https://instagram.com/mariedupont"
+      "nom": "PAROUMANOU",
+      "prenom": "Migline",
+      "photo": "Migline.jpg",
+      "description": "Artiste réunionnaise aux racines indiennes, Migline Paroumanou explore la relation entre l'individu et son environnement à travers son art, mêlant héritage, convictions et expériences personnelles.",
+      "url": "",
+      "reseauSocial": "https://www.instagram.com/migline.paroumanou/"
     },
     {
       "id": 2,
-      "nom": "Martin",
-      "prenom": "Pierre",
-      "photo": "id1.jpg",
-      "description": "Sculpteur contemporain travaillant principalement le métal",
-      "url": "MOSAIC.jpg",
-      "reseauSocial": "https://twitter.com/pierremartin"
+      "nom": "MBAE",
+      "prenom": "Moniri",
+      "photo": "Jean-Marc LACAZE.jpg",
+      "description": "L'illustrateur est un professionnel qui crée des images pour accompagner des textes. Son métier, qui remonte à l'époque de l'industrialisation du livre au XIXe siècle, allie créativité et technique. Les illustrateurs travaillent souvent en freelance dans divers domaines tels que l'édition, la presse, et la publicité, utilisant des outils traditionnels et numériques pour donner vie à des idées et des messages.",
+      "url": "",
+      "reseauSocial": "https://www.instagram.com/moniribae?igsh=MTVtZ2dzOGdnbnBrdw=="
+    },
+    {
+      "id": 3,
+      "nom": "LACAZE",
+      "prenom": "Jean-Marc",
+      "photo": "Moniri-M'Baé.jpeg",
+      "description": "Jean Marc Lacaze, né en 1977 à Perpignan, est un artiste plasticien polyvalent basé à La Réunion. Formé aux Beaux-Arts de La Réunion après des études de lettres, il explore divers médiums artistiques tels que la vidéo, le mapping, la photographie, la sculpture, le dessin et la peinture. Son approche créative s'adapte au sujet, au lieu et à ses rencontres.",
+      "url": "",
+      "reseauSocial": "https://www.facebook.com/lakazito"
+    },
+    {
+      "id": 4,
+      "nom": "VAN DER HOEVEN",
+      "prenom": "Jean ",
+      "photo": "Jean Van der Hoeven.jpg",
+      "description": "Seul graffeur de Mayotte, Papajan a commencé à s’exprimer sur les murs de sa maison, bien connue des Mahorais. Lorsqu’il ne graffe pas chez lui avec des gens, amis ou inconnus, Papajan balade ses dreadlocks au stade Cavani, où il tente de transmettre son amour de l’art auprès d’une jeunesse désœuvrée. Roi de la débrouille, il récoltera du matériel pour peindre à Kawéni, et continuer avec son combat associatif avec la persévérance et la bonté qui le caractérisent.",
+      "url": "",
+      "reseauSocial": "https://www.instagram.com/papajan976?igsh=MWNscmcwd3hrdjlrMg== "
+    },
+    {
+      "id": 5,
+      "nom": "SOULE",
+      "prenom": "Ali",
+      "photo": "Soule Ali.jpg",
+      "description": "L'illustrateur est un professionnel qui crée des images pour accompagner des textes. Son métier, qui remonte à l'époque de l'industrialisation du livre au XIXe siècle, allie créativité et technique. Les illustrateurs travaillent souvent en freelance dans divers domaines tels que l'édition, la presse, et la publicité, utilisant des outils traditionnels et numériques pour donner vie à des idées et des messages.",
+      "url": "https://www.instagram.com/p/CGVWmBFBtoF/?igsh=MTVtZ2dzOGdnbnBrdw%3D%3D&img_index=1",
+      "reseauSocial": "https://www.instagram.com/moniribae?igsh=MTVtZ2dzOGdnbnBrdw=="
+    },
+    {
+      "id": 6,
+      "nom": "MBAYE",
+      "prenom": "Baba",
+      "photo": "Baba Mbaye.jpg",
+      "description": "Mbaye Baba est un artiste plasticien franco-sénégalais vivant à Mayotte, où il enseigne les arts plastiques. Il a créé une résidence artistique à Boueni pour accueillir des artistes étrangers et inspirer les jeunes mahorais. Baba a participé aux Festivals des Arts Contemporains des Comores et a représenté Mayotte à Marseille en 2013.",
+      "url": "",
+      "reseauSocial": "https://www.instagram.com/p/CGVWmBFBtoF/?igsh=MTVtZ2dzOGdnbnBrdw%3D%3D&img_index=1"
+    },
+    {
+      "id": 7,
+      "nom": "ALLAOUI",
+      "prenom": "Mounir",
+      "photo": "Mounir Allaoui.jpg",
+      "description": "Mbaye Baba est un artiste plasticien franco-sénégalais vivant à Mayotte, où il enseigne les arts plastiques. Il a créé une résidence artistique à Boueni pour accueillir des artistes étrangers et inspirer les jeunes mahorais. Baba a participé aux Festivals des Arts Contemporains des Comores et a représenté Mayotte à Marseille en 2013.",
+      "url": "",
+      "reseauSocial": "https://www.facebook.com/mounir.allaoui"
+    },
+    {
+      "id": 8,
+      "nom": "OMAR AWADI",
+      "prenom": "Myriam",
+      "photo": "Myriam Omar Awadi.jpg",
+      "description": "Myriam Omar Awadi, née en 1983 à Paris, est une artiste franco-comorienne vivant à La Réunion. Membre du collectif La Box, elle explore l'oralité et les mémoires de l'Océan Indien à travers divers médiums. Son travail met en avant les traditions orales féminines, notamment la cérémonie du Debe comorien, en reliant les voix du passé, du présent et du futur.",
+      "url": "",
+      "reseauSocial": "https://www.instagram.com/myriam_omar_awadi/"
+    },
+    {
+      "id": 9,
+      "nom": "ZOLGER",
+      "prenom": "Olivier",
+      "photo": "Olivier Zolger.jpg",
+      "description": "Olivier Zolger, né en 1979 à Colmar, est un photographe français spécialisé dans le noir et blanc. D'abord formé à l'argentique, il est passé au numérique tout en conservant son approche artistique. Son travail, centré sur l'être humain et le portrait, couvre divers domaines comme le nu, la mode et le documentaire. Zolger a remporté le concours VIF2017, confirmant son talent dans le milieu photographique.",
+      "url": "",
+      "reseauSocial": "https://www.flickr.com/photos/zolgy/with/7620370952"
+    },
+    {
+      "id": 10,
+      "nom": "M'SA",
+      "prenom": "Sakina",
+      "photo": "Sakina Msa.jpg",
+      "description": "Sakina M'sa est une créatrice de mode franco-comorienne engagée dans la mode durable et éthique. Fondatrice de sa marque et de la boutique Front de Mode à Paris, elle utilise des matériaux recyclés et promeut des pratiques éco-responsables. Son travail intègre des valeurs sociales, et elle s'implique dans des projets communautaires pour aider les personnes en difficulté. Elle a été récompensée pour son approche innovante et son engagement envers l'identité culturelle.",
+      "url": "",
+      "reseauSocial": "https://www.instagram.com/sakinamsa?igsh=cHNhcDJvdHdzenBq"
+    },
+    {
+      "id": 11,
+      "nom": "ZOUBERT OUSSENI",
+      "prenom": "Mary",
+      "photo": "Mary Zoubert Oussen.png",
+      "description": "Mary Zoubert Ousseni, née en 1996, est une jeune artiste polyvalente. Elle s'exprime à travers divers médiums artistiques, notamment l'écriture, la poésie, la photographie et la peinture. Son attrait pour les arts est ancré dans son histoire familiale : sa mère est collectionneuse d'art depuis son enfance, tandis que son père est peintre. Cette immersion précoce dans le monde artistique a nourri sa créativité et sa passion pour différentes formes d'expression, faisant d'elle une artiste émergente aux multiples talents.",
+      "url": "",
+      "reseauSocial": "https://www.instagram.com/myriam_omar_awadi/"
     },
     {
       "id": 3,
       "nom": "BALTHAZAR",
       "prenom": "Denis",
       "photo": "Denis.jpg",
-      "description": "Sculpteur contemporain travaillant principalement le métal",
-      "url": "MOSAIC.jpg",
-      "reseauSocial": "https://www.facebook.com/Facdescomores"
+      "description": "Denis Balthazar, originaire de Guyane française, a découvert l'art grâce à sa mère. Après des études aux Beaux-Arts et en droit, il s'est inspiré de l'art timbé des Saramacca. Enseignant à Mayotte depuis 2004, il a fondé UNE association 'En passant par l'art' pour promouvoir l'art comorien et cofondé le Festival des Arts Contemporains des Comores, où il encourage l'innovation artistique.",
+      "url": "",
+      "reseauSocial": " https://www.instagram.com/denis.balthazar?igsh=ZTcxMWF0MW4xNDFx "
     }
   ]
 }
