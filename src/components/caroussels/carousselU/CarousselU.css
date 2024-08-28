@@ -1,108 +1,183 @@
 .CarousselU {
-  height: 300px; /* Hauteur fixe pour le carrousel */
-  width: 100%;
+  max-width: 95%;
+  position: relative;
+  overflow: hidden;
+  box-sizing: border-box;
   display: flex;
   align-items: center;
   justify-content: center;
-  position: relative;
-  overflow: hidden;
-}
-
-.arrow {
-  height: 75px;
-  width: auto;
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  z-index: 1;
-}
-
-.arrow:first-child {
-  left: 10px;
-}
-
-.arrow:last-child {
-  right: 10px;
+  padding: 20px ;
 }
 
 .images {
   display: flex;
-  flex-direction: row;
-  gap: 30px;
+  gap: 20px;
   align-items: center;
   justify-content: center;
-  width: 80%;
+  width: 100%;
   height: 100%;
+  padding: 0 50px;
+  transition: transform 0.3s ease;
+}
+
+.arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  background: none;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 0.3s ease;
+}
+
+.arrow:hover {
+  opacity: 0.7;
+}
+
+.arrow:first-of-type {
+  left: 5px;
+}
+
+.arrow:last-of-type {
+  right: 5px;
 }
 
 .pic {
+  flex: 0 0 calc(33.33% - 14px);
+  max-width: calc(33.33% - 14px);
+  height: 200px; /* Hauteur fixe pour tous les conteneurs d'image */
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  height: 100%;
-  width: calc(33.33% - 20px); /* Pour 3 images visibles avec un gap */
+  justify-content: center; /* Centrer verticalement l'image */
+  transition: transform 0.3s ease;
+  overflow: hidden;
+}
+
+.pic:hover {
+  transform: scale(1.05);
 }
 
 .img {
-  width: 100%;
-  height: 250px; /* Hauteur fixe pour toutes les images */
-  object-fit: cover; /* Assure que l'image remplit tout l'espace */
-  object-position: center; /* Centre l'image dans son conteneur */
-}
-
-.CarousselU.mobile-always {
-  height: auto;
-  max-height: 300px;
-  display: flex;
-  flex-direction: row;
-  gap: 20px;
-}
-
-.CarousselU.mobile-always .images {
-  width: 75%;
-}
-
-.CarousselU.mobile-always .pic {
-  margin: 0 5px;
-  width: calc(100% - 10px); /* Pour une seule image visible */
-}
-
-.CarousselU.mobile-always .img {
-  height: 200px;
-  width: 100%;
-  object-fit: cover;
-}
-
-.CarousselU.mobile-always .arrow {
-  height: 75px;
+  max-width: 100%;
+  height: 200px; /* Hauteur fixe pour toutes les images */
   width: auto;
-  margin: 10px 0;
+  object-fit: contain; /* Assure que l'image entière est visible sans être déformée */
 }
 
-/* Responsive design */
-@media (max-width: 768px) {
+.image-name {
+  margin-top: 10px;
+  text-align: center;
+  font-size: 14px;
+  padding-bottom: 1%;
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
   .CarousselU {
-    height: auto; /* Permet au carrousel de s'adapter en hauteur sur mobile */
-    max-height: 300px;
+    padding: 15px 0;
   }
 
   .images {
-    width: 100%;
+    padding: 0 45px;
   }
 
   .pic {
-    margin: 0 5px;
-    width: calc(100% - 10px); /* Pour une seule image visible */
-  }
-
-  .img {
-    height: 200px; /* Hauteur réduite pour les écrans mobiles */
-    width: 100%;
-    object-fit: cover;
+    flex: 0 0 calc(50% - 10px);
+    max-width: calc(50% - 10px);
   }
 
   .arrow {
-    margin: 10px 0;
+    width: 35px;
+    height: 35px;
   }
+}
+
+@media (max-width: 768px) {
+  .CarousselU {
+    padding: 10px 0;
+  }
+
+  .images {
+    padding: 0 30px;
+    max-width: 450px;
+  }
+
+  .pic {
+    flex: 0 0 100%;
+    max-width: 450px;
+  }
+
+  .arrow {
+    width: 30px;
+    height: 30px;
+  }
+
+  .arrow:first-of-type {
+    left: 3px;
+  }
+
+  .arrow:last-of-type {
+    right: 3px;
+  }
+}
+
+@media (max-width: 480px) {
+  .CarousselU {
+    padding: 5px 0;
+  }
+
+  .images {
+    padding: 0 25px;
+  }
+
+  .pic {
+    max-width: 450px;
+  }
+
+  .image-name {
+    font-size: 12px;
+  }
+
+  .arrow {
+    width: 25px;
+    height: 25px;
+  }
+
+  .arrow:first-of-type {
+    left: 2px;
+  }
+
+  .arrow:last-of-type {
+    right: 2px;
+  }
+}
+
+/* Force mobile layout */
+.CarousselU.mobile-always .images {
+  padding: 0 15px;
+}
+
+.CarousselU.mobile-always .pic {
+  flex: 0 0 100%;
+  max-width: 100%;
+}
+
+.CarousselU.mobile-always .arrow {
+  width: 25px;
+  height: 25px;
+}
+
+.CarousselU.mobile-always .arrow:first-of-type {
+  left: 2px;
+}
+
+.CarousselU.mobile-always .arrow:last-of-type {
+  right: 2px;
 }

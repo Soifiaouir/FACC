@@ -10,7 +10,7 @@ import Caroussel2014 from "../../components/caroussels/carousselU/caroussels/car
                 <h2>Edition 2014</h2>
 
                 <div>
-                    <h3 className="H">Seconde Edition</h3>
+                    <h3 className="H2014">Seconde Edition</h3>
                         <div className="hero2014">
                             <p>
                             Du 29 mai au 2 juin 2014, la capitale des Comores, Moroni, a vibré au rythme de la créativité et de l'inspiration lors de la seconde édition du Festival d'Arts Contemporains des Comores (FACC). Cet événement a rassemblé de nombreux festivaliers venus des quatre coins du monde, désireux de partager leur talent et leur savoir-faire avec le public comorien.<br/>

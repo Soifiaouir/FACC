@@ -1,6 +1,7 @@
 .artistes-page {
   max-width: 100%;
   padding-left: 7%;
+  padding-right: 7%;
   transition: filter 0.3s ease;
   padding-bottom: 15%;
 }
@@ -11,7 +12,7 @@
 
 .artistes-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
   gap: 5%;
   padding-top: 5%;
   justify-content: center;
@@ -26,6 +27,7 @@
   overflow: hidden;
   box-shadow: 0 4px 8px rgba(0,0,0,0.5);
   transition: transform 0.3s ease;
+  margin: 0 auto;
 }
 
 .artiste-card:hover {
@@ -36,11 +38,16 @@
   width: 100%;
   height: 250px;
   object-fit: cover;
+  object-position: center;
 }
 
 .artiste-card h4 {
   margin: 10px 0;
   text-align: center;
+  height: 65px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .artiste-card img.oeuvre {
@@ -92,4 +99,39 @@
   max-width: 100%;
   height: auto;
   margin-bottom: 15px;
+}
+
+@media screen and (max-width: 975px) {
+  .artistes-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+
+  .artiste-card {
+    width: 100%;
+    max-width: 250px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .artistes-page {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+
+  .artistes-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .artiste-card {
+    width: 100%;
+    max-width: 250px;
+  }
+
+  .artiste-detail-content {
+    max-width: 90%;
+    max-height: 90%;
+    padding: 15px;
+  }
 }

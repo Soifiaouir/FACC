@@ -1,116 +1,130 @@
-.edit2012{
-    padding: 0%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.edit2012 {
+  padding: 0%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.preums{
+.preums {
   height: auto;
-  width: 500px;
+  width: 100%;
+  max-width: 500px;
   box-shadow: 5px 5px 10px 2px rgba(0, 0, 0, 0.5);
 }
 
 .hero {
-    display: flex;
-    flex-direction: row;
-    gap: 30px;
-    margin-bottom: 40px;
-    width: 95%;
-    padding-left: 2%;
-    align-items: center;
-  }
-    
-  .Vid2012{
-    width: 500px;
-    padding-right: 2%;
-  }
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  margin-bottom: 40px;
+  width: 95%;
+  padding-left: 2%;
+  align-items: center;
+}
 
-  
-  .Salouva{
-    max-width:100% ;
-  }
+.Vid2012 {
+  width: 100%;
+  max-width: 500px;
+  padding-right: 2%;
+}
 
-  ul {
-    list-style-type: none;
-   
-  }
+.Salouva {
+  max-width: 100%;
+}
 
-  .top{
-    margin-top: 0%;
-    padding: 0%;
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-    background-color: #BF8B63;
-  }
+ul {
+  list-style-type: none;
+  padding-left: 0;
+}
 
-    .PF{
-      padding-left: 2%;
-      width: 95%;
-    }
-  
-  .parain2012{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap:30px;
-    height: auto;
-    width: 95%;
-  }
+.top, .middle, .bottom {
+  margin-top: 0%;
+  padding: 0%;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  background-color: #BF8B63;
+  width: 100%;
+}
 
-  .Ouss{
-    height:300px;
-  }
+.PF, .art2012, .scolarité2012, .science2012 {
+  padding-left: 2%;
+  padding-right: 2%;
+  width: 96%;
+}
 
-  .middle{
-    display: flex;
-    flex-direction: column; 
-    gap: 30px;
-    background-color: #BF8B63;
-  }
+.parain2012 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 30px;
+  height: auto;
+  width: 96%;
+  padding-left: 2%;
+  padding-right: 2%;
+}
 
-  .art2012{
-    padding-left: 2%;
-    width: 95%;
-  }
+.Ouss {
+  height: 300px;
+  width: auto;
+  max-width: 100%;
+}
 
-  .scolarité2012{
-    width: 95%;
-    padding-left: 2%;
-  }
-
-  .bottom{
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-    background-color: #BF8B63;
-    height: auto;
-    width: 100%;
-  }
-
-  .science2012{
-    width: 95%;
-    padding-left: 2%;    
-  }
-  
-  /* Responsive design */
-  @media (max-width: 768px) {
-    .hero {
+/* Responsive design */
+@media (max-width: 1024px) {
+  .hero, .parain2012 {
       flex-direction: column;
-    }
-  
-    .hDroite {
-      margin-top: 20px;
-    }
-  
-    iframe {
+      align-items: center;
+  }
+
+  .Vid2012 {
+      padding-right: 0;
+  }
+
+  .Ouss {
+      height: auto;
+      width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero, .parain2012 {
+      gap: 20px;
+  }
+
+  .preums, .Vid2012 {
+      width: 100%;
+  }
+
+  iframe {
       width: 100%;
       height: 300px;
-    }
   }
-  
-  /* Styles pour les carrousels */
-  .CarousselPF, .CarouselA {
-    margin-top: 20px;
+
+  .PF, .art2012, .scolarité2012, .science2012 {
+      width: 90%;
+      padding-left: 5%;
+      padding-right: 5%;
   }
+}
+
+@media (max-width: 480px) {
+  .hero, .parain2012 {
+      gap: 15px;
+  }
+
+  .Ouss {
+      height: auto;
+      width: 100%;
+  }
+
+  iframe {
+      height: 200px;
+  }
+}
+
+/* Styles pour les carrousels */
+.CarousselPF, .CarouselA {
+  margin-top: 20px;
+  width: 100%;
+}
