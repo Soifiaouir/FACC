@@ -1,13 +1,13 @@
 import React from "react";
 import './Edition2024.css';
 import Compteur from "../../components/compteurs/Compteur";
-import BoutonTelecharger from "../../components/boutons/boutonT/boutonT";
 import Program from "../../assets/Invitation/6eme.png";
 import Lieux from "../../assets/Lieux/UNIV.jpg";
 import BoutonP from "../../components/boutons/boutonP/boutonP";
 import shiromani from "../../assets/shiromani.jpg";
 import Caroussel2024 from "../../components/caroussels/carousselU/caroussels/carousel2024/Caroussel2024";
 import Artistes from "../../assets/Artistes/Denis.jpg";
+import BoutonTelecharger from "../../components/boutons/boutonT/boutonT";
 
 const Edition2024 = () => {
 
