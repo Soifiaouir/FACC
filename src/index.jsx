@@ -6,8 +6,8 @@ import { BrowserRouter as Router, Routes, Route, Navigate} from 'react-router-do
 import reportWebVitals from './reportWebVitals';
 import App from './App';
 import Acceuil from './pages/acceuil/acceuil';
-import Artistes from './pages/artistes/Artistes'
-import Apropos from './pages/apropos/Apropos';
+import Artistes from './pages/artistes/Artistes';
+import Apropos from './pages/Apropos/Apropos';
 import ContactForm from './pages/contact/Contact';
 import Localisation from './pages/lieu/Lieux';
 import ArtisteDetail from './pages/artistes/artdet/ArtistesDetails';

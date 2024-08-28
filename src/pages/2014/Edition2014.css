@@ -7,13 +7,13 @@
 .section {
     padding-left: 2%;
     padding-right: 2%;
-    width: 96%; /* 100% - 2% padding on each side */
+    width: 96%;
 }
 
 .H2014 {
     width: 100%;
-    padding: 0%;
-    margin: 0%;
+    padding: 0;
+    margin: 0;
 }
 
 .hero2014 {
@@ -52,8 +52,8 @@
 .A {
     width: 100%;
     height: auto;
-    padding: 0%;
-    margin: 0%;
+    padding: 0;
+    margin: 0;
 }
 
 .dimArt {
@@ -93,11 +93,17 @@
     .maraine {
         flex-direction: column;
         height: auto;
-        padding: 20px 0;
+        padding: 20px 1%; /* Ajout de padding de 1% à gauche et à droite */
     }
 
     .dimArt {
         height: auto;
+    }
+
+    .Sec {
+        height: auto;
+        width: 100%;
+        max-height: 400px;
     }
 }
 
@@ -106,16 +112,21 @@
         width: 100%;
         height: auto;
         object-fit: cover;
+        max-height: 350px;
     }
 
     .section {
-        width: 100%;
-        padding-left: 0;
-        padding-right: 0;
+        width: 96%;
+        padding-left: 1%; /* Ajout de padding de 1% à gauche */
+        padding-right: 1%; /* Ajout de padding de 1% à droite */
     }
 
     .dimArt {
-        padding: 0;
+        padding: 0 1%; /* Ajout de padding de 1% à gauche et à droite */
+    }
+
+    .maraine {
+        gap: 15px;
     }
 }
 
@@ -126,5 +137,35 @@
 
     .hero2014, .maraine {
         gap: 15px;
+    }
+
+    .section {
+        width: 94%;
+        padding-left: 1%; /* Ajout de padding de 1% à gauche */
+        padding-right: 1%; /* Ajout de padding de 1% à droite */
+    }
+
+    .Sec {
+        max-height: 250px;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .H2014, .M, .A, .S {
+        font-size: 0.8em;
+    }
+
+    .hero2014, .maraine {
+        gap: 10px;
+    }
+
+    .section {
+        width: 96%;
+        padding-left: 1%; /* Ajout de padding de 1% à gauche */
+        padding-right: 1%; /* Ajout de padding de 1% à droite */
+    }
+
+    .Sec {
+        max-height: 200px;
     }
 }

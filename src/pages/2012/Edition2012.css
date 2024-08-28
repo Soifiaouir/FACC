@@ -70,6 +70,12 @@ ul {
   max-width: 100%;
 }
 
+/* Styles pour les carrousels */
+.CarousselPF, .CarouselA {
+  margin-top: 20px;
+  width: 100%;
+}
+
 /* Responsive design */
 @media (max-width: 1024px) {
   .hero, .parain2012 {
@@ -123,8 +129,45 @@ ul {
   }
 }
 
-/* Styles pour les carrousels */
-.CarousselPF, .CarouselA {
-  margin-top: 20px;
-  width: 100%;
+@media (max-width: 360px) {
+  .edit2012 {
+    padding: 0;
+  }
+
+  .hero, .parain2012 {
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+
+  .preums, .Vid2012 {
+    max-width: 100%;
+  }
+
+  .Salouva {
+    width: 100%;
+    height: auto;
+  }
+
+  iframe {
+    height: 180px;
+  }
+
+  .PF, .art2012, .scolarité2012, .science2012 {
+    width: 94%;
+    padding-left: 3%;
+    padding-right: 3%;
+  }
+
+  .Ouss {
+    height: auto;
+    width: 100%;
+  }
+
+  .top, .middle, .bottom {
+    gap: 20px;
+  }
+
+  .CarousselPF, .CarouselA {
+    margin-top: 10px;
+  }
 }
