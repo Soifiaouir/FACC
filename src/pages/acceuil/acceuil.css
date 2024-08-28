@@ -1,51 +1,45 @@
 .acceuil {
-    margin: 0%;
+    margin: 0;
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap:30px;
-    padding: 0px;
+    gap: 30px;
+    padding: 0;
+    width: 100%;
 }
 
-h2{
-    padding: 0%;
-    margin-bottom: 0%;
-    
-}
-
-h3{
-    padding: 0%;
-    margin: 0%;
+h2, h3 {
+    padding: 0;
+    margin: 0;
 }
 
 .video {
     width: 90%;
+    max-width: 1200px;
 }
 
 .hero {
-    padding: 25px 0px;
+    padding: 25px 0;
     height: auto;
     display: flex;
     flex-direction: row;
+    width: 100%;
 }
 
-.herogauche{
-    width: 479px;
+.herogauche {
+    width: 45%;
+    max-width: 479px;
     contain: layout inline-size;
 }
 
 .herodroite {
     width: 55%;
     height: auto;
-}
-
-.herodroite {
     text-align: center;
-    padding: 0%;
+    padding: 0;
     display: flex;
     flex-direction: column;
     gap: 20px;
-
 }
 
 .bandeau {
@@ -57,27 +51,28 @@ h3{
     align-items: center;
     justify-content: center;
     gap: 7%;
+    padding: 15px 0;
 }
 
 .futur {
     display: flex;
     flex-direction: row;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
     text-align: left;
     gap: 60px;
     width: 90%;
     padding-bottom: 10px;
+    max-width: 1200px;
 }
 
 .sectionG {
     width: 40%;
 }
 
-.event{
+.event {
     text-align: left;
 }
-
 
 .invitation {
     width: 40%;
@@ -93,13 +88,14 @@ h3{
     background-color: #7C3302;
     width: 100%;
     color: #E0DA4F;   
-    margin-bottom: 10px; 
+    margin-bottom: 10px;
+    padding: 15px 0;
 }
 
-.mobil{
+.mobil {
     background-color: #7C3302;
     width: 100%;
-    color:#C4CEDE;
+    color: #C4CEDE;
     height: 100px;
     display: flex;
     align-items: center;
@@ -107,39 +103,47 @@ h3{
 }
 
 /* Responsive styles */
+@media screen and (max-width: 1024px) {
+    .futur {
+        gap: 30px;
+    }
+}
+
 @media screen and (max-width: 768px) {
-    .acceuil{  
-        gap:10px;
+    .acceuil {  
+        gap: 20px;
     }
 
     .hero {
         flex-direction: column;
+        align-items: center;
     }
 
-    .herogauche{
-        width: 500px;
+    .herogauche, .herodroite {
+        width: 90%;
+        max-width: none;
     }
     
     .herodroite {
-        width: 100%;
         margin-bottom: 20px;
-        padding: 10px 0px 10px 0px;
+        padding: 10px 0;
     }
 
     .bandeau {
         flex-direction: column;
         gap: 20px;
-        height: 100px;
-        width: 100%;
+        height: auto;
+        padding: 20px 0;
     }
 
     .futur {
         flex-direction: column;
         gap: 30px;
+        align-items: center;
     }
 
     .sectionG, .invitation {
-        width: 100%;
+        width: 90%;
     }
 
     .compt {
@@ -147,38 +151,63 @@ h3{
         gap: 30px;
         padding: 20px 0;
     }
-    .E{
+
+    .E {
         display: none;
     }
-    
 }
-
 
 @media screen and (min-width: 769px) {
-
-    .mobil{
+    .mobil {
         display: none;
-        }
-
+    }
 }
 
+@media screen and (max-width: 480px) {
+    .video {
+        width: 95%;
+    }
 
+    .hero {
+        padding: 15px 0;
+    }
 
-@media screen and (max-width: 400px) {
+    .futur {
+        width: 95%;
+    }
+
+    .sectionG, .invitation {
+        width: 100%;
+    }
+
+    .bandeau, .compt {
+        gap: 15px;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .acceuil {
+        gap: 15px;
+    }
+
     .video {
         width: 100%;
     }
 
     .hero {
-        padding: 30px 0px;
+        padding: 10px 0;
+    }
+
+    .herogauche, .herodroite, .sectionG, .invitation {
+        width: 95%;
+    }
+
+    .bandeau, .compt {
+        gap: 10px;
+        padding: 10px 0;
     }
 
     .futur {
-        width: 100%;
+        gap: 20px;
     }
-
-    .sectionG, .invitation {
-        width: 95%;
-    }
-   
 }
