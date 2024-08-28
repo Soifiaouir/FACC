@@ -29,8 +29,8 @@
 
 @media (max-width: 360px) {
     .compteur {
-        font-size: 24px; /* Taille de police encore plus petite */
-        height: 30px; /* Ajustement de la hauteur */
+        font-size: 20px; /* Taille de police encore plus petite */
+        height: 25px; /* Ajustement de la hauteur */
         padding: 0 5px; /* Réduction du padding */
     }
 }
