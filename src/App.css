@@ -1,85 +1,122 @@
 @font-face {
   font-family: 'ApexBrush';
-  src: url('../public/font/FontsFree-Net-apex-brush-regular.ttf') format('truetype'); /* Chemin relatif vers le fichier de police */
+  src: url('../public/font/FontsFree-Net-apex-brush-regular.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: 'Adamina';
-  src: url('../public/font/Adamina-Regular.ttf') format('truetype'); /* Chemin relatif vers le fichier de police */
+  src: url('../public/font/Adamina-Regular.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: 'InriaSerif';
-  src: url('../public/font/InriaSerif-Regular.ttf') format('truetype'); /* Chemin relatif vers le fichier de police */
+  src: url('../public/font/InriaSerif-Regular.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: 'Corbel';
-  src: url('../public/font/Adamina-Regular.ttf') format('truetype'); /* Chemin relatif vers le fichier de police */
+  src: url('../public/font/Adamina-Regular.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
 
-.App{
-  margin: 0%;
-  padding: 0%;
-  background-color:beige;
+.App {
+  margin: 0;
+  padding: 0;
+  background-color: beige;
   color: #1F1E13;
-  font-family:  'Corbel';
+  font-family: 'Corbel';
   width: 100%;
   line-height: 1.7em;
+}
 
- 
- }
-
- h1{
+h1 {
   font-family: 'ApexBrush';
   font-size: 58px;
   text-align: center;
   line-height: 1.7em;
- }
+}
 
- h2{
+h2 {
   font-family: 'ApexBrush';
   font-size: 48px;
   text-align: center;
   line-height: 1.7em;
- }
+}
 
-h3{
+h3 {
   font-family: 'Adamina';
   font-size: 42px;
   text-align: center;
   line-height: 1.7em;
 }
-h4{
+
+h4 {
   font-family: 'Adamina';
   font-size: 20px;
   text-align: center;
 }
 
-.vidéo{
+.vidéo {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-ul{
+
+ul {
   list-style-type: none;
+  padding-left: 0;
 }
 
-li{
+li {
   color: #1F1E13;
-  font-family:  'Corbel'
+  font-family: 'Corbel';
 }
 
-p{
+p {
   text-align: left;
-  padding-left: 2%px;
+  padding-left: 2%;
 }
 
-.Salouva{
-  max-width:100% ;
+.Salouva {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Media Queries pour le responsive design */
+
+@media (max-width: 1024px) {
+  h1 { font-size: 48px; }
+  h2 { font-size: 40px; }
+  h3 { font-size: 36px; }
+}
+
+@media (max-width: 768px) {
+  h1 { font-size: 40px; }
+  h2 { font-size: 34px; }
+  h3 { font-size: 30px; }
+  h4 { font-size: 18px; }
+  
+  .App { padding: 0 10px; }
+}
+
+@media (max-width: 480px) {
+  h1 { font-size: 32px; }
+  h2 { font-size: 28px; }
+  h3 { font-size: 24px; }
+  h4 { font-size: 16px; }
+  
+  p { padding-left: 0; }
+}
+
+@media (max-width: 360px) {
+  h1 { font-size: 28px; }
+  h2 { font-size: 24px; }
+  h3 { font-size: 20px; }
+  h4 { font-size: 14px; }
+  
+  .App { line-height: 1.5em; }
 }

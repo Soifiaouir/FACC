@@ -82,6 +82,20 @@
     display: none;
 }
 
+@media screen and (max-width: 1024px) {
+    .menu {
+        font-size: 22px;
+    }
+
+    .Facclogo {
+        height: 250px;
+    }
+
+    .menu p {
+        width: 130px;
+    }
+}
+
 @media screen and (max-width: 768px) {
     .menu {
         flex-direction: row;
@@ -89,11 +103,11 @@
         align-items: center;
         padding: 10px;
         position: relative;
+        font-size: 20px;
     }
 
     .menu::before {
         top: 30%;
-
     }
 
     .Facclogo {
@@ -157,5 +171,50 @@
         width: 100%;
         text-align: center;
         padding: 10px 0;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .menu {
+        font-size: 18px;
+    }
+
+    .Facclogo {
+        height: 120px;
+    }
+
+    .menu_resp {
+        font-size: 25px;
+        top: 15px;
+        right: 15px;
+    }
+
+    .menu-items {
+        width: 60%;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .menu {
+        font-size: 16px;
+        padding: 5px;
+    }
+
+    .Facclogo {
+        height: 100px;
+    }
+
+    .menu_resp {
+        font-size: 22px;
+        top: 10px;
+        right: 10px;
+    }
+
+    .menu-items {
+        width: 70%;
+    }
+
+    .dropdown p {
+        padding: 3px 0;
     }
 }
