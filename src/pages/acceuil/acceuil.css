@@ -30,7 +30,8 @@ h3{
 }
 
 .herogauche{
-    width: 35%;
+    width: 479px;
+    contain: layout inline-size;
 }
 
 .herodroite {

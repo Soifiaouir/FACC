@@ -1,19 +1,24 @@
-.Appel{
+.Appel {
     max-width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding-left: 2%;
+    padding-right: 2%;
+    box-sizing: border-box;
 }
 
-.topapp{
-    width: 80;
+.topapp {
+    width: 100%;
+    max-width: 80%;
     text-align: center;
-    
 }
 
-p{
-    width: 80%;
-    padding: 0% 5%;
+p {
+    width: 100%;
+    max-width: 80%;
+    padding: 0 5%;
+    box-sizing: border-box;
 }
 
 .bt {
@@ -22,10 +27,11 @@ p{
     align-items: center;
     height: auto;
     justify-content: center;
-    
+    width: 100%;
+    padding-bottom: 1%;
 }
 
-.limite{
+.limite {
     background-color: #7C3302;
     color: #E0DA4F;
     display: flex;
@@ -34,4 +40,32 @@ p{
     justify-content: center;
     width: 50%;
     height: auto;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* Media Queries pour le responsive */
+@media screen and (max-width: 768px) {
+    .topapp, p {
+        max-width: 90%;
+    }
+
+    .bt {
+        flex-direction: column;
+    }
+
+    .limite {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .topapp, p {
+        max-width: 100%;
+    }
+
+    .limite {
+        width: 100%;
+    }
 }

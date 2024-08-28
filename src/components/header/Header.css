@@ -2,36 +2,41 @@
     padding: 0% 7%;
     margin: 0%;
     display: flex;
-    flex-direction: row;
     align-items: center;
-    justify-content: space-between;
     color: #7C3302;
     background-color: beige;
     font-family: 'Corbel';
     font-weight: bold;
     font-size: 25px;
-    position: relative; /* Nécessaire pour le positionnement absolu de l'image */
-    z-index: 1; /* Assurez-vous que le texte est au-dessus de l'image */
+    position: relative;
+    z-index: 1;
     max-width: 100%;
+}
+
+.menu-items {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 75%;
 }
 
 .menu::before {
     content: '';
     position: absolute;
-    top: 25%; /* Positionnez l'image à 1/4 de la hauteur de la nav */
+    top: 25%;
     left: 0;
     width: 100%;
     height: 50px;
     background-image: url('../../assets/shiromani.jpg');
-    background-size: cover; /* Couvre toute la largeur */
+    background-size: cover;
     background-repeat: no-repeat;
-    z-index: 0; /* Assurez-vous que l'image est derrière le texte */
+    z-index: 0;
 }
 
 .Facclogo {
-    height: 300px; /* Conserve la taille du logo */
-    position: relative; /* Position relative pour gérer le z-index */
-    z-index: 2; /* Assurez-vous que le logo est au-dessus de l'image de fond */
+    height: 300px;
+    position: relative;
+    z-index: 2;
 }
 
 .menu a {
@@ -52,7 +57,7 @@
 .dropdown {
     display: none;
     position: absolute;
-    background-color: #7C3302; /* Couleur de fond du dropdown */
+    background-color: #7C3302;
     box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
     padding: 10px;
     z-index: 1;
@@ -60,14 +65,97 @@
     border-radius: 5px;
     color: #E0DA4F;
     line-height: 1.2em;
-    
 }
+
 .dropdown p {
-    width: 100%; /* Assure que chaque élément prend toute la largeur */
-    text-align: center; /* Aligne le texte à gauche */
-    padding: 5px 0; /* Ajoute un peu d'espace vertical */
-    white-space: nowrap; /* Empêche le texte de se wrapper */
+    width: 100%;
+    text-align: center;
+    padding: 5px 0;
+    white-space: nowrap;
 }
+
 .nav-dropdown:hover .dropdown {
     display: block;
+}
+
+.menu_resp {
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+    .menu {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+        position: relative;
+    }
+
+    .menu::before {
+        top: 30%;
+
+    }
+
+    .Facclogo {
+        height: 150px;
+        margin-right: 10px;
+    }
+
+    .menu_resp {
+        display: block;
+        font-size: 30px;
+        cursor: pointer;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+    }
+
+    .menu-items {
+        display: none;
+        position: absolute;
+        top: 40%;
+        right: 0;
+        width: 50%;
+        flex-direction: column;
+        align-items: center;
+        background-color: #7C3302;
+        color: #E0DA4F;
+        padding: 20px 0;
+        border-radius: 15px;
+        margin-top: 10px;
+    }
+
+    .menu-items.open {
+        display: flex;
+    }
+
+    .nav-dropdown {
+        width: 100%;
+        text-align: center;
+        margin: 10px 0;
+    }
+
+    .dropdown {
+        position: static;
+        display: none;
+        background-color: transparent;
+        box-shadow: none;
+        padding: 0;
+    }
+
+    .nav-dropdown:hover .dropdown {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .dropdown p {
+        color: #E0DA4F;
+        padding: 5px 0;
+    }
+
+    .menu p, .nav-dropdown > span {
+        width: 100%;
+        text-align: center;
+        padding: 10px 0;
+    }
 }

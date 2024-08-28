@@ -1,21 +1,66 @@
-.donde{
-    width: 100%;
+.donde {
     display: flex;
     flex-direction: column;
     justify-content: center;
-}
-
-.lugar{
-    height: 300px;
-    width: 100%;
-    object-fit: cover;
-    display: flex;
-    flex-direction: row;
     align-items: center;
-    justify-content: center;
-
+    padding-left: 2%;
+    padding-right: 2%;
+    box-sizing: border-box;
 }
 
-.lugar img{
-    max-height: 300px;
+.Where {
+    background-color: #7C3302;
+    color: beige;
+    width: 100%;
+    text-align: center;
+}
+
+.lugar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.lugar img {
+    width: 500px;
+    height: auto;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto;
+    padding-top: 1%;
+    max-width: 100%; /* Assure que l'image ne dépasse pas son conteneur */
+}
+
+/* Media Queries pour le responsive */
+@media screen and (max-width: 1024px) {
+    .lugar img {
+        width: 100%; /* L'image prend toute la largeur disponible */
+        max-width: 500px; /* Mais ne dépasse pas 500px */
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .donde {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .lugar {
+        flex-direction: column;
+    }
+
+    .lugar img {
+        width: 90%; /* Réduit légèrement la largeur pour les écrans moyens */
+        max-width: 450px; /* Ajuste la largeur maximale */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .lugar img {
+        width: 95%; /* Utilise presque toute la largeur sur les petits écrans */
+        max-width: none; /* Supprime la largeur maximale pour les très petits écrans */
+    }
 }
