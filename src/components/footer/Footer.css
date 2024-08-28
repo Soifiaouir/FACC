@@ -2,68 +2,94 @@
     background-color: beige;
     display: flex;
     flex-direction: row;
-    align-items: stretch; /* Assure que tous les enfants occupent la même hauteur */
+    align-items: stretch;
     color: #7C3302;
-    font-family: 'Adamina';
+    font-family: 'Adamina', serif;
     font-weight: bold;
     font-size: 15px;
-    
+    padding: 20px;
 }
-.contenus{
+
+.contenus {
     width: 100%;
+    display: flex;
+    flex-direction: row;
 }
 
 .footer-logo {
     display: flex;
-    justify-content: flex-end; /* Centre le logo horizontalement */
-    width: 30%; /* Largeur fixe pour le conteneur du logo */
+    justify-content: flex-end;
+    width: 30%;
 }
 
 .footer-logo img {
-    height: 250px; /* Hauteur fixe pour l'image du logo */
-    width: auto; /* Maintient le ratio de l'image */
+    height: 250px;
+    width: auto;
+    max-width: 100%;
 }
 
 .footer-container {
     display: flex;
-    flex: 1; /* Prend le reste de l'espace après le logo */
+    flex: 1;
     flex-direction: column;
-    justify-content: space-between; /* Espace entre les colonnes et la signature */
+    justify-content: space-between;
 }
 
 .columns {
     display: flex;
-    justify-content: space-between; /* Espace entre les colonnes sur toute la largeur */
-    align-items: center;
-    flex: 1; /* Prend tout l'espace disponible verticalement */
-    padding: 0 20px; /* Ajoute un peu de padding pour l'espacement latéral */
+    justify-content: space-between;
+    align-items: flex-start;
+    flex: 1;
+    padding: 0 20px;
 }
 
 .footer-column {
     text-align: center;
-    flex: 1; /* Permet aux colonnes de prendre un espace égal */
-    padding-top: 10px;
+    flex: 1;
+    padding: 10px;
 }
 
 .footer-signature {
     text-align: center;
-    padding: 10px 0; /* Ajoute un peu de padding pour l'espacement */
+    padding: 10px 0;
 }
 
 a {
     text-decoration: none;
     color: inherit;
+    transition: color 0.3s ease;
 }
+
+a:hover {
+    color: #283527;
+}
+
 /* Responsive Styles for Tablets */
+@media (max-width: 1024px) {
+    .footer {
+        font-size: 14px;
+    }
+
+    .footer-logo img {
+        height: 200px;
+    }
+}
+
 @media (max-width: 768px) {
     .footer {
-        flex-direction: column; /* Empile les éléments verticalement */
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contenus {
+        flex-direction: column;
+        align-items: center;
     }
 
     .footer-logo {
-        justify-content: center; /* Centre le logo */
-        width: 100%; /* Prend toute la largeur */
-        margin-bottom: 20px; /* Ajoute un espacement en bas */
+        justify-content: center;
+        width: 100%;
+        margin-bottom: 20px;
     }
 
     .footer-container {
@@ -71,31 +97,56 @@ a {
     }
 
     .columns {
-        flex-direction: column; /* Empile les colonnes verticalement */
-        align-items: center; /* Centre les colonnes */
+        flex-direction: column;
+        align-items: center;
     }
 
     .footer-column {
-        margin-bottom: 20px; /* Ajoute un espacement entre les colonnes */
+        margin-bottom: 20px;
+        width: 100%;
     }
 }
 
 /* Responsive Styles for Mobile */
 @media (max-width: 480px) {
     .footer {
-        padding: 10px; /* Réduit le padding pour les petits écrans */
-        font-size: 12px; /* Réduit la taille de la police pour une meilleure lisibilité */
+        padding: 10px;
+        font-size: 12px;
     }
 
     .footer-logo img {
-        height: 150px; /* Réduit la hauteur du logo pour les petits écrans */
+        height: 150px;
     }
 
     .footer-signature {
-        padding: 5px 0; /* Réduit le padding pour économiser de l'espace */
+        padding: 5px 0;
     }
 
-    #mobil , #mobile {
+    #mobil, #mobile {
         display: none;
+    }
+}
+
+/* Responsive Styles for Very Small Screens */
+@media (max-width: 360px) {
+    .footer {
+        padding: 5px; /* Réduit le padding pour les très petits écrans */
+        font-size: 10px; /* Réduit la taille de la police pour une meilleure lisibilité */
+    }
+
+    .footer-logo img {
+        height: 120px; /* Réduit la hauteur du logo pour les très petits écrans */
+    }
+
+    .footer-signature {
+        padding: 3px 0; /* Réduit le padding pour économiser de l'espace */
+    }
+
+    .columns {
+        padding: 0; /* Supprime le padding pour les très petits écrans */
+    }
+
+    .footer-column {
+        margin-bottom: 10px; /* Réduit l'espacement entre les colonnes */
     }
 }
