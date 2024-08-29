@@ -2,8 +2,8 @@ import React from "react";
 import './acceuil.css';
 import Invitation from "../../assets/Invitation/6eme.png";
 import Compteur from "../../components/compteurs/Compteur";
-import CarrousselP from "../../components/caroussels/carousselP/CarrousselP";
 import CarousselAcc from "../../components/caroussels/carousselU/caroussels/carouselAcc/CarousselAcc";
+import CarousselLogo from "../../components/caroussels/carousselU/caroussels/carousellogo/CarousselLogo";
 
 const eventDate = "2024-11-21T10:15:00";
 
@@ -49,7 +49,9 @@ function Acceuil() {
                     <h3 className="E">6ème Edition:</h3>
                     <Compteur eventDate={eventDate}/>
                 </div>
-                < CarrousselP visibleImages={3}/>
+                <div className="logoC">
+                    < CarousselLogo/>
+                </div>
             </div>
     
 

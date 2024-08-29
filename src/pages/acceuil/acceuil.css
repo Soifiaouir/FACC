@@ -97,6 +97,11 @@ h4{
     justify-content: center;
 }
 
+.logoC{
+    height: auto;
+    background-color: #A26563;
+}
+
 @media screen and (max-width: 768px) {
     .hero {
         flex-direction: column;
