@@ -1,36 +1,87 @@
 .compteur {
-    font-family: 'Corbel';
-    font-size: 40px;
-    font-weight: bold;
-    color: #E0DA4F;
+    max-width: 100%;
+    position: relative;
+    overflow: hidden;
+    box-sizing: border-box;
     display: flex;
-    justify-content: center;
     align-items: center;
-    background-color: #7C3302;
-    height: 45px;
-    padding: 0 10px; /* Ajout de padding pour un meilleur espacement */
-}
-
-/* Media Queries pour le responsive */
-
-@media (max-width: 768px) {
+    justify-content: center;
+    padding: 20px;
+    background-color:#7C3302 ;
+    color: #E0DA4F;
+    font-size: large;
+  }
+  
+  .timer-container {
+    display: flex;
+    gap: 20px; /* Ajoute un espace uniforme entre les éléments du timer */
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .timer-item {
+    flex: 0 0 auto; /* Empêche les éléments de s'étirer */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .timer-value {
+    font-size: 2em; /* Taille de la valeur */
+    font-weight: bold;
+  }
+  
+  .timer-label {
+    font-size: 0.8em; /* Taille du label */
+    margin-top: 5px; /* Espace entre la valeur et le label */
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 1200px) {
     .compteur {
-        font-size: 32px; /* Réduction de la taille de la police */
-        height: 40px; /* Ajustement de la hauteur */
+      padding: 15px 0;
     }
-}
-
-@media (max-width: 480px) {
+  
+    .timer-container {
+      padding: 0 45px;
+    }
+  }
+  
+  @media (max-width: 768px) {
     .compteur {
-        font-size: 28px; /* Réduction supplémentaire pour les petits écrans */
-        height: 35px; /* Ajustement de la hauteur */
+      padding: 10px 0;
     }
-}
-
-@media (max-width: 360px) {
+  
+    .timer-container {
+      padding: 0 30px;
+      gap: 15px; /* Réduit l'espace sur les écrans plus petits */
+    }
+  }
+  
+  @media (max-width: 480px) {
     .compteur {
-        font-size: 24px; /* Taille de police encore plus petite */
-        height: 30px; /* Ajustement de la hauteur */
-        padding: 0 5px; /* Réduction du padding */
+      padding: 5px 0;
     }
-}
+  
+    .timer-container {
+      padding: 0 25px;
+      gap: 10px; /* Réduit encore l'espace sur les très petits écrans */
+    }
+  
+    .timer-value {
+      font-size: 1.5em; /* Réduit la taille de la police sur les petits écrans */
+    }
+  
+    .timer-label {
+      font-size: 0.7em;
+    }
+  }
+  
+  /* Force mobile layout */
+  .compteur.mobile-always .timer-container {
+    padding: 0 15px;
+    gap: 10px;
+  }

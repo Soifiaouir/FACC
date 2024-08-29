@@ -34,8 +34,8 @@ function Acceuil() {
                     <h2>Evenement à venir</h2>  
                 <div className="futur">
                     <div className="sectionG">
-                       <p className="event">Le Festival d’Arts Contemporains desComores : FACC, se tiendra du 21 au 28 novembre 2024 à Moroni. <br/>
-                        Cette sixième édition aura pour thème général <b>RESISTER</b> c’est-à-dire l’engagement à être, faire et avoir pour la réalisation de nos rêves. Résister c’est nourrir, conserver notre vitalité, notre émerveillement. Résister invite à s’affirmer, s’inventer, rechercher le désir, l’exprimer en rapport avec un présent qui est appelé à progresser, évoluer. <br/>
+                       <h4>Le Festival d’Arts Contemporains desComores : FACC, se tiendra du 21 au 28 novembre 2024 à Moroni. </h4>
+                        <p>Cette sixième édition aura pour thème général <b>RESISTER</b> c’est-à-dire l’engagement à être, faire et avoir pour la réalisation de nos rêves. Résister c’est nourrir, conserver notre vitalité, notre émerveillement. Résister invite à s’affirmer, s’inventer, rechercher le désir, l’exprimer en rapport avec un présent qui est appelé à progresser, évoluer. <br/>
                         Résister c’est aussi sublimer son monde en le présentant tel qu’il est souhaité.<br/>
                         Cette dimension introspective permet à l’artiste de creuser en lui pour s’offrir au monde, son monde. C’est un acte de générosité, de partage, création du vivre et construire ensemble.<br/>
                         L’art par ce qu’il donne à voir, montrer, entendre, ressentir, invite dans son essence la plus profonde à résister. Le choix du vecteur, de l’esthétique concourt également à cet objectif puissant qui questionne de tous temps.<br/>
@@ -43,8 +43,8 @@ function Acceuil() {
                        </p>
                         <h3 className="mobil">12 ans d'art</h3>
                     </div>
-                    <img src={Invitation} alt='Invitaion' class='invitation' />           
-                </div>
+                    <img src={Invitation} alt='Invitaion' className='invitation' />           
+                    </div>
                 <div className="compt">
                     <h3 className="E">6ème Edition:</h3>
                     <Compteur eventDate={eventDate}/>

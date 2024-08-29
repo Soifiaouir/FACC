@@ -60,22 +60,26 @@ h3{
 }
 
 .futur {
+    padding-left: 5%;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
     text-align: left;
-    gap: 60px;
-    width: 90%;
+    width: 80%;
     padding-bottom: 10px;
 }
 
 .sectionG {
-    width: 40%;
+    width: 100%;
+}
+p{
+    margin: 0%;
 }
 
-.event{
-    text-align: left;
+h4{
+    font-family: 'Corbel';
+    margin: 0%;
 }
 
 
@@ -99,7 +103,7 @@ h3{
 .mobil{
     background-color: #7C3302;
     width: 100%;
-    color:#C4CEDE;
+    color:#E0DA4F;
     height: 100px;
     display: flex;
     align-items: center;

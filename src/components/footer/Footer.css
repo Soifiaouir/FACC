@@ -10,12 +10,6 @@
     padding: 20px;
 }
 
-.contenus {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-}
-
 .footer-logo {
     display: flex;
     justify-content: flex-end;
@@ -28,30 +22,36 @@
     max-width: 100%;
 }
 
-.footer-container {
+.contenus {
+    width: 100%;
     display: flex;
-    flex: 1;
     flex-direction: column;
-    justify-content: space-between;
 }
+
 
 .columns {
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
     align-items: flex-start;
     flex: 1;
     padding: 0 20px;
+    
 }
 
 .footer-column {
-    text-align: center;
+    text-align: start;
     flex: 1;
-    padding: 10px;
+}
+
+.footer-column h3{
+    text-align: start;
 }
 
 .footer-signature {
     text-align: center;
     padding: 10px 0;
+    filter :blur(0.7px)
 }
 
 a {
