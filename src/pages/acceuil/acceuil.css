@@ -1,42 +1,39 @@
 .acceuil {
-    margin: 0;
+    width: 95%;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 2%;
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 30px;
-    padding: 0;
-    width: 100%;
 }
 
-h2, h3 {
-    padding: 0;
-    margin: 0;
+.acceuil > * {
+    width: 95%;
+    max-width: 100%;
+    padding: 2%;
 }
 
 .video {
-    width: 90%;
+    width: 95%;
     max-width: 1200px;
 }
 
 .hero {
-    padding: 25px 0;
-    height: auto;
     display: flex;
     flex-direction: row;
-    width: 100%;
+    width: 95%;
+    gap: 2%;
 }
 
 .herogauche {
     width: 45%;
     max-width: 479px;
-    contain: layout inline-size;
 }
 
 .herodroite {
     width: 55%;
-    height: auto;
-    text-align: center;
-    padding: 0;
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -45,13 +42,11 @@ h2, h3 {
 .bandeau {
     background-color: #7C3302;
     color: #E0DA4F;
-    width: 100%;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
     gap: 7%;
-    padding: 15px 0;
 }
 
 .futur {
@@ -59,19 +54,12 @@ h2, h3 {
     flex-direction: row;
     align-items: flex-start;
     justify-content: center;
-    text-align: left;
     gap: 60px;
-    width: 90%;
-    padding-bottom: 10px;
     max-width: 1200px;
 }
 
 .sectionG {
     width: 40%;
-}
-
-.event {
-    text-align: left;
 }
 
 .invitation {
@@ -86,15 +74,11 @@ h2, h3 {
     justify-content: center;
     gap: 60px;
     background-color: #7C3302;
-    width: 100%;
-    color: #E0DA4F;   
-    margin-bottom: 10px;
-    padding: 15px 0;
+    color: #E0DA4F;
 }
 
 .mobil {
     background-color: #7C3302;
-    width: 100%;
     color: #C4CEDE;
     height: 100px;
     display: flex;
@@ -102,38 +86,19 @@ h2, h3 {
     justify-content: center;
 }
 
-/* Responsive styles */
-@media screen and (max-width: 1024px) {
-    .futur {
-        gap: 30px;
-    }
-}
-
 @media screen and (max-width: 768px) {
-    .acceuil {  
-        gap: 20px;
-    }
-
     .hero {
         flex-direction: column;
         align-items: center;
     }
 
     .herogauche, .herodroite {
-        width: 90%;
-        max-width: none;
-    }
-    
-    .herodroite {
-        margin-bottom: 20px;
-        padding: 10px 0;
+        width: 95%;
     }
 
     .bandeau {
         flex-direction: column;
         gap: 20px;
-        height: auto;
-        padding: 20px 0;
     }
 
     .futur {
@@ -143,13 +108,12 @@ h2, h3 {
     }
 
     .sectionG, .invitation {
-        width: 90%;
+        width: 95%;
     }
 
     .compt {
         flex-direction: column;
         gap: 30px;
-        padding: 20px 0;
     }
 
     .E {
@@ -164,50 +128,15 @@ h2, h3 {
 }
 
 @media screen and (max-width: 480px) {
-    .video {
-        width: 95%;
-    }
-
-    .hero {
-        padding: 15px 0;
-    }
-
-    .futur {
-        width: 95%;
-    }
-
-    .sectionG, .invitation {
-        width: 100%;
-    }
-
-    .bandeau, .compt {
-        gap: 15px;
-    }
-}
-
-@media screen and (max-width: 360px) {
     .acceuil {
-        gap: 15px;
-    }
-
-    .video {
-        width: 100%;
-    }
-
-    .hero {
-        padding: 10px 0;
-    }
-
-    .herogauche, .herodroite, .sectionG, .invitation {
-        width: 95%;
-    }
-
-    .bandeau, .compt {
-        gap: 10px;
-        padding: 10px 0;
+        gap: 20px;
     }
 
     .futur {
         gap: 20px;
+    }
+
+    .bandeau, .compt {
+        gap: 15px;
     }
 }

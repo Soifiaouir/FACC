@@ -35,15 +35,18 @@ const Navbar = () => {
             </div>
 
             <div className={`menu-items ${isMenuOpen ? 'open' : ''}`}>
-                <Link to="/Edition2024" onClick={handleLinkClick}><p>Edition 2024</p></Link>
-                <Link to="/Artistes" onClick={handleLinkClick}><p>Artistes</p></Link>
-
+                <div>
+                    <Link to="/Edition2024" onClick={handleLinkClick}><p>Edition 2024</p></Link>
+                </div>
+                <div>
+                    <Link to="/Artistes" onClick={handleLinkClick}><p>Artistes</p></Link>
+                </div>
                 <div className="nav-dropdown" onMouseEnter={() => setShowPastEvents(true)} onMouseLeave={() => setShowPastEvents(false)}>
                     <span>Evenements Passés</span>
                     {showPastEvents && (
                         <div className="dropdown">
-                            <Link to="/Edition2014" onClick={handleLinkClick}><p>Edition 2014</p></Link>
                             <Link to="/Edition2016" onClick={handleLinkClick}><p>Edition 2016</p></Link>
+                            <Link to="/Edition2014" onClick={handleLinkClick}><p>Edition 2014</p></Link>
                             <Link to="/Edition2012" onClick={handleLinkClick}><p>Edition 2012</p></Link>
                         </div>
                     )}

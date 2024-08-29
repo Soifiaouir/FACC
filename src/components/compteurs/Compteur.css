@@ -1,4 +1,5 @@
 .compteur {
+    max-width: 100%;
     font-family: 'Corbel';
     font-size: 40px;
     font-weight: bold;
@@ -8,7 +9,7 @@
     align-items: center;
     background-color: #7C3302;
     height: 45px;
-    padding: 0 10px; /* Ajout de padding pour un meilleur espacement */
+
 }
 
 /* Media Queries pour le responsive */
@@ -22,7 +23,7 @@
 
 @media (max-width: 480px) {
     .compteur {
-        font-size: 20x; /* Réduction supplémentaire pour les petits écrans */
+        font-size: 20px; /* Réduction supplémentaire pour les petits écrans */
         height: 35px; /* Ajustement de la hauteur */
     }
 }
@@ -31,6 +32,6 @@
     .compteur {
         font-size: 16px; /* Taille de police encore plus petite */
         height: 25px; /* Ajustement de la hauteur */
-        padding: 0 5px; /* Réduction du padding */
+        
     }
 }
