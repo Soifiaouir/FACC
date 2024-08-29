@@ -10,7 +10,7 @@ const importAll = (r) => {
 
 const Caroussel2012top = () => {
     const imageArray = importAll(require.context('../../../../../assets/2012', false, /\.(png|jpe?g|svg)$/));
-    return <CarousselU imageArray={imageArray} />;
+    return <CarousselU imageArray={imageArray} hideImageName={true}/>;
 };
 
 export default Caroussel2012top;

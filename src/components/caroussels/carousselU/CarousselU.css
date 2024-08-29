@@ -7,7 +7,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 15em; /* Changé de 250px à 15em */
+  height: 16em; /* Changé de 250px à 15em */
   padding: 0 10%;
 }
 
@@ -81,7 +81,8 @@
 /* Responsive Design */
 @media (max-width: 75em) { /* 1200px */
   .CarousselU {
-    padding: 0 8%;
+    height: auto;
+    padding: 0 10%;
   }
 
   .images {
@@ -91,6 +92,7 @@
   .pic {
     flex: 0 0 calc(50% - 1%);
     max-width: calc(50% - 1%);
+    padding-bottom: 2em;
   }
 
   .arrow {
