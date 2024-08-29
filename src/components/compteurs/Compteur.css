@@ -8,6 +8,7 @@
     justify-content: center;
     padding: 20px;
     background-color:#7C3302 ;
+
     color: #E0DA4F;
     font-size: large;
   }
@@ -47,18 +48,20 @@
   
     .timer-container {
       padding: 0 45px;
+
     }
   }
   
   @media (max-width: 768px) {
     .compteur {
+
       padding: 10px 0;
     }
   
     .timer-container {
       padding: 0 30px;
       gap: 15px; /* Réduit l'espace sur les écrans plus petits */
-    }
+
   }
   
   @media (max-width: 480px) {
@@ -77,6 +80,7 @@
   
     .timer-label {
       font-size: 0.7em;
+
     }
   }
   

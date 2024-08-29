@@ -1,57 +1,47 @@
 .acceuil {
-    margin: 0%;
+    width: 95%;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 2%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap:30px;
-    padding: 0px;
+    gap: 30px;
 }
 
-h2{
-    padding: 0%;
-    margin-bottom: 0%;
-    
-}
-
-h3{
-    padding: 0%;
-    margin: 0%;
+.acceuil > * {
+    width: 95%;
+    max-width: 100%;
+    padding: 2%;
 }
 
 .video {
-    width: 90%;
+    width: 95%;
+    max-width: 1200px;
 }
 
 .hero {
-    padding: 25px 0px;
-    height: auto;
     display: flex;
     flex-direction: row;
+    width: 95%;
+    gap: 2%;
 }
 
-.herogauche{
-    width: 479px;
-    contain: layout inline-size;
+.herogauche {
+    width: 45%;
+    max-width: 479px;
 }
 
 .herodroite {
     width: 55%;
-    height: auto;
-}
-
-.herodroite {
-    text-align: center;
-    padding: 0%;
     display: flex;
     flex-direction: column;
     gap: 20px;
-
 }
 
 .bandeau {
     background-color: #7C3302;
     color: #E0DA4F;
-    width: 100%;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -63,7 +53,7 @@ h3{
     padding-left: 5%;
     display: flex;
     flex-direction: row;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
     text-align: left;
     width: 80%;
@@ -82,7 +72,6 @@ h4{
     margin: 0%;
 }
 
-
 .invitation {
     width: 40%;
     height: auto;
@@ -95,12 +84,10 @@ h4{
     justify-content: center;
     gap: 60px;
     background-color: #7C3302;
-    width: 100%;
-    color: #E0DA4F;   
-    margin-bottom: 10px; 
+    color: #E0DA4F;
 }
 
-.mobil{
+.mobil {
     background-color: #7C3302;
     width: 100%;
     color:#E0DA4F;
@@ -110,79 +97,57 @@ h4{
     justify-content: center;
 }
 
-/* Responsive styles */
 @media screen and (max-width: 768px) {
-    .acceuil{  
-        gap:10px;
-    }
-
     .hero {
         flex-direction: column;
+        align-items: center;
     }
 
-    .herogauche{
-        width: 500px;
-    }
-    
-    .herodroite {
-        width: 100%;
-        margin-bottom: 20px;
-        padding: 10px 0px 10px 0px;
+    .herogauche, .herodroite {
+        width: 95%;
     }
 
     .bandeau {
         flex-direction: column;
         gap: 20px;
-        height: 100px;
-        width: 100%;
     }
 
     .futur {
         flex-direction: column;
         gap: 30px;
-    }
-
-    .sectionG, .invitation {
-        width: 100%;
-    }
-
-    .compt {
-        flex-direction: column;
-        gap: 30px;
-        padding: 20px 0;
-    }
-    .E{
-        display: none;
-    }
-    
-}
-
-
-@media screen and (min-width: 769px) {
-
-    .mobil{
-        display: none;
-        }
-
-}
-
-
-
-@media screen and (max-width: 400px) {
-    .video {
-        width: 100%;
-    }
-
-    .hero {
-        padding: 30px 0px;
-    }
-
-    .futur {
-        width: 100%;
+        align-items: center;
     }
 
     .sectionG, .invitation {
         width: 95%;
     }
-   
+
+    .compt {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .E {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 769px) {
+    .mobil {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .acceuil {
+        gap: 20px;
+    }
+
+    .futur {
+        gap: 20px;
+    }
+
+    .bandeau, .compt {
+        gap: 15px;
+    }
 }

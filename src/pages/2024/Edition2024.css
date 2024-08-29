@@ -1,24 +1,28 @@
-.Edition2024{
+.Edition2024 {
     max-width: 100%;
     overflow-x: hidden;
+    padding: 0 2%;
+    box-sizing: border-box;
 }
 
-
-.hero2024{
+.hero2024 {
     text-align: center;
+    margin-bottom: 20px;
 }
 
-.HeroB{
-    
-    height: 35%;
-  }
+.HeroB {
+    height: auto;
+    max-height: 35vh;
+    width: 100%;
+    object-fit: cover;
+}
 
-.section{
-    padding: 30px;
+.section {
+    padding: 20px 0;
     display: flex;
     flex-direction: row;
-    gap : 10px;
-    width: 95%;
+    gap: 20px;
+    width: 100%;
 }
 
 .lieux, .program {
@@ -31,19 +35,71 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 5px;
+    gap: 10px;
 }
 
-@media screen and (max-width: 700px) {
+/* Responsive pour tablettes */
+@media screen and (max-width: 1024px) {
+    .section {
+        padding: 15px 0;
+        gap: 15px;
+    }
+}
 
-
-    p{
-        display: none;
+/* Responsive pour grands mobiles */
+@media screen and (max-width: 768px) {
+    .HeroB {
+        max-height: 30vh;
     }
 
-    .section{
+    .section {
         flex-direction: column;
         align-items: center;
-        width: 90%;
+        gap: 20px;
+    }
+
+    .lieux, .program, .droite {
+        width: 100%;
+    }
+}
+
+/* Responsive pour petits mobiles */
+@media screen and (max-width: 480px) {
+    .Edition2024 {
+        padding: 0 1%;
+    }
+
+    .HeroB {
+        max-height: 25vh;
+    }
+
+    .section {
+        padding: 10px 0;
+    }
+
+    p {
+        font-size: 14px;
+    }
+}
+
+/* Responsive pour très petits écrans */
+@media screen and (max-width: 360px) {
+    .HeroB {
+        max-height: 20vh;
+    }
+
+    .section {
+        gap: 15px;
+    }
+
+    p {
+        font-size: 13px;
+    }
+}
+
+/* Style pour cacher les paragraphes sur les petits écrans si nécessaire */
+@media screen and (max-width: 700px) {
+    .hide-on-mobile {
+        display: none;
     }
 }
