@@ -31,14 +31,14 @@
     display: block;
     margin: 0 auto;
     padding-top: 1%;
-    max-width: 100%; /* Assure que l'image ne dépasse pas son conteneur */
+    max-width: 100%;
 }
 
 /* Media Queries pour le responsive */
 @media screen and (max-width: 1024px) {
     .lugar img {
-        width: 100%; /* L'image prend toute la largeur disponible */
-        max-width: 500px; /* Mais ne dépasse pas 500px */
+        width: 100%;
+        max-width: 500px;
     }
 }
 
@@ -53,14 +53,34 @@
     }
 
     .lugar img {
-        width: 90%; /* Réduit légèrement la largeur pour les écrans moyens */
-        max-width: 450px; /* Ajuste la largeur maximale */
+        width: 90%;
+        max-width: 450px;
     }
 }
 
 @media screen and (max-width: 480px) {
     .lugar img {
-        width: 95%; /* Utilise presque toute la largeur sur les petits écrans */
-        max-width: none; /* Supprime la largeur maximale pour les très petits écrans */
+        width: 95%;
+        max-width: none;
+    }
+}
+
+/* Nouvelle media query pour 360px */
+@media screen and (max-width: 360px) {
+    .donde {
+        padding-left: 1%;
+        padding-right: 1%;
+    }
+
+    .lugar img {
+        width: 80%; /* Utilise presque toute la largeur disponible */
+    }
+
+    .Where {
+        font-size: 0.9em; /* Réduit légèrement la taille de la police */
+    }
+
+    .lugar {
+        padding: 10px 0; /* Ajoute un peu d'espace vertical */
     }
 }
