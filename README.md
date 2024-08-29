@@ -1,3 +1,44 @@
+# Festival d'Art Contemporain des Comores
+
+Bienvenue dans le dépôt du site web du **Festival d'Art Contemporain des Comores**. Ce projet a pour but de promouvoir l'art contemporain aux Comores et de partager les informations sur le festival.
+
+## Table des matières
+
+- [À propos](#à-propos)
+- [Fonctionnalités](#fonctionnalités)
+- [Technologies utilisées](#technologies-utilisées)
+- [Installation](#installation)
+- [Utilisation](#utilisation)
+- [Contribuer](#contribuer)
+- [Contact](#contact)
+
+## À propos
+
+Le Festival d'Art Contemporain des Comores (FACC) est un événement biennal qui célèbre l'art contemporain à Moroni, aux Comores. Le festival met en avant les artistes locaux et internationaux à travers des expositions, des performances, des projections de films et des conférences.
+
+## Fonctionnalités
+
+- **Expositions d'art** : Présentation d'œuvres d'art contemporain.
+- **Performances** : Concerts et spectacles en direct.
+- **Conférences** : Discussions sur l'art contemporain et son impact.
+- **Accessibilité mobile** : Conçu pour être utilisé sur tous les appareils.
+
+## Technologies utilisées
+
+- **React** : Pour la création de l'interface utilisateur.
+- **CSS** : Pour le style et la mise en page.
+- **JavaScript** : Pour la logique de l'application.
+- **HTML** : Structure de base du site.
+
+## Installation
+
+Pour installer et exécuter le projet localement, suivez ces étapes :
+
+1. Clonez le dépôt :
+   ```bash
+   git clone https://github.com/Soifiaouir/FACC.git
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
