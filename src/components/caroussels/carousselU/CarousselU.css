@@ -26,21 +26,15 @@
   transform: translateY(-50%);
   z-index: 10;
   cursor: pointer;
-  width: 40px;
-  height: 40px;
-  background: rgba(0, 0, 0, 0.5);
-  border: none;
-  border-radius: 50%;
+  width: 55px;
+  height: 55px;
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: opacity 0.3s ease, background 0.3s ease;
-  color: white;
 }
 
-.arrow:hover {
-  opacity: 1;
-  background: rgba(0, 0, 0, 0.7);
+.arrow:focus {
+  outline: none;
 }
 
 .arrow:first-of-type {
@@ -155,7 +149,6 @@
   .arrow {
     width: 28px;
     height: 28px;
-    background: rgba(0, 0, 0, 0.6);
   }
 
   .arrow:first-of-type {
@@ -212,7 +205,6 @@
 .CarousselU.mobile-always .arrow {
   width: 28px;
   height: 28px;
-  background: rgba(0, 0, 0, 0.6);
 }
 
 .CarousselU.mobile-always .arrow:first-of-type {

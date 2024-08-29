@@ -8,11 +8,11 @@
     width: 150px;
     height: 50px;
     text-align: center;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
     transition: 2s;
     
   }
-  
   .boutont:hover {
-    background-color: #BF8B63;
+    background-color: #283527;
+    color: #BF8B63 ;
   }

@@ -11,8 +11,8 @@ const Footer = () => {
         <Link to="/" className="logo-link"><img src={Logofacc} alt='logofacc' className="Facclogo"/></Link>
       </div>
       <div className="contenus">
-         <div className='columns'>
 
+         <div className='columns'>
               <div className="footer-column">
                 <h3>FACC</h3>
                 <Link to="/Apropos"><p>A propos</p></Link>
@@ -23,18 +23,17 @@ const Footer = () => {
               </div>
               
               <div className="footer-column" id='mobil'>
-                
                 <h3>Communauté</h3>
                   <Link to="/Artistes"><p>Artistes</p></Link>
                   <p><a href="https://www.unesco.org/creativity/en/policy-monitoring-platform/festival-dart-contemporain-des-comores#:~:text=il%20se%20veut%20d'une,des%20concerts%20et%20du%20theatre." target="_blank" rel="noopener noreferrer">UNESCO</a></p>
                   <p><a href="https://biennaledakar.org/" target="_blank" rel="noopener noreferrer">Biennale de Dakar</a></p>
                   </div>
               </div>
+         </div>
             
-            <div className="footer-signature" id='mobile'>
-                  <p><a href="www.linkedin.com/in/soifia-ouirdane-04a81a2bb">Soifia Ouirdane</a></p>
-            </div>
-          </div>
+        <div className="footer-signature" id='mobile'>
+              <p><a href="www.linkedin.com/in/soifia-ouirdane-04a81a2bb">Soifia Ouirdane</a></p>
+        </div>
           
     </footer>
   );

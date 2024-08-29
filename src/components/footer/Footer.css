@@ -11,9 +11,9 @@
 }
 
 .contenus {
-    width: 100%;
+    width: 65%;
     display: flex;
-    flex-direction: row;
+    flex-direction: column ;
 }
 
 .footer-logo {
@@ -38,8 +38,6 @@
 .columns {
     display: flex;
     justify-content: space-between;
-    align-items: flex-start;
-    flex: 1;
     padding: 0 20px;
 }
 
