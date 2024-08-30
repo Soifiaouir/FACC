@@ -9,7 +9,6 @@ import Acceuil from './pages/acceuil/acceuil';
 import Artistes from './pages/artistes/Artistes';
 import Apropos from './pages/Apropos/Apropos';
 import ContactForm from './pages/contact/Contact';
-import Localisation from './pages/lieu/Lieux';
 import ArtisteDetail from './pages/artistes/artdet/ArtistesDetails';
 import Edition2024 from './pages/2024/Edition2024';
 import MentionLegal from './pages/ml/MentionLegal';
@@ -18,6 +17,7 @@ import Edition2012 from './pages/2012/Edition2012';
 import Edition2014 from './pages/2014/Edition2014';
 import Edition2016 from './pages/2016/Edition2016';
 import Edition2018 from './pages/2018/Edition2018';
+import Lieux from './pages/lieu/Lieux';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -38,7 +38,7 @@ root.render(
               <Route path="Apropos" element={<Apropos />} />
               <Route path="MentionLegal" element={<MentionLegal />} />
               <Route path="AppelCandidature" element={<AppelCandidature/>} />
-              <Route path="Localisation" element={<Localisation />} />
+              <Route path="Lieux" element={<Lieux />} />
               <Route path="ArtisteDetails" element={<ArtisteDetail />} />
             </Route>
           </Routes>

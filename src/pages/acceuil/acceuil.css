@@ -16,8 +16,13 @@
 }
 
 .video {
-    width: 95%;
-    max-width: 1200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 100%;
+    width: 90%;
+    padding-left: 4%;
+
 }
 
 .hero {

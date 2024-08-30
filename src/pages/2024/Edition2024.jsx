@@ -2,7 +2,7 @@ import React from "react";
 import './Edition2024.css';
 import Compteur from "../../components/compteurs/Compteur";
 import Program from "../../assets/Invitation/6eme.png";
-import Lieux from "../../assets/Lieux/UNIV.jpg";
+import Lieu from "../../assets/Lieux/UNIV.jpg";
 import BoutonP from "../../components/boutons/boutonP/boutonP";
 import shiromani from "../../assets/shiromani.jpg";
 import Caroussel2024 from "../../components/caroussels/carousselU/caroussels/carousel2024/Caroussel2024";
@@ -39,10 +39,10 @@ const Edition2024 = () => {
                     <h3>LIEUX</h3>
                     <p>Nous vous invitons à explorer les différents lieux d'exposition du Festival d'Arts Contemporains des Comores, qui se déroulera à Moroni. Chaque espace a été soigneusement sélectionné pour offrir une expérience immersive et unique, mettant en valeur la créativité des artistes comoriens et internationaux.</p>
                     <BoutonP 
-                    Link to="/Localisation" 
+                    Link to="/Lieux" 
                     label="Explorez" />
                  </div>
-                 <img src={Lieux} alt='lieux' className="lieux"/>    
+                 <img src={Lieu} alt='lieux' className="lieu"/>    
             </div>
            
             <img src={shiromani} alt='tissus des comores' className="Salouva" />
@@ -50,10 +50,10 @@ const Edition2024 = () => {
                 <img src={Artistes} alt='prestation' className="program"/>    
                 <div className="droite">
                     <h3>Artistes</h3>
-                    <p>Nous vous attendons nombreux pour partager ensemble cette expérience artistique inoubliable qui contribue à la valorisation de l'art et de la culture comorienne. Ne manquez pas cette opportunité de vous immerger dans un monde de créativité et d'inspiration</p>
+                    <p>En visitant notre page dédiée, vous aurez l'opportunité de plonger dans l'univers unique de chaque artiste, d'admirer leurs œuvres et de comprendre l'inspiration qui les anime. Que vous soyez amateur d'art ou simplement curieux, cette expérience vous permettra de vous connecter avec les talents qui façonnent la scène artistique du FACC.</p>
                     <BoutonP 
                         Link to="/Artistes" 
-                        label="Explorez" /> 
+                        label="Découvrez" /> 
                 </div>
             </div>
         

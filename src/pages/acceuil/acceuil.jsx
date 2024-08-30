@@ -11,17 +11,19 @@ function Accueil() {
     return (
         <div className="accueil">
             <h1>Festival d'Arts Contemporains des Comores (FACC)</h1>
-            <iframe 
-                width="695" 
-                height="391" 
-                src="https://www.youtube.com/embed/enT-JJIIo48" 
-                title="Bande annonce  Documentaire FACC - MP 13" 
-                frameBorder="0" 
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-                referrerPolicy="strict-origin-when-cross-origin" 
-                allowFullScreen 
-                className="video"
-            ></iframe>
+            <div className="video">
+                <iframe 
+                    width="695" 
+                    height="391" 
+                    src="https://www.youtube.com/embed/enT-JJIIo48" 
+                    title="Bande annonce  Documentaire FACC - MP 13" 
+                    frameBorder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                    referrerPolicy="strict-origin-when-cross-origin" 
+                    allowFullScreen 
+                    className="video"
+                ></iframe>
+            </div>
             <h3 className="mobil">5 Editions</h3>
             <h2>Présentation du FACC</h2>
             <div className="hero">

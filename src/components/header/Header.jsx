@@ -42,7 +42,7 @@ const Navbar = () => {
                     <Link to="/Artistes" onClick={handleLinkClick}><p>Artistes</p></Link>
                 </div>
                 <div className="nav-dropdown" onMouseEnter={() => setShowPastEvents(true)} onMouseLeave={() => setShowPastEvents(false)}>
-                    <span>Evenements Passés</span>
+                    <span>Editions précédentes</span>
                     {showPastEvents && (
                         <div className="dropdown">
                             <Link to="/Edition2016" onClick={handleLinkClick}><p>Edition 2016</p></Link>
