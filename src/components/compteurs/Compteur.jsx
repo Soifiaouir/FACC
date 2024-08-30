@@ -1,8 +1,8 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useCallback } from 'react';
 import './Compteur.css';
 
 const Compteur = ({ eventDate }) => {
-  const calculateTimeLeft = () => {
+  const calculateTimeLeft = useCallback(() => {
     const difference = +new Date(eventDate) - +new Date();
     let timeLeft = {};
 
@@ -23,7 +23,7 @@ const Compteur = ({ eventDate }) => {
     console.log("Time left:", timeLeft); // Log pour le débogage
 
     return timeLeft;
-  };
+  }, [eventDate]);
 
   const [timeLeft, setTimeLeft] = useState(calculateTimeLeft());
 
@@ -33,7 +33,7 @@ const Compteur = ({ eventDate }) => {
     }, 60000); // Mise à jour toutes les minutes (60000 ms = 1 minute)
 
     return () => clearInterval(timer);
-  }, [eventDate]);
+  }, [calculateTimeLeft]);
 
   const timerComponents = [];
 
