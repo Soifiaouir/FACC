@@ -4,6 +4,9 @@ import { useCookies } from 'react-cookie';
 import BoutonE from '../../components/boutons/boutonE/BoutonE';
 import './Contact.css';
 
+// Importez ces constantes depuis un fichier de configuration sécurisé
+import { EMAILJS_SERVICE_ID, EMAILJS_TEMPLATE_ID, EMAILJS_USER_ID } from '../../config';
+
 const ContactForm = () => {
   const [cookies, setCookie] = useCookies(['consentement']);
   const [formData, setFormData] = useState({
@@ -14,9 +17,9 @@ const ContactForm = () => {
     message: '',
   });
   const [consentement, setConsentement] = useState(false);
+  const [isSubmitting, setIsSubmitting] = useState(false);
 
   useEffect(() => {
-    // Vérifier si le consentement a déjà été donné
     if (cookies.consentement) {
       setConsentement(true);
     }
@@ -27,14 +30,14 @@ const ContactForm = () => {
     if (type === 'checkbox') {
       setConsentement(checked);
     } else {
-      setFormData({
-        ...formData,
+      setFormData(prevData => ({
+        ...prevData,
         [name]: value,
-      });
+      }));
     }
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
 
     if (!consentement) {
@@ -42,29 +45,61 @@ const ContactForm = () => {
       return;
     }
 
-    emailjs.send(
-      'service_p7ohbk6',
-      'template_8hl1fpr',
-      formData,
-      'sR71DfBVDD2tSU3ah'
-    )
-    .then((result) => {
+    setIsSubmitting(true);
+
+    try {
+      // Validation côté client
+      if (!validateForm(formData)) {
+        throw new Error("Formulaire invalide");
+      }
+
+      const result = await emailjs.send(
+        EMAILJS_SERVICE_ID,
+        EMAILJS_TEMPLATE_ID,
+        formData,
+        EMAILJS_USER_ID
+      );
+
       console.log('Email envoyé avec succès:', result.text);
       alert('Message envoyé avec succès!');
-      // Enregistrer le consentement dans un cookie
-      setCookie('consentement', true, { path: '/', maxAge: 31536000 }); // 1 an
-    }, (error) => {
-      console.error('Erreur lors de l\'envoi de l\'email:', error.text);
-      alert('Erreur lors de l\'envoi du message.');
-    });
+      setCookie('consentement', true, { path: '/', maxAge: 31536000, secure: true, sameSite: 'strict' });
 
-    setFormData({
-      firstName: '',
-      lastName: '',
-      email: '',
-      phone: '',
-      message: '',
-    });
+      setFormData({
+        firstName: '',
+        lastName: '',
+        email: '',
+        phone: '',
+        message: '',
+      });
+    } catch (error) {
+      console.error('Erreur lors de l\'envoi de l\'email:', error);
+      alert('Erreur lors de l\'envoi du message. Veuillez réessayer plus tard.');
+    } finally {
+      setIsSubmitting(false);
+    }
+  };
+
+  // Fonction de validation du formulaire
+  const validateForm = (data) => {
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    const phoneRegex = /^\d{10}$/;
+
+    if (!data.firstName || !data.lastName || !data.email || !data.phone || !data.message) {
+      alert("Tous les champs sont obligatoires.");
+      return false;
+    }
+
+    if (!emailRegex.test(data.email)) {
+      alert("Veuillez entrer une adresse email valide.");
+      return false;
+    }
+
+    if (!phoneRegex.test(data.phone)) {
+      alert("Veuillez entrer un numéro de téléphone valide (10 chiffres).");
+      return false;
+    }
+
+    return true;
   };
 
   return (
@@ -135,7 +170,9 @@ const ContactForm = () => {
           </label>
         </div>
         <div className='centre'>
-          <BoutonE type="submit">Envoyez</BoutonE>
+          <BoutonE type="submit" disabled={isSubmitting}>
+            {isSubmitting ? 'Envoi en cours...' : 'Envoyez'}
+          </BoutonE>
         </div>
       </form>
     </div>
