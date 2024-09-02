@@ -18,6 +18,10 @@ import Edition2014 from './pages/2014/Edition2014';
 import Edition2016 from './pages/2016/Edition2016';
 import Edition2018 from './pages/2018/Edition2018';
 import Lieux from './pages/lieu/Lieux';
+import { library } from '@fortawesome/fontawesome-svg-core';
+import { fab } from '@fortawesome/free-brands-svg-icons';
+
+library.add(fab);
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
