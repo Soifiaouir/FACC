@@ -30,9 +30,6 @@ const Footer = () => {
                   </div>
               </div>
             </div>
-            <div className="footer-signature" id='mobile'>
-                  <p><a href="www.linkedin.com/in/soifia-ouirdane-04a81a2bb" target="_blank">Soifia Ouirdane</a></p>
-            </div>
           </div>
           
     </footer>

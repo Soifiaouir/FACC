@@ -36,14 +36,16 @@ h1 {
   font-family: 'ApexBrush';
   font-size: 58px;
   text-align: center;
-  line-height: 1.7em;
+  line-height: 1.2em;
+  padding: 1% 1%;
 }
 
 h2 {
   font-family: 'ApexBrush';
   font-size: 48px;
   text-align: center;
-  line-height: 1.7em;
+  line-height: 1em;
+  padding: 1% 1%;
 }
 
 h3 {
@@ -51,12 +53,14 @@ h3 {
   font-size: 42px;
   text-align: center;
   line-height: 1.7em;
+  padding: 1% 1%;
 }
 
 h4 {
   font-family: 'Adamina';
   font-size: 20px;
   text-align: center;
+  padding: 1% 1%;
 }
 
 .vidéo , iframe{
@@ -77,6 +81,7 @@ li {
 
 p {
   text-align: left;
+  padding: 1% 1%;
   
 }
 

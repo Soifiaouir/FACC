@@ -16,7 +16,7 @@ const AppelCandidature = () => {
       </p>
       
       <h3>Formulaire de Candidature</h3>
-      <p>
+      <p className="topapp">
         L’artiste souhaitant présenter sa candidature pour le FACC 2024 doit remplir la présente fiche de candidature.
         <br />
         Le simple fait de participer au Festival implique l’acceptation pure et simple du règlement ainsi que l’abandon des droits de reproduction des œuvres qui figureront dans tous les supports de communications et de reproductions du Festival d’Arts Contemporains de Comores (catalogue, site internet, médias...).
@@ -24,7 +24,7 @@ const AppelCandidature = () => {
       </p>
       
       <b>PIÈCES À JOINDRE AU DOSSIER DE CANDIDATURE</b>
-      <ul>
+      <ul className="topapp">
         <li>CV</li>
         <li>Texte explicatif de la démarche artistique</li>
         <li>4 reproductions couleurs 300 dpi (photographies, vidéo, CD-ROM, DVD...) significatives du travail proposé en précisant les titres, les dimensions et techniques de l’œuvre.</li>
@@ -40,7 +40,7 @@ const AppelCandidature = () => {
 
       <div className="limite">
         <h4>Date limite d'envoi</h4>
-        <p>
+        <p className="topapp">
           Ce dossier est à retourner par e-mail dûment complété avant le 
           <b> 05 octobre 2024</b> par mail à l'adresse <a href="mailto:f.acc@hotmail.fr">f.acc@hotmail.fr</a>.
           <br />
@@ -51,7 +51,7 @@ const AppelCandidature = () => {
       </div>
 
       <h4>Envoi et Réception des Œuvres</h4>
-      <p>
+      <p className="topapp">
         Les œuvres sélectionnées pourront être expédiées à l’adresse :
         <br />
         28 rue Madi MCHE

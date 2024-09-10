@@ -25,17 +25,17 @@ const ArtisteDetail = ({ artiste, onClose }) => {
           alt={`${artiste.prenom} ${artiste.nom}`} 
         />
         <p>{artiste.description}</p>
-        {socialMediaIcon && (
-          <a href={artiste.reseauSocial} target="_blank" rel="noopener noreferrer" className="social-media-link">
-            <FontAwesomeIcon icon={socialMediaIcon} size="2x" />
-          </a>
-        )}
         <h3>Œuvres</h3>
         {artiste.url && (
           <img 
             src={require(`../../../assets/Oeuvres/${artiste.url}`)} 
             alt={`Œuvre de ${artiste.prenom} ${artiste.nom}`} 
           />
+        )}
+        {socialMediaIcon && (
+          <a href={artiste.reseauSocial} target="_blank" rel="noopener noreferrer" className="social-media-link">
+            <FontAwesomeIcon icon={socialMediaIcon} size="2x" />
+          </a>
         )}
       </div>
     </div>
