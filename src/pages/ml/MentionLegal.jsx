@@ -46,9 +46,9 @@ const MentionLegal = () => {
         Notre site utilise des cookies techniques essentiels au fonctionnement du site et des cookies analytiques (Google Analytics) pour améliorer votre expérience. Vous pouvez gérer vos préférences via le bandeau de consentement affiché sur le site.
       </p>
 
-      <h3>5. Utilisation d'EmailJS</h3>
+      <h3>5. Utilisation d'EMAILJS</h3>
       <p>
-        Notre formulaire de contact utilise le service EmailJS. Les données transmises via ce formulaire sont traitées conformément à la <a href="https://www.emailjs.com/legal/privacy-policy/" target="_blank" rel="noopener noreferrer">politique de confidentialité d'EmailJS</a>.
+        Notre formulaire de contact utilise le service EMAILJS. Les données transmises via ce formulaire sont traitées conformément à la <a href="https://www.emailjs.com/legal/privacy-policy/" target="_blank" rel="noopener noreferrer">politique de confidentialité d'EMAILJS</a>.
       </p>
 
       <h3>6. Responsabilité</h3>
