@@ -15,7 +15,7 @@ const CookiePolicy = () => {
         Un cookie est un petit fichier texte qui est enregistré sur votre appareil lorsque vous visitez notre site. Les cookies permettent au site de reconnaître votre appareil et de mémoriser certaines informations sur votre visite.
       </p>
 
-      <h3>Types de cookies utilisés</h2>
+      <h3>Types de cookies utilisés</h3>
       <ul>
         <li><strong>Cookies de session</strong> : Ces cookies sont temporaires et expirent lorsque vous fermez votre navigateur.</li>
         <li><strong>Cookies persistants</strong> : Ces cookies restent sur votre appareil pendant une période déterminée ou jusqu'à ce que vous les supprimiez.</li>
