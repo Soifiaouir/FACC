@@ -11,13 +11,8 @@
 .topapp {
     width: 100%;
     max-width: 80%;
-    text-align: center;
-}
-
-p {
-    width: 100%;
-    max-width: 80%;
-    padding: 0 5%;
+    text-align: lef;
+    padding: 2% 5%;
     box-sizing: border-box;
 }
 

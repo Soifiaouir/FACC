@@ -35,11 +35,8 @@ import Caroussel2016B from "../../components/caroussels/carousselU/caroussels/ca
                             Cette événement avait rassemblé une impressionnante sélection d'artistes internationaux, reflétant la diversité et le dynamisme de la scène artistique contemporaine de l'océan Indien et au-delà.<br/>
                             Une grande variété de disciplines artistiques ont été mis en lumière en offrant au public une expérience riche et multiforme. Les visiteurs ont pu découvrir des œuvres allant des arts visuels traditionnels aux expressions plus contemporaines, incluant la performance, les arts urbains, les installations, les arts numériques, l'architecture, l'urbanisme et le design.<br/>
                             Parmi les 45 artistes sélectionnés, on comptait des créateurs venus des Comores (Grande Comore, Anjouan, Mohéli), mais aussi de Mayotte, de La Réunion, de France métropolitaine, du Japon, d'Éthiopie, de Guyane et des Seychelles. <br/>
-                            Cette diversité géographique a permis des échanges culturels fructueux et a offert un panorama étendu de l'art contemporain.<br/>
-                            Des artistes de renom tels que Kadiatou Kante, Emmanuel Colinet, Moniri Mbae et Masami Yamazaki ont côtoyé des talents émergents, créant un dialogue intergénérationnel et interculturel stimulant. La présence d'artistes reconnus a conféré au festival une portée dépassant l'échelle locale et régionale, le positionnant comme un événement majeur dans le paysage artistique de l'océan Indien.
-                            Cette édition du FACC a ainsi réaffirmé son rôle de plateforme d'échange et de découverte, mettant en valeur la richesse et la diversité de l'expression artistique contemporaine, tout en offrant aux artistes comoriens une opportunité unique de se confronter à la scène internationale.
                             </p>
-                            <CarouselA artisteIds={[1, 3, 5]} />
+                            <CarouselA />
                         </div>                        
                     </div>
 

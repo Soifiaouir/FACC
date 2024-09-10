@@ -38,9 +38,6 @@ const Navbar = () => {
                 <div>
                     <Link to="/Edition2024" onClick={handleLinkClick}><p>Edition 2024</p></Link>
                 </div>
-                <div>
-                    <Link to="/Artistes" onClick={handleLinkClick}><p>Artistes</p></Link>
-                </div>
                 <div className="nav-dropdown" onMouseEnter={() => setShowPastEvents(true)} onMouseLeave={() => setShowPastEvents(false)}>
                     <span>Editions précédentes</span>
                     {showPastEvents && (
@@ -59,6 +56,7 @@ const Navbar = () => {
                             <Link to="/Apropos" onClick={handleLinkClick}><p>A propos</p></Link>
                             <Link to="/MentionLegal" onClick={handleLinkClick}><p>Mentions Légales</p></Link>
                             <Link to="/AppelCandidature" onClick={handleLinkClick}><p>Appel à Candidature</p></Link>
+                            <Link to="/Politiquedecookies" onClick={handleLinkClick}><p>Politique des cookies</p></Link>
                         </div>
                     )}
                 </div>

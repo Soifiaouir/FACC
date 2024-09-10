@@ -1,7 +1,6 @@
 .Edition2024 {
     max-width: 100%;
     overflow-x: hidden;
-    padding: 0 2%;
     box-sizing: border-box;
 }
 
@@ -36,6 +35,10 @@
     align-items: center;
     justify-content: center;
     gap: 10px;
+}
+
+.program, .lieu{
+    padding: 0% 2%;
 }
 
 /* Responsive pour tablettes */
