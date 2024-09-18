@@ -1,5 +1,4 @@
 import React from 'react';
-import './MentionLegal.css';
 
 const MentionLegal = () => {
   return (
