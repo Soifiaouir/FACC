@@ -1,5 +1,6 @@
 .Edition2024 {
     max-width: 100%;
+    width: 100%;
     overflow-x: hidden;
     box-sizing: border-box;
 }
@@ -24,7 +25,7 @@
     width: 100%;
 }
 
-.lieu, .program {
+.univ, .program {
     width: 50%;
 }
 
@@ -83,6 +84,10 @@
     p {
         font-size: 14px;
     }
+
+    .univ{
+        width: 98%;
+    }
 }
 
 /* Responsive pour très petits écrans */
@@ -97,6 +102,10 @@
 
     p {
         font-size: 13px;
+    }
+
+    .univ{
+        width: 98%;
     }
 }
 

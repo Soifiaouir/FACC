@@ -1,5 +1,5 @@
 .acceuil {
-    width: 95%;
+    width: 100%;
     max-width: 100%;
     margin: 0 auto;
     padding: 2%;
@@ -55,7 +55,7 @@
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    gap: 7%;
+    margin-bottom:5%;
 }
 
 .futur {
@@ -84,7 +84,7 @@ h4{
 .invitation {
     width: 40%;
     height: auto;
-    padding-top: 100px;
+    padding: 10px;
 }
 
 .compt {
@@ -106,6 +106,7 @@ h4{
     display: flex;
     align-items: center;
     justify-content: center;
+    padding-bottom: 2%;
 }
 
 .logoC{

@@ -42,7 +42,7 @@ const Edition2024 = () => {
                     Link to="/Lieux" 
                     label="Explorez" />
                  </div>
-                 <img src={Lieu} alt='lieux' className="lieu"/>    
+                 <img src={Lieu} alt='lieux' className="univ"/>    
             </div>
            
             <img src={shiromani} alt='tissus des comores' className="Salouva" />

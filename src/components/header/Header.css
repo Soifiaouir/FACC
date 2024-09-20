@@ -30,6 +30,7 @@
     background-size: cover;
     background-repeat: no-repeat;
     z-index: 0;
+    overflow: hidden;
 }
 
 .Facclogo {
@@ -66,14 +67,16 @@
     border-radius: 5px;
     color: #E0DA4F;
     line-height: 1.2em;
-    text-align: left;
+    text-align: right;
+    overflow: hidden;
+    
 }
 
 .dropdown p {
-    width: 100%;
-    text-align: left;
-    padding: 5px 0;
+    width: auto;
+    text-align: right;
     white-space: nowrap;
+    overflow: hidden;
 }
 
 .nav-dropdown:hover .dropdown {
@@ -125,25 +128,33 @@
         display: none;
         position: absolute;
         top: 40%;
-        right: 0;
-        width: 50%;
+        right: 10px;
+        width: auto;
+        display: flex;
         flex-direction: column;
         align-items: center;
+        text-align: center;
+        text-align: center;
         background-color: #7C3302;
         color: #E0DA4F;
-        padding: 20px 0;
+        padding: 20px 2%;
         border-radius: 15px;
-        margin-top: 10px;
+        z-index: 10;
     }
 
+    .menu-items {
+        display: none;
+    }
+    
     .menu-items.open {
-        display: flex;
+        display: flex; /* Assurez-vous que cela est correct */
     }
 
     .nav-dropdown {
-        width: 100%;
+        width: auto;
         text-align: center;
         margin: 10px 0;
+
     }
 
     .dropdown {
@@ -189,7 +200,7 @@
     }
 
     .menu-items {
-        width: 60%;
+        width: 70%;
     }
 }
 

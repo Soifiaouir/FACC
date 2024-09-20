@@ -128,7 +128,8 @@
 
 @media (max-width: 30em) { /* 480px */
   .CarousselU {
-    height: 11em; /* Ajusté pour les très petits écrans */
+    height: 20%;
+    padding-top: 3em; /* Ajusté pour les très petits écrans */
   }
 
   .pic {

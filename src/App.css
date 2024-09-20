@@ -24,8 +24,6 @@
 }
 
 .App {
-  margin: 0;
-  padding: 0;
   background-color: beige;
   color: #1F1E13;
   font-family: 'Corbel';
@@ -104,7 +102,7 @@ p {
   h3 { font-size: 30px; }
   h4 { font-size: 18px; }
   
-  .App { padding: 0 10px; }
+  .App { padding: 0 0px; }
 }
 
 @media (max-width: 480px) {

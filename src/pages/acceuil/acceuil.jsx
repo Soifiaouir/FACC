@@ -52,10 +52,10 @@ function Accueil() {
                     L'art par ce qu'il donne à voir, montrer, entendre, ressentir, invite dans son essence la plus profonde à résister. Le choix du vecteur, de l'esthétique concourt également à cet objectif puissant qui questionne de tous temps.<br/>
                     Le concept « Résister », se propose de développer une stratégie de monstrations pour consolider la Rencontre avec la population et la ville de Moroni, investie en plateforme rayonnante pour l'art contemporain...
                    </p>
-                    <h3 className="mobil">12 ans d'art</h3>
                 </div>
-                <img src={Invitation} alt='Invitation' className='invitation' />           
             </div>
+                <h3 className="mobil">12 ans d'art</h3>
+                <img src={Invitation} alt='Invitation' className='invitation' />           
             <div className="compt">
                 <h3 className="E">6ème Edition:</h3>
                 <Compteur eventDate={eventDate}/>
