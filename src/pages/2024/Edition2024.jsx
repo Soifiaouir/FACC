@@ -32,7 +32,7 @@ const Edition2024 = () => {
                     {/* <BoutonTelecharger 
                         fileName="cvsoif"
                         fileUrl="https://www.canva.com/design/DAGIrgD6F04/zQBf-ddSxcxnXaEH2-CkkQ/view?utm_content=DAGIrgD6F04&utm_campaign=designshare&utm_medium=link&utm_source=editor"/>
-                    </div> */}
+                    */}</div> 
             </div>
             <img src={shiromani} alt='tissus des comores' className="Salouva" />
             <div className="section">
@@ -58,7 +58,6 @@ const Edition2024 = () => {
                 </div>
             </div>
         
-
 
         </div>
     );
