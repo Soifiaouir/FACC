@@ -27,11 +27,12 @@ const Edition2024 = () => {
                 <img src={Program} alt='prestation' className="program"/>    
                 <div className="droite">
                     <h3>PROGRAMME</h3>
-                    <p>Nous vous attendons nombreux pour partager ensemble cette expérience artistique inoubliable qui contribue à la valorisation de l'art et de la culture comorienne. Ne manquez pas cette opportunité de vous immerger dans un monde de créativité et d'inspiration</p>
-                    <BoutonTelecharger 
+                    <p>Nous vous attendons nombreux pour partager ensemble cette expérience artistique inoubliable qui contribue à la valorisation de l'art et de la culture comorienne. Ne manquez pas cette opportunité de vous immerger dans un monde de créativité et d'inspiration.<br/>Notre promgramme sera disponible d'ici peu.
+                    </p>
+                    {/* <BoutonTelecharger 
                         fileName="cvsoif"
                         fileUrl="https://www.canva.com/design/DAGIrgD6F04/zQBf-ddSxcxnXaEH2-CkkQ/view?utm_content=DAGIrgD6F04&utm_campaign=designshare&utm_medium=link&utm_source=editor"/>
-                    </div>
+                    </div> */}
             </div>
             <img src={shiromani} alt='tissus des comores' className="Salouva" />
             <div className="section">
@@ -50,10 +51,10 @@ const Edition2024 = () => {
                 <img src={Artistes} alt='prestation' className="program"/>    
                 <div className="droite">
                     <h3>Artistes</h3>
-                    <p>En visitant notre page dédiée, vous aurez l'opportunité de plonger dans l'univers unique de chaque artiste, d'admirer leurs œuvres et de comprendre l'inspiration qui les anime. Que vous soyez amateur d'art ou simplement curieux, cette expérience vous permettra de vous connecter avec les talents qui façonnent la scène artistique du FACC.</p>
-                    <BoutonP 
+                     <p>{/*En visitant notre page dédiée, */}Vous aurez l'opportunité de plonger dans l'univers unique de chaque artiste, d'admirer leurs œuvres et de comprendre l'inspiration qui les anime. Que vous soyez amateur d'art ou simplement curieux, cette expérience vous permettra de vous connecter avec les talents qui façonnent la scène artistique du FACC.</p> 
+                    {/* <BoutonP 
                         Link to="/Artistes" 
-                        label="Découvrez" /> 
+                        label="Découvrez" />  */}
                 </div>
             </div>
         
