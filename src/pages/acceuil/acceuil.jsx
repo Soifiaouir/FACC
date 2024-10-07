@@ -12,6 +12,9 @@ function Accueil() {
     return (
         <div className="accueil">
             <h1>Festival d'Arts Contemporains des Comores (FACC)</h1>
+            <div className="compt">
+                <Compteur eventDate={eventDate}/>
+            </div>
             <div className="video">
                 <iframe 
                     width="695" 
@@ -51,21 +54,19 @@ function Accueil() {
             <h2>Evenement à venir</h2>  
             <div className="futur">
                 <div className="sectionG">
-                   <h4>Le Festival d'Arts Contemporains desComores : FACC, se tiendra du 21 au 28 novembre 2024 à Moroni. </h4>
-                    <p>Cette sixième édition aura pour thème général <b>RESISTER</b> c'est-à-dire l'engagement à être, faire et avoir pour la réalisation de nos rêves. Résister c'est nourrir, conserver notre vitalité, notre émerveillement. Résister invite à s'affirmer, s'inventer, rechercher le désir, l'exprimer en rapport avec un présent qui est appelé à progresser, évoluer. <br/>
-                    Résister c'est aussi sublimer son monde en le présentant tel qu'il est souhaité.<br/>
-                    Cette dimension introspective permet à l'artiste de creuser en lui pour s'offrir au monde, son monde. C'est un acte de générosité, de partage, création du vivre et construire ensemble.<br/>
-                    L'art par ce qu'il donne à voir, montrer, entendre, ressentir, invite dans son essence la plus profonde à résister. Le choix du vecteur, de l'esthétique concourt également à cet objectif puissant qui questionne de tous temps.<br/>
-                    Le concept « Résister », se propose de développer une stratégie de monstrations pour consolider la Rencontre avec la population et la ville de Moroni, investie en plateforme rayonnante pour l'art contemporain...
-                   </p>
+                    <div>
+                        <h4>Le Festival d'Arts Contemporains desComores : FACC, se tiendra du 21 au 28 novembre 2024 à Moroni. </h4>
+                        <p>Cette sixième édition aura pour thème général <b>RESISTER</b> c'est-à-dire l'engagement à être, faire et avoir pour la réalisation de nos rêves. Résister c'est nourrir, conserver notre vitalité, notre émerveillement. Résister invite à s'affirmer, s'inventer, rechercher le désir, l'exprimer en rapport avec un présent qui est appelé à progresser, évoluer. <br/>
+                        Résister c'est aussi sublimer son monde en le présentant tel qu'il est souhaité.<br/>
+                        Cette dimension introspective permet à l'artiste de creuser en lui pour s'offrir au monde, son monde. C'est un acte de générosité, de partage, création du vivre et construire ensemble.<br/>
+                        L'art par ce qu'il donne à voir, montrer, entendre, ressentir, invite dans son essence la plus profonde à résister. Le choix du vecteur, de l'esthétique concourt également à cet objectif puissant qui questionne de tous temps.<br/>
+                        Le concept « Résister », se propose de développer une stratégie de monstrations pour consolider la Rencontre avec la population et la ville de Moroni, investie en plateforme rayonnante pour l'art contemporain...
+                    </p>
+                   </div>
+                   <img src={Invitation} alt='Invitation' className='invitation' />         
                 </div>
             </div>
-                <h3 className="mobil">12 ans d'art</h3>
-                <img src={Invitation} alt='Invitation' className='invitation' />           
-            <div className="compt">
-                <h3 className="E">6ème Edition:</h3>
-                <Compteur eventDate={eventDate}/>
-            </div>
+                <h3 className="mobil">12 ans d'art</h3>     
             <div className="logoC">
                 <CarousselLogo/>
             </div>

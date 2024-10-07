@@ -71,6 +71,8 @@
 
 .sectionG {
     width: 100%;
+    display: flex;
+    align-items: center;
 }
 p{
     margin: 0%;
@@ -82,6 +84,9 @@ h4{
 }
 
 .invitation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 40%;
     height: auto;
     padding: 10px;
@@ -166,5 +171,9 @@ h4{
 
     .bandeau, .compt {
         gap: 15px;
+    }
+
+    .sectionG{
+        flex-direction: column;
     }
 }
