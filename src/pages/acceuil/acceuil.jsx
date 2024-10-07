@@ -42,7 +42,7 @@ function Accueil() {
                 </div>
             </div>
             <div className="actualité">
-                <h3> Actualité </h3>
+                <h2> Actualité </h2>
                 <p>Le Festival d'Arts Contemporain des Comores et L'Association Zangoma sont ravis d'exposé l'oeuvre suivante en soutien aux femmes pour Octobre Rose.  L'engagement de la communauté artistique dans la lutte contre le cancer du sein est une initiative qui s'inscrit dans le cadre plus large de la campagne annuelle de sensibilisation Octobre Rose, qui se déroule chaque année durant le mois d'octobr</p>
                 <CarousselO/>
             </div>
