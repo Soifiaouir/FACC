@@ -4,6 +4,7 @@ import Invitation from "../../assets/Invitation/6eme.png";
 import Compteur from "../../components/compteurs/Compteur";
 import CarousselAcc from "../../components/caroussels/carousselU/caroussels/carouselAcc/CarousselAcc";
 import CarousselLogo from "../../components/caroussels/carousselU/caroussels/carousellogo/CarousselLogo";
+import CarousselO from "../../components/caroussels/carousselU/caroussels/carouselO/CarousselO";
 
 const eventDate = "2024-11-21T10:15:00";
 
@@ -36,6 +37,11 @@ function Accueil() {
                     Le Festival d'Arts Contemporains des Comores, également connu sous le nom de Hudjijuwa, est un événement culturel phare qui se déroule tous les deux ans à Moroni. Créé en 2012, il met en lumière la richesse et la diversité de l'art comorien tout en favorisant les échanges culturels internationaux. Le FACC propose une programmation variée comprenant des expositions, des performances, des projections de films et des débats, impliquant des artistes locaux et internationaux. Ce festival joue un rôle essentiel dans la promotion de l'identité culturelle des Comores et l'éducation artistique des jeunes générations.
                     </p>
                 </div>
+            </div>
+            <div className="actualité">
+                <h3> Actualité </h3>
+                <p>Le Festival d'Arts Contemporain des Comores et L'Association Zangoma sont ravis d'exposé l'oeuvre suivante en soutien aux femmes pour Octobre Rose.  L'engagement de la communauté artistique dans la lutte contre le cancer du sein est une initiative qui s'inscrit dans le cadre plus large de la campagne annuelle de sensibilisation Octobre Rose, qui se déroule chaque année durant le mois d'octobr</p>
+                <CarousselO/>
             </div>
             <div className="bandeau">
                 <h3 className="E">5 Editions</h3>
