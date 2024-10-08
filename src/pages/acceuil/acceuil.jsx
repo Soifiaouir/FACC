@@ -43,7 +43,7 @@ function Accueil() {
             </div>
             <div className="actualité">
                 <h2> Actualité </h2>
-                <p>L'Association Zangoma partenaire du FACC s'unissent pour une noble cause en cette période d'Octobre Rose. Dans un geste de solidarité et de sensibilisation, ces deux entités culturelles ont le plaisir de présenter une œuvre d'art exceptionnelle, spécialement conçue pour soutenir les femmes dans leur lutte contre le cancer du sein.
+                <p>L'Association Zangoma partenaire du FACC expose pour une noble cause en cette période d'Octobre Rose. Dans un geste de solidarité et de sensibilisation, ces deux entités culturelles ont le plaisir de présenter une œuvre d'art exceptionnelle, spécialement conçue pour soutenir les femmes dans leur lutte contre le cancer du sein.
                 Cette installation artistique, à la fois puissante et émouvante, sera exposée sur le fronton de l'hôtel de ville de Mamoudzou, le chef-lieu de Mayotte. Le choix de cet emplacement central et prestigieux n'est pas anodin : il vise à maximiser la visibilité de l'œuvre et à toucher un large public.</p>
                 <CarousselO/>
             </div>
