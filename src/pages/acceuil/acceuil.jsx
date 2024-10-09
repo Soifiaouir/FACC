@@ -5,6 +5,7 @@ import Compteur from "../../components/compteurs/Compteur";
 import CarousselAcc from "../../components/caroussels/carousselU/caroussels/carouselAcc/CarousselAcc";
 import CarousselLogo from "../../components/caroussels/carousselU/caroussels/carousellogo/CarousselLogo";
 import CarousselO from "../../components/caroussels/carousselU/caroussels/carouselO/CarousselO";
+import Shiromani from '../../assets/shiromani.jpg'
 
 const eventDate = "2024-11-21T10:15:00";
 
@@ -41,6 +42,7 @@ function Accueil() {
                     </p>
                 </div>
             </div>
+            <Shiromani />
             <div className="actualité">
                 <h2> Actualité </h2>
                 <p>L'Association Zangoma expose pour une noble cause en cette période d'Octobre Rose. Dans un geste de solidarité et de sensibilisation, ces deux entités culturelles ont le plaisir de présenter une œuvre d'art exceptionnelle, spécialement conçue pour soutenir les femmes dans leur lutte contre le cancer du sein.
