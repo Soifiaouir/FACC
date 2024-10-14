@@ -39,7 +39,7 @@ root.render(
               <Route path="Edition2018" element={<Edition2018 />} />
               <Route path="Contact" element={<ContactForm />} />
               <Route path="Apropos" element={<Apropos />} />
-              <Route path="MentionsLegal" element={<MentionLegal />} />
+              <Route path="MentionLegal" element={<MentionLegal />} />
               <Route path="Politiquedecookies" element={<CookiePolicy/>} />
               <Route path="AppelCandidature" element={<AppelCandidature/>} />
               <Route path="Lieux" element={<Lieux />} />
