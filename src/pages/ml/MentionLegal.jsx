@@ -60,7 +60,7 @@ const MentionLegal = () => {
         Les présentes mentions légales sont soumises à la loi comorienne. En cas de litige, les tribunaux comoriens seront seuls compétents.
       </p>
 
-      <p><em>Dernière mise à jour : 15 août 2024</em></p>
+      <p><em>Dernière mise à jour : 14/10/24</em></p>
     </div>
   );
 };

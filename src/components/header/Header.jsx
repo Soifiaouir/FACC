@@ -54,8 +54,8 @@ const Navbar = () => {
                         <div className="dropdown">
                             <Link to="/Contact" onClick={handleLinkClick}><p>Contacts</p></Link>
                             <Link to="/Apropos" onClick={handleLinkClick}><p>A propos</p></Link>
-                            <Link to="/MentionLegal" onClick={handleLinkClick}><p>Mentions Légales</p></Link>
                             <Link to="/AppelCandidature" onClick={handleLinkClick}><p>Appel à Candidature</p></Link>
+                            <Link to="/MentionLegal" onClick={handleLinkClick}><p>Mentions Légales</p></Link>
                             <Link to="/Politiquedecookies" onClick={handleLinkClick}><p>Politique des cookies</p></Link>
                         </div>
                     )}

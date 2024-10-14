@@ -1,6 +1,15 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 const CookiePolicy = () => {
+  const [email, setEmail] = useState('Cliquez pour afficher');
+
+  const revealEmail = (e) => {
+    e.preventDefault();
+    const revealedEmail = 'f.acc@hotmail.fr';
+    setEmail(revealedEmail);
+    window.location.href = `mailto:${revealedEmail}`;
+  };
+
   return (
     <div>
       <h1>Conditions Générales d'Utilisation des Cookies</h1>
@@ -63,7 +72,8 @@ const CookiePolicy = () => {
 
       <h3>Contact</h3>
       <p>
-        Pour toute question concernant cette politique de cookies, veuillez nous contacter à l'adresse email suivante : <a href="f.acc@hotmail.fr">email FACC</a>.
+        Pour toute question concernant cette politique de cookies, veuillez nous contacter à l'adresse email suivante : {' '}
+        <a href="#" onClick={revealEmail}>{email}</a>.
       </p>
     </div>
   );
