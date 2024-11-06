@@ -43,12 +43,12 @@ function Accueil() {
                 </div>
             </div>
             <img src={Shiromani} alt='Invitation' className='Salouva' />   
-            <div className="actualité">
+            {/* <div className="actualité">
                 <h2> Actualité </h2>
                 <p>L'Association Zangoma expose pour une noble cause en cette période d'Octobre Rose. Dans un geste de solidarité et de sensibilisation, ces deux entités culturelles ont le plaisir de présenter une œuvre d'art exceptionnelle, spécialement conçue pour soutenir les femmes dans leur lutte contre le cancer du sein.
                 Cette installation artistique, à la fois puissante et émouvante, sera exposée sur le fronton de l'hôtel de ville de Mamoudzou, le chef-lieu de Mayotte. </p>
                 <CarousselO/>
-            </div>
+            </div> */}
             <div className="bandeau">
                 <h3 className="E">5 Editions</h3>
                 <h3>+ de  100 Artistes</h3>
