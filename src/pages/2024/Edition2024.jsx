@@ -11,7 +11,7 @@ import BoutonTelecharger from "../../components/boutons/boutonT/boutonT";
 
 const Edition2024 = () => {
 
-    const eventDate = "2024-11-21T10:15:00";
+    const eventDate = "2024-11-21T10:09:00";
 
     return (
         <div className="Edition2024">
@@ -29,10 +29,11 @@ const Edition2024 = () => {
                     <h3>PROGRAMME</h3>
                     <p>Nous vous attendons nombreux pour partager ensemble cette expérience artistique inoubliable qui contribue à la valorisation de l'art et de la culture comorienne. Ne manquez pas cette opportunité de vous immerger dans un monde de créativité et d'inspiration.<br/>Notre promgramme sera disponible d'ici peu.
                     </p>
-                    {/* <BoutonTelecharger 
+                     <BoutonTelecharger 
                         fileName="cvsoif"
-                        fileUrl="https://www.canva.com/design/DAGIrgD6F04/zQBf-ddSxcxnXaEH2-CkkQ/view?utm_content=DAGIrgD6F04&utm_campaign=designshare&utm_medium=link&utm_source=editor"/>
-                    */}</div> 
+                        fileUrl="https://www.canva.com/design/DAGVQIQfB8M/A2N-T7rDnMSqLfq9J0YLxQ/view?utm_content=DAGVQIQfB8M&utm_campaign=designshare&utm_medium=link&utm_source=editor"
+                        target="_blank"/>
+                    </div> 
             </div>
             <img src={shiromani} alt='tissus des comores' className="Salouva" />
             <div className="section">

@@ -11,12 +11,8 @@ const MentionLegal = () => {
           <strong>Éditeur du site :</strong> Festival d'Art Contemporain des Comores<br />
           Téléphone : +269639238465<br />
           Email : f.acc@hotmail.fr<br />
-        </p>
-        <p>
           <strong>Hébergeur :</strong> OVHcloud<br />
-          2 Rue Kellermann, 59100 Roubaix, France
-        </p>
-        <p>
+          2 Rue Kellermann, 59100 Roubaix, France<br/>
           <strong>Directeur de la publication :</strong> Soifia OUIRDANE
         </p>
       </div>

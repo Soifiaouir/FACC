@@ -5,7 +5,8 @@ import Compteur from "../../components/compteurs/Compteur";
 import CarousselAcc from "../../components/caroussels/carousselU/caroussels/carouselAcc/CarousselAcc";
 import CarousselLogo from "../../components/caroussels/carousselU/caroussels/carousellogo/CarousselLogo";
 import CarousselO from "../../components/caroussels/carousselU/caroussels/carouselO/CarousselO";
-import Shiromani from '../../assets/shiromani.jpg'
+import Shiromani from '../../assets/shiromani.jpg';
+import Video from "../../components/video/video";
 
 const eventDate = "2024-11-21T10:15:00";
 
@@ -17,17 +18,11 @@ function Accueil() {
                 <Compteur eventDate={eventDate}/>
             </div>
             <div className="video">
-                <iframe 
-                    width="695" 
-                    height="391" 
-                    src="https://www.youtube.com/embed/enT-JJIIo48" 
-                    title="Bande annonce  Documentaire FACC - MP 13" 
-                    frameBorder="0" 
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-                    referrerPolicy="strict-origin-when-cross-origin" 
-                    allowFullScreen 
-                    className="video"
-                ></iframe>
+            <Video 
+            videoSource="https://www.instagram.com/p/DCE_rhtouzd/" 
+            type="instagram" 
+            
+           />
             </div>
             <h3 className="mobil">5 Editions</h3>
             <h2>Présentation du FACC</h2>
@@ -65,6 +60,7 @@ function Accueil() {
                         L'art par ce qu'il donne à voir, montrer, entendre, ressentir, invite dans son essence la plus profonde à résister. Le choix du vecteur, de l'esthétique concourt également à cet objectif puissant qui questionne de tous temps.<br/>
                         Le concept « Résister », se propose de développer une stratégie de monstrations pour consolider la Rencontre avec la population et la ville de Moroni, investie en plateforme rayonnante pour l'art contemporain...
                     </p>
+                    
                    </div>
                    <img src={Invitation} alt='Invitation' className='invitation' />         
                 </div>
