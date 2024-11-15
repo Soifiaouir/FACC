@@ -29,7 +29,7 @@ const Edition2024 = () => {
                     <h3>PROGRAMME</h3>
                     <p>Nous vous attendons nombreux pour partager ensemble cette expérience artistique inoubliable qui contribue à la valorisation de l'art et de la culture comorienne. Ne manquez pas cette opportunité de vous immerger dans un monde de créativité et d'inspiration.<br/>Notre promgramme sera disponible d'ici peu.
                     </p>
-                     <BoutonTelecharger 
+                     <BoutonTelecharger
                         fileName="programme2024"
                         fileUrl="https://www.canva.com/design/DAGVQIQfB8M/A2N-T7rDnMSqLfq9J0YLxQ/view?utm_content=DAGVQIQfB8M&utm_campaign=designshare&utm_medium=link&utm_source=editor"
                         target="_blank"/>
