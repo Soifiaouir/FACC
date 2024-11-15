@@ -18,11 +18,7 @@ function Accueil() {
                 <Compteur eventDate={eventDate}/>
             </div>
             <div className="video">
-            <Video 
-            videoSource="https://www.instagram.com/p/DCE_rhtouzd/" 
-            type="instagram" 
-            
-           />
+            <iframe width="640" height="360" src="https://www.youtube.com/embed/01FxROZE6Iw" title="spot facc24" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             </div>
             <h3 className="mobil">5 Editions</h3>
             <h2>Présentation du FACC</h2>

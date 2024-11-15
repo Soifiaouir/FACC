@@ -17,7 +17,7 @@ const BoutonTelecharger = ({ fileName, fileUrl }) => {
     };
 
     return (
-        <button onClick={handleDownload} target="blank"  className="boutont">
+        <button onClick={handleDownload} target="_blank"  className="boutont">
             Téléchargez
         </button>
     );
