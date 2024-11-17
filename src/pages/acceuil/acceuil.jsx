@@ -8,7 +8,7 @@ import CarousselO from "../../components/caroussels/carousselU/caroussels/carous
 import Shiromani from '../../assets/shiromani.jpg';
 import Video from "../../components/video/video";
 
-const eventDate = "2024-11-18T9:00";
+const eventDate = "2024-11-18T09:00:00";
 
 function Accueil() {
     return (
