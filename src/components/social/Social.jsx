@@ -2,7 +2,7 @@ import React from "react";
 import { FaFacebook, FaInstagram } from 'react-icons/fa';
 
 const SocialIcons = ({ facebookUrl, instagramUrl }) => (
-  <div>
+  <div className="social">
     <a href={facebookUrl} target="_blank" rel="noopener noreferrer">
       <FaFacebook size={32} color="#3b5998" /> {/* Couleur Facebook */}
     </a>

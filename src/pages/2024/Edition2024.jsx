@@ -1,7 +1,7 @@
 import React from "react";
 import './Edition2024.css';
 import Compteur from "../../components/compteurs/Compteur";
-import Program from "../../assets/Invitation/6eme.png";
+import Program from "../../assets/Logofacc.png";
 import Lieu from "../../assets/Lieux/UNIV.jpg";
 import BoutonP from "../../components/boutons/boutonP/boutonP";
 import shiromani from "../../assets/shiromani.jpg";
@@ -15,24 +15,24 @@ const Edition2024 = () => {
 
     return (
         <div className="Edition2024">
-            <h2>Edition 2024</h2>
+            <h2>Edition 2026</h2>
             <div className="hero2024">
-            <Caroussel2024 />
+            {/* <Caroussel2024 /> */}
             <p>Chers visiteurs et artistes,<br/>
-            Nous avons le plaisir de vous inviter à la prochaine édition du Festival d'Arts Contemporains des Comores, qui se tiendra le 21 novembre 2024 à Moroni. Organisé par l'Association du Festival d'Art Contemporain des Comores, cet événement biennal, connu sous le nom de "Hudjijuwa", célèbre la richesse et la diversité de l'art comorien et international.
+            Nous avons le plaisir de vous inviter à la prochaine édition du Festival d'Arts Contemporains des Comores, qui se tiendra en 2026 à Moroni. Organisé par l'Association du Festival d'Art Contemporain des Comores, cet événement biennal, connu sous le nom de "Hudjijuwa", célèbre la richesse et la diversité de l'art comorien et international.
             </p>
             </div>
-            < Compteur eventDate={eventDate}/>
+            {/* < Compteur eventDate={eventDate}/> */}
             <div className="section">
                 <img src={Program} alt='prestation' className="program"/>    
                 <div className="droite">
                     <h3>PROGRAMME</h3>
                     <p>Nous vous attendons nombreux pour partager ensemble cette expérience artistique inoubliable qui contribue à la valorisation de l'art et de la culture comorienne. Ne manquez pas cette opportunité de vous immerger dans un monde de créativité et d'inspiration.<br/>Notre promgramme sera disponible d'ici peu.
                     </p>
-                     <BoutonTelecharger
+                     {/* <BoutonTelecharger
                         fileName="programme2024"
                         fileUrl="https://www.canva.com/design/DAGVQIQfB8M/A2N-T7rDnMSqLfq9J0YLxQ/view?utm_content=DAGVQIQfB8M&utm_campaign=designshare&utm_medium=link&utm_source=editor"
-                        target="_blank"/>
+                        target="_blank"/> */}
                     </div> 
             </div>
             <img src={shiromani} alt='tissus des comores' className="Salouva" />

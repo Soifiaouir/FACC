@@ -36,7 +36,7 @@ const Navbar = () => {
 
             <div className={`menu-items ${isMenuOpen ? 'open' : ''}`}>
                 <div>
-                    <Link to="/Edition2024" onClick={handleLinkClick}><p>Edition 2024</p></Link>
+                    <Link to="/Edition2024" onClick={handleLinkClick}><p>Edition 2026</p></Link>
                 </div>
                 <div className="nav-dropdown" onMouseEnter={() => setShowPastEvents(true)} onMouseLeave={() => setShowPastEvents(false)}>
                     <span>Editions précédentes</span>

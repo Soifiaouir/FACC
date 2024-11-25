@@ -24,8 +24,10 @@
     gap: 20px;
     width: 100%;
 }
-
-.univ, .program {
+.program{
+    width: 30%;
+}
+.univ {
     width: 50%;
 }
 

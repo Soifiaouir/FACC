@@ -7,6 +7,7 @@ import CarousselLogo from "../../components/caroussels/carousselU/caroussels/car
 import CarousselO from "../../components/caroussels/carousselU/caroussels/carouselO/CarousselO";
 import Shiromani from '../../assets/shiromani.jpg';
 import Video from "../../components/video/video";
+import SocialIcons from "../../components/social/Social";
 
 const eventDate = "2024-11-18T09:00:00";
 
@@ -14,9 +15,7 @@ function Accueil() {
     return (
         <div className="accueil">
             <h1>Festival d'Arts Contemporains des Comores (FACC)</h1>
-            <div className="compt">
-                <Compteur eventDate={eventDate}/>
-            </div>
+            
             <div className="video">
             <iframe width="640" height="360" src="https://www.youtube.com/embed/01FxROZE6Iw" title="spot facc24" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             </div>
@@ -34,18 +33,25 @@ function Accueil() {
                 </div>
             </div>
             <img src={Shiromani} alt='Invitation' className='Salouva' />   
-            {/* <div className="actualité">
+            <div className="actualité">
                 <h2> Actualité </h2>
-                <p>L'Association Zangoma expose pour une noble cause en cette période d'Octobre Rose. Dans un geste de solidarité et de sensibilisation, ces deux entités culturelles ont le plaisir de présenter une œuvre d'art exceptionnelle, spécialement conçue pour soutenir les femmes dans leur lutte contre le cancer du sein.
-                Cette installation artistique, à la fois puissante et émouvante, sera exposée sur le fronton de l'hôtel de ville de Mamoudzou, le chef-lieu de Mayotte. </p>
-                <CarousselO/>
-            </div> */}
+                <p>Très récemment, s'est déroulée l'édition 2024 du festival d'art contemporain, un événement incontournable qui met en lumière les talents artistiques de la région. Ce festival, qui attire des artistes et des visiteurs du monde entier, propose une variété d'expositions, d'ateliers et de performances en direct. C'est une occasion unique de découvrir des œuvres innovantes et de plonger dans l'univers de l'art contemporain. Pour en savoir plus et avoir un premier aperçu des temps forts de cette édition, vous pouvez cliquer sur ce lien.</p>
+               <div className="soc">
+                < SocialIcons 
+                    facebookUrl="https://www.facebook.com/Facdescomores" 
+                    instagramUrl="https://www.instagram.com/facc269/" />
+                <a href="https://la1ere.francetvinfo.fr/mayotte/le-festival-d-arts-contemporains-comorien-bat-son-plein-1539703.html" target="_blank">Mayotte la 1ère</a>
+                </div>
+            </div>
             <div className="bandeau">
                 <h3 className="E">5 Editions</h3>
                 <h3>+ de  100 Artistes</h3>
                 <h3 className="E">12 ans d'art</h3>
             </div>
-            <h2>Evenement à venir</h2>  
+            <div className="compt">
+                <Compteur eventDate={eventDate}/>
+            </div>
+            {/* <h2>Evenement à venir</h2>  
             <div className="futur">
                 <div className="sectionG">
                     <div>
@@ -60,7 +66,7 @@ function Accueil() {
                    </div>
                    <img src={Invitation} alt='Invitation' className='invitation' />         
                 </div>
-            </div>
+            </div> */}
                 <h3 className="mobil">12 ans d'art</h3>     
             {/* <div className="logoC">
                 <CarousselLogo/>
